@@ -1,0 +1,322 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nutrition Lab</title>
+<script src="disableActions.js"></script>
+
+    <style>
+
+body{
+font-family: Arial, sans-serif;
+margin:0;
+padding:0;
+background:#f5f7fa;
+}
+
+/* HEADER */
+
+.header{
+display:flex;
+align-items:center;
+justify-content:space-between;
+padding:10px 40px;
+background:white;
+border-bottom:3px solid #003366;
+}
+
+.header img{
+width:150px;
+height:150px;
+object-fit:contain;
+}
+
+.title{
+text-align:center;
+flex:1;
+padding:0 20px;
+}
+
+.title h1{
+margin:0;
+font-size:26px;
+color:#003366;
+font-weight:bold;
+}
+
+.location{
+font-weight:bold;
+margin-top:5px;
+}
+
+
+/* NAVIGATION */
+
+nav{
+background:#003366;
+text-align:center;
+position:sticky;
+top:0;
+z-index:1000;
+}
+
+nav ul{
+list-style:none;
+margin:0;
+padding:0;
+}
+
+nav ul li{
+display:inline-block;
+position:relative;
+}
+
+nav ul li a{
+display:block;
+padding:14px 20px;
+color:white;
+text-decoration:none;
+font-weight:bold;
+}
+
+nav ul li a:hover{
+background:#0055a5;
+}
+
+
+/* DROPDOWN */
+
+nav ul ul{
+display:none;
+position:absolute;
+background:#0055a5;
+min-width:200px;
+text-align:left;
+}
+
+nav ul ul li{
+display:block;
+}
+
+nav ul li:hover > ul{
+display:block;
+}
+
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+.header{
+flex-direction:column;
+text-align:center;
+}
+
+.header img{
+width:100px;
+height:100px;
+}
+
+.title h1{
+font-size:20px;
+}
+
+nav ul li{
+display:block;
+}
+
+}
+
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f9f9f9;
+            color: #000;
+        }
+        .content {
+            background-color:white; /* soft red background */
+            padding: 20px;
+            border-radius: 10px;
+        }
+        h1 {
+            text-align: center;
+            color: #000;
+        }
+        h2, h3 {
+            color: #000;
+            margin-top: 20px;
+        }
+        p, ul {
+            line-height: 1.6;
+            margin: 10px 0;
+        }
+        ul {
+            margin-left: 20px;
+        }
+    </style>
+</head>
+<body>
+<!-- HEADER -->
+<div class="header">
+
+<img src="images/governament-logo1.jpeg" alt="Government Logo">
+
+<div class="title">
+<h1>
+MAHATMA JYOTHIBA PHULE <br>
+TELANGANA BACKWARD CLASSES <br>
+WELFARE RESIDENTIAL <br>
+DEGREE COLLEGE FOR WOMEN
+</h1>
+
+<div class="location">
+Medchal & Hyderabad
+</div>
+
+</div>
+
+<img src="images/mjp1.png">
+
+</div>
+
+
+<!-- NAVIGATION -->
+
+<nav>
+
+<ul>
+
+<li><a href="mjp.html">Home</a></li>
+
+<li>
+<a href="#">About</a>
+<ul>
+<li><a href="history.html">History</a></li>
+<li><a href="governing body.html">Governing Body</a></li>
+<li><a href="secretary.html">Secretary</a></li>
+<li><a href="principal.html">Principal</a></li>
+<li><a href="vice principal.html">Vice Principal</a></li>
+<li><a href="management.html">Management</a></li>
+</ul>
+</li>
+
+<li>
+<a href="#">Academics</a>
+<ul>
+<li><a href="admissions.html">Admissions</a></li>
+<li><a href="courses.html">Courses</a></li>
+<li><a href="course details.html">Course Details</a></li>
+
+<li><a href="examination.html">Examination Branch</a></li>
+</ul>
+</li>
+
+<li>
+<a href="#">Department & Faculty</a>
+<ul>
+<li><a href="languages.html">Languages</a></li>
+<li><a href="computer science.html">Computer Science</a></li>
+<li><a href="life science.html">Life Science</a></li>
+<li><a href="arts.html">Arts</a></li>
+<li><a href="commerce.html">Commerce</a></li>
+<li><a href="bba.html">BBA</a></li>
+<li><a href="bft.html">BFT</a></li>
+</ul>
+</li>
+
+<li>
+<a href="#">Facilities</a>
+<ul>
+<li><a href="library.html">Library</a></li>
+<li><a href="labs.html">Labs</a></li>
+<li><a href="sports.html">Sports</a></li>
+<li><a href="events.html">Events</a></li>
+<li><a href="cultural.html">Cultural</a></li>
+<li><a href="industrial visits.html">Industrial Visits</a></li>
+<li><a href="nss.html">NSS</a></li>
+<li><a href="food-menu.html">Food Menu</a></li>
+<li><a href="health-cards.html">Health Cards</a></li>
+</ul>
+</li>
+
+<li><a href="placements.html">Placements</a></li>
+
+</ul>
+</nav>
+
+
+
+    <div class="content">
+        <!-- Main Heading -->
+        <h1>Nutrition Lab</h1>
+
+        <!-- Nutrition Lab Section -->
+        <p>The Nutrition Lab is designed to provide students and researchers with practical knowledge of food and nutrients. It is equipped with modern instruments to analyze the nutritional content of various foods. Students perform experiments to study metabolism, dietary requirements, and the effects of nutrition on health. The lab encourages hands-on learning and scientific inquiry through practical exercises and research projects.</p>
+
+        <!-- Importance of the Lab -->
+        <h3>Importance of the Lab</h3>
+        <p>The Nutrition Lab is vital for understanding the role of nutrients in human health. It helps students apply theoretical knowledge practically, develop analytical skills, and gain insights into diet planning, food safety, and public health nutrition.</p>
+
+        <!-- Lab Goals and Objectives -->
+        <h3>Lab Goals and Objectives</h3>
+        <ul>
+            <li>Provide practical experience in nutrient analysis and food testing.</li>
+            <li>Develop skills in diet planning, assessment, and research methodology.</li>
+            <li>Enhance understanding of the relationship between nutrition and health.</li>
+            <li>Promote critical thinking and scientific inquiry in nutritional studies.</li>
+        </ul>
+
+        <!-- Benefits of the Nutrition Lab -->
+        <h2>Benefits of the Nutrition Lab</h2>
+        <p>The Nutrition Lab helps students and professionals understand the impact of diet on overall health. It supports research in food science, enables precise nutritional analysis, and trains students in practical skills needed for careers in health, dietetics, and clinical nutrition. By exploring real-life experiments, learners can make informed decisions about nutrition and wellness.</p>
+
+        <!-- Facilities and Equipment Section -->
+        <h2>Facilities and Equipment of Nutrition Lab</h2>
+        <p>The Nutrition Lab is equipped with modern tools and facilities to support research, experiments, and practical learning in food science and nutrition. The lab provides a safe and organized environment for students and researchers.</p>
+
+        <h3>Facilities:</h3>
+        <ul>
+            <li>Well-ventilated and hygienic laboratory space.</li>
+            <li>Separate sections for food analysis, biochemistry, and microbiology.</li>
+            <li>Computerized data recording and analysis systems.</li>
+            <li>Reference library with nutritional charts and manuals.</li>
+        </ul>
+
+        <h3>Common Equipment and Tools:</h3>
+        <ul>
+            <li>Digital weighing scales for precise measurement of food samples.</li>
+            <li>Spectrophotometers for analyzing nutrient content.</li>
+            <li>pH meters and moisture analyzers for food testing.</li>
+            <li>Autoclaves and incubators for microbiological studies.</li>
+            <li>Refrigerators and cold storage for sample preservation.</li>
+            <li>Basic kitchen and food preparation tools for practical experiments.</li>
+        </ul>
+
+        <!-- Usage Section -->
+        <h2>Usage of the Lab</h2>
+        <p>The Nutrition Lab is actively used by the following organizations for research, practical experiments, and educational purposes:</p>
+        <ul>
+            <li>NZC (Nutrition and Zoology Club)</li>
+            <li>ANPHBC (Association of Nutrition and Public Health Biology Club)</li>
+        </ul>
+
+        <!-- Nutrition Lab Rules Section -->
+        <h2>Nutrition Lab Rules</h2>
+        <p>To ensure safety, efficiency, and proper learning in the Nutrition Lab, all students and staff must follow these rules:</p>
+        <ul>
+            <li>Always wear a lab coat, gloves, and other personal protective equipment (PPE) while working.</li>
+            <li>No eating or drinking in the lab except during approved food experiments.</li>
+            <li>Handle all instruments and chemicals carefully and follow proper operating instructions.</li>
+            <li>Keep the lab workspace clean and organized; clean all equipment after use.</li>
+            <li>Report any accidents, spills, or damaged equipment immediately to the lab instructor.</li>
+            <li>Do not remove lab materials, samples, or equipment without permission.</li>
+            <li>Follow all written procedures and experiment protocols strictly.</li>
+            <li>Maintain discipline and respect for other students and lab staff at all times.</li>
+        </ul>
+    </div>
+
+</body>
+</html>

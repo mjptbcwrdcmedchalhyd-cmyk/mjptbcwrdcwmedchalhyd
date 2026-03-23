@@ -1,0 +1,398 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Courses with Entrance Exams</title>
+<script src="disableActions.js"></script>
+
+
+
+<style>
+
+body{
+font-family: Arial, sans-serif;
+margin:0;
+padding:0;
+background:#f5f7fa;
+}
+
+/* HEADER */
+
+.header{
+display:flex;
+align-items:center;
+justify-content:space-between;
+padding:10px 40px;
+background:white;
+border-bottom:3px solid #003366;
+}
+
+.header img{
+width:150px;
+height:150px;
+object-fit:contain;
+}
+
+.title{
+text-align:center;
+flex:1;
+padding:0 20px;
+}
+
+.title h1{
+margin:0;
+font-size:26px;
+color:#003366;
+font-weight:bold;
+}
+
+.location{
+font-weight:bold;
+margin-top:5px;
+}
+
+
+/* NAVIGATION */
+
+nav{
+background:#003366;
+text-align:center;
+position:sticky;
+top:0;
+z-index:1000;
+}
+
+nav ul{
+list-style:none;
+margin:0;
+padding:0;
+}
+
+nav ul li{
+display:inline-block;
+position:relative;
+}
+
+nav ul li a{
+display:block;
+padding:14px 20px;
+color:white;
+text-decoration:none;
+font-weight:bold;
+}
+
+nav ul li a:hover{
+background:#0055a5;
+}
+
+
+/* DROPDOWN */
+
+nav ul ul{
+display:none;
+position:absolute;
+background:#0055a5;
+min-width:200px;
+text-align:left;
+}
+
+nav ul ul li{
+display:block;
+}
+
+nav ul li:hover > ul{
+display:block;
+}
+
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+.header{
+flex-direction:column;
+text-align:center;
+}
+
+.header img{
+width:100px;
+height:100px;
+}
+
+.title h1{
+font-size:20px;
+}
+
+nav ul li{
+display:block;
+}
+
+}
+
+
+
+body{
+   
+}
+
+h1{
+    text-align:center;
+    font-size:36px;
+    color:#333;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+th{
+    background-color: brown;
+    color:white;
+    padding:10px;
+    font-size:18px;
+}
+
+td{
+    padding:10px;
+    border:1px solid #999;
+}
+
+/* Odd rows */
+tr:nth-child(odd){
+    background-color:#E3F2FD;
+}
+
+/* Even rows */
+tr:nth-child(even){
+    background-color:#FCE4EC;
+}
+</style>
+</head>
+<body  oncontextmenu="return false;" onselectstart="return false">
+
+
+
+<!-- HEADER -->
+<div class="header">
+
+<img src="images/governament-logo1.jpeg" alt="Government Logo">
+
+<div class="title">
+<h1>
+MAHATMA JYOTHIBA PHULE <br>
+TELANGANA BACKWARD CLASSES <br>
+WELFARE RESIDENTIAL <br>
+DEGREE COLLEGE FOR WOMEN
+</h1>
+
+<div class="location">
+Medchal & Hyderabad
+</div>
+
+</div>
+
+<img src="images/mjp1.png">
+
+</div>
+
+
+<!-- NAVIGATION -->
+
+<nav>
+
+<ul>
+
+<li><a href="index.html">Home</a></li>
+
+<li>
+<a href="#">About</a>
+<ul>
+<li><a href="history.html">History</a></li>
+<li><a href="governing body.html">Governing Body</a></li>
+<li><a href="secretary.html">Secretary</a></li>
+<li><a href="principal.html">Principal</a></li>
+<li><a href="vice principal.html">Vice Principal</a></li>
+<li><a href="management.html">Management</a></li>
+</ul>
+</li>
+
+<li>
+<a href="#">Academics</a>
+<ul>
+<li><a href="admissions.html">Admissions</a></li>
+<li><a href="courses.html">Courses</a></li>
+
+<li><a href="examination.html">Examination Branch</a></li>
+</ul>
+</li>
+
+<li>
+<a href="#">Department & Faculty</a>
+<ul>
+<li><a href="languages.html">Languages</a></li>
+<li><a href="Physical_Science.html">Physical Science</a></li>
+<li><a href="life science.html">Life Science</a></li>
+<li><a href="arts.html">Arts</a></li>
+<li><a href="commerce.html">Commerce</a></li>
+<li><a href="bba.html">BBA</a></li>
+<li><a href="bft.html">BFT</a></li>
+<li><a href="PD_librarian.html">Physical  Education and Librarians</a></li>
+
+<li><a href="Non_Teaching.html">Staff Nurses and Junior Assistants</a></li>
+
+
+</ul>
+</li>
+
+<li>
+<a href="#">Facilities</a>
+<ul>
+<li><a href="library.html">Library</a></li>
+<li><a href="labs.html">Labs</a></li>
+<li><a href="sports.html">Sports</a></li>
+<li><a href="events.html">Events</a></li>
+<li><a href="cultural.html">Cultural</a></li>
+<li><a href="industrial visits.html">Industrial Visits</a></li>
+<li><a href="nss.html">NSS</a></li>
+<li><a href="food-menu.html">Food Menu</a></li>
+<li><a href="health-cards.html">Health Cards</a></li>
+</ul>
+</li>
+
+<li><a href="Placements.html">Placements</a></li>
+
+</ul>
+
+</nav>
+
+
+
+
+<h1>Degree Courses Details</h1>
+
+<table>
+<tr>
+<th>S.No</th>
+<th>Course</th>
+<th>Higher Education</th>
+<th>Entrance Exams</th>
+<th>Future Job Opportunities</th>
+</tr>
+
+<tr>
+<td>1</td>
+<td>B.Sc MPC</td>
+<td>M.Sc Physics, M.Sc Chemistry, M.Sc Mathematics, M.Tech</td>
+<td>IIT JAM, CUET-PG, GATE, TIFR GS, JEST, BHU PET</td>
+<td>Scientist, Lecturer, Data Analyst, Researcher</td>
+</tr>
+
+<tr>
+<td>2</td>
+<td>B.Sc MPCS</td>
+<td>MCA, M.Sc Computer Science, M.Tech</td>
+<td>NIMCET, CUET-PG, GATE, TANCET, MAH MCA CET</td>
+<td>Software Developer, Programmer, System Analyst</td>
+</tr>
+
+<tr>
+<td>3</td>
+<td>B.Sc MSCS</td>
+<td>M.Sc Statistics, MCA, M.Sc Computer Science</td>
+<td>CUET-PG, IIT JAM (Stats), NIMCET, ISI Admission Test</td>
+<td>Data Analyst, Statistician, Data Engineer</td>
+</tr>
+
+<tr>
+<td>4</td>
+<td>B.Sc MSDS</td>
+<td>M.Sc Data Science, M.Sc Statistics, MCA</td>
+<td>CUET-PG, IIT JAM, ISI Entrance, GATE</td>
+<td>Data Scientist, Business Analyst, Data Engineer</td>
+</tr>
+
+<tr>
+<td>5</td>
+<td>B.Sc AIML</td>
+<td>M.Sc AI, M.Tech AI, M.Sc ML</td>
+<td>GATE, CUET-PG, TIFR GS, JEST</td>
+<td>AI Engineer, ML Engineer, Robotics Engineer</td>
+</tr>
+
+<tr>
+<td>6</td>
+<td>B.Sc ANPHBC</td>
+<td>M.Sc Agriculture, M.Sc Horticulture, M.Sc Forestry</td>
+<td>ICAR AIEEA, CUET-PG, SAAT, BCECE</td>
+<td>Agriculture Officer, Research Scientist, Seed Technologist</td>
+</tr>
+
+<tr>
+<td>7</td>
+<td>B.Sc MBZC</td>
+<td>M.Sc Botany, M.Sc Zoology, M.Sc Biotechnology</td>
+<td>CUET-PG, IIT JAM, JNU CEEB, BHU PET</td>
+<td>Biologist, Lecturer, Lab Technician, Researcher</td>
+</tr>
+
+<tr>
+<td>8</td>
+<td>B.Sc NZC</td>
+<td>M.Sc Zoology, M.Sc Life Sciences, M.Sc Biotechnology</td>
+<td>CUET-PG, IIT JAM, JNU CEEB</td>
+<td>Wildlife Biologist, Teacher, Research Assistant</td>
+</tr>
+
+<tr>
+<td>9</td>
+<td>B.Sc BFT</td>
+<td>M.Sc Food Technology, M.Sc Nutrition, M.Sc Dairy Tech</td>
+<td>ICAR AIEEA, CUET-PG, GATE, TANCET</td>
+<td>Food Inspector, Quality Analyst, Nutritionist</td>
+</tr>
+
+<tr>
+<td>10</td>
+<td>B.Com CA</td>
+<td>M.Com, CA, MBA, CMA, CS</td>
+<td>CA Foundation, CMA Entrance, CS Entrance, CUET-PG</td>
+<td>Chartered Accountant, Auditor, Tax Consultant</td>
+</tr>
+
+<tr>
+<td>11</td>
+<td>B.Com BA</td>
+<td>MBA, M.Com, PGDM</td>
+<td>CAT, MAT, XAT, CMAT, CUET-PG</td>
+<td>Business Analyst, Accountant, Financial Analyst</td>
+</tr>
+
+<tr>
+<td>12</td>
+<td>BBA</td>
+<td>MBA, PGDM</td>
+<td>CAT, MAT, XAT, CMAT, SNAP, GMAT</td>
+<td>Manager, HR Executive, Marketing Executive</td>
+</tr>
+
+<tr>
+<td>13</td>
+<td>BA HEP</td>
+<td>MA History, MA Economics, MA Public Admin</td>
+<td>CUET-PG, UPSC, APPSC, TSPSC</td>
+<td>Civil Services, Lecturer, Economist</td>
+</tr>
+
+<tr>
+<td>14</td>
+<td>BA PPGEP</td>
+<td>MA Political Science, MA Economics, MA Public Policy</td>
+<td>CUET-PG, UPSC, APPSC, TSPSC</td>
+<td>IAS, IPS, Policy Analyst, Political Analyst</td>
+</tr>
+
+</table>
+
+</body>
+</html>

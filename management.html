@@ -1,0 +1,390 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Employee List</title>
+<script src="disableActions.js"></script>
+
+
+<style>
+
+body{
+font-family: Arial, sans-serif;
+margin:0;
+padding:0;
+background:#f5f7fa;
+}
+
+/* HEADER */
+
+.header{
+display:flex;
+align-items:center;
+justify-content:space-between;
+padding:10px 40px;
+background:white;
+border-bottom:3px solid #003366;
+}
+
+.header img{
+width:150px;
+height:150px;
+object-fit:contain;
+}
+
+.title{
+text-align:center;
+flex:1;
+padding:0 20px;
+}
+
+.title h1{
+margin:0;
+font-size:26px;
+color:#003366;
+font-weight:bold;
+}
+
+.location{
+font-weight:bold;
+margin-top:5px;
+}
+
+
+/* NAVIGATION */
+
+nav{
+background:#003366;
+text-align:center;
+position:sticky;
+top:0;
+z-index:1000;
+}
+
+nav ul{
+list-style:none;
+margin:0;
+padding:0;
+}
+
+nav ul li{
+display:inline-block;
+position:relative;
+}
+
+nav ul li a{
+display:block;
+padding:14px 20px;
+color:white;
+text-decoration:none;
+font-weight:bold;
+}
+
+nav ul li a:hover{
+background:#0055a5;
+}
+
+
+/* DROPDOWN */
+
+nav ul ul{
+display:none;
+position:absolute;
+background:#0055a5;
+min-width:200px;
+text-align:left;
+}
+
+nav ul ul li{
+display:block;
+}
+
+nav ul li:hover > ul{
+display:block;
+}
+
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+.header{
+flex-direction:column;
+text-align:center;
+}
+
+.header img{
+width:100px;
+height:100px;
+}
+
+.title h1{
+font-size:20px;
+}
+
+nav ul li{
+display:block;
+}
+
+}
+
+
+
+
+
+body{
+font-family: Arial, sans-serif;
+}
+
+h2{
+text-align:center;
+color:#00008B;
+font-weight:bold;
+}
+
+table{
+width:80%;
+border-collapse:collapse;
+margin:20px auto;
+}
+
+th,td{
+padding:8px;
+text-align:center;
+border:none;
+}
+
+th{
+background-color:PURPLE;
+color:white;
+}
+
+/* Odd rows */
+tbody tr:nth-child(odd){
+background-color:#f3e6ff;
+}
+
+/* Even rows */
+tbody tr:nth-child(even){
+background-color:#e6f2ff;
+}
+</style>
+
+</head>
+<body>
+
+<!-- PRINCIPAL TABLE -->
+
+
+<table>
+<thead>
+<tr>
+<th>S.No</th>
+<th>Employee Name</th>
+<th>Designation</th>
+</tr>
+</thead>
+<body oncontextmenu="return false;" onselectstart="return false">
+
+
+<tbody>
+
+<!-- HEADER -->
+<div class="header">
+
+<img src="images/governament-logo1.jpeg" alt="Government Logo">
+
+<div class="title">
+<h1>
+MAHATMA JYOTHIBA PHULE <br>
+TELANGANA BACKWARD CLASSES <br>
+WELFARE RESIDENTIAL <br>
+DEGREE COLLEGE FOR WOMEN
+</h1>
+
+<div class="location">
+Medchal & Hyderabad
+</div>
+
+</div>
+
+<img src="images/mjp1.png">
+
+</div>
+
+
+<!-- NAVIGATION -->
+
+<nav>
+
+<ul>
+
+<li><a href="index.html">Home</a></li>
+
+<li>
+<a href="#">About</a>
+<ul>
+<li><a href="history.html">History</a></li>
+<li><a href="governing body.html">Governing Body</a></li>
+<li><a href="secretary.html">Secretary</a></li>
+<li><a href="principal.html">Principal</a></li>
+<li><a href="vice principal.html">Vice Principal</a></li>
+</ul>
+</li>
+
+<li>
+<a href="#">Academics</a>
+<ul>
+<li><a href="admissions.html">Admissions</a></li>
+<li><a href="courses.html">Courses</a></li>
+<li><a href="course details.html">Course Details</a></li>
+
+<li><a href="examination.html">Examination Branch</a></li>
+</ul>
+</li>
+
+<li>
+<a href="#">Department & Faculty</a>
+<ul>
+<li><a href="languages.html">Languages</a></li>
+<li><a href="Physical_Science.html">Physical Science</a></li>
+<li><a href="life science.html">Life Science</a></li>
+<li><a href="arts.html">Arts</a></li>
+<li><a href="commerce.html">Commerce</a></li>
+<li><a href="bba.html">BBA</a></li>
+<li><a href="bft.html">BFT</a></li>
+<li><a href="PD_librarian.html">Physical Education and Librarians</a></li>
+
+<li><a href="Non_Teaching.html">Staff Nurses and Junior Assistants</a></li>
+
+
+</ul>
+</li>
+
+<li>
+<a href="#">Facilities</a>
+<ul>
+<li><a href="library.html">Library</a></li>
+<li><a href="labs.html">Labs</a></li>
+<li><a href="sports.html">Sports</a></li>
+<li><a href="events.html">Events</a></li>
+<li><a href="cultural.html">Cultural</a></li>
+<li><a href="industrial visits.html">Industrial Visits</a></li>
+<li><a href="nss.html">NSS</a></li>
+<li><a href="food-menu.html">Food Menu</a></li>
+<li><a href="health-cards.html">Health Cards</a></li>
+</ul>
+</li>
+
+<li><a href="placements.html">Placements</a></li>
+
+</ul>
+
+</nav>
+
+
+
+<h2>Principal</h2>
+
+<tr>
+<td>1</td>
+<td>V.RADHA</td>
+<td>PRINCIPAL</td>
+</tr>
+</tbody>
+</table>
+
+
+
+<!-- TEACHING STAFF TABLE -->
+
+<h2>Teaching Staff</h2>
+
+<table>
+<thead>
+<tr>
+<th>S.No</th>
+<th>Employee Name</th>
+<th>Designation</th>
+</tr>
+</thead>
+
+<tbody>
+<tr><td>1</td><td>P.V.NAGALAKSHMI</td><td>DL in COMPUTER SCIENCE</td></tr>
+<tr><td>2</td><td>SANA SIDDIQUA</td><td>DL in COMPUTER SCIENCE</td></tr>
+<tr><td>3</td><td>V.VARALAXMI</td><td>DL in COMPUTER SCIENCE</td></tr>
+<tr><td>4</td><td>SANA FIRDOUS</td><td>DL in COMPUTER SCIENCE</td></tr>
+<tr><td>5</td><td>DIVYA JYOTHI</td><td>DL in COMPUTER SCIENCE</td></tr>
+<tr><td>6</td><td>G.PRATHIBHA</td><td>DL in MATHEMATICS</td></tr>
+<tr><td>7</td><td>P.MANJULA</td><td>DL in MATHEMATICS</td></tr>
+<tr><td>8</td><td>K.DHANALAKSHMI</td><td>DL in MATHEMATICS</td></tr>
+<tr><td>9</td><td>P.LAVANYA</td><td>DL in MATHEMATICS</td></tr>
+<tr><td>10</td><td>Dr.T.DEEPTHI</td><td>DL in STATISTICS</td></tr>
+<tr><td>11</td><td>Dr.RANJITHA CHUL</td><td>DL in STATISTICS</td></tr>
+<tr><td>12</td><td>P.ANNAPURNA</td><td>DL in CHEMISTRY</td></tr>
+<tr><td>13</td><td>N.BABY</td><td>DL in CHEMISTRY</td></tr>
+<tr><td>14</td><td>K.SHIREESHA</td><td>DL in CHEMISTRY</td></tr>
+<tr><td>15</td><td>M.RAVALI</td><td>DL in PHYSICS</td></tr>
+<tr><td>16</td><td>A.VINEETHA</td><td>DL in MICRO BIOLOGY</td></tr>
+<tr><td>17</td><td>A.DEEPTHI</td><td>DL in ZOOLOGY</td></tr>
+<tr><td>18</td><td>N.SUVARNA</td><td>DL in ZOOLOGY</td></tr>
+<tr><td>19</td><td>S.MOUNIKA</td><td>DL in NUTRITION</td></tr>
+<tr><td>20</td><td>MANI SRINIVAS</td><td>DL in NUTRITION</td></tr>
+<tr><td>21</td><td>V.GANGAVATHI</td><td>DL in COMMERCE</td></tr>
+<tr><td>22</td><td>M.NAVANEETHA LAKSHMI</td><td>DL in COMMERCE</td></tr>
+<tr><td>23</td><td>J.MAHESHWARI</td><td>DL in COMMERCE</td></tr>
+<tr><td>24</td><td>G.TIRUPATHA</td><td>DL in COMMERCE</td></tr>
+<tr><td>25</td><td>K.VANISRI</td><td>DL in BOTANY</td></tr>
+<tr><td>26</td><td>E.NAGALAXMI</td><td>DL in PUBLIC ADMINISTRATIION</td></tr>
+<tr><td>27</td><td>SK.SAMEERUNNISA BEGUM</td><td>DL in HISTORY</td></tr>
+<tr><td>28</td><td>K.SRIDEVI</td><td>DL in POLITICAL SCIENCE</td></tr>
+<tr><td>29</td><td>B.POOJA</td><td>DL in ECONOMICS</td></tr>
+<tr><td>30</td><td>DR.A.LATHA</td><td>DL in BUSINESS ADMINISTRATION</td></tr>
+<tr><td>31</td><td>G.SHIREESHA</td><td>DL in BUSINESS ADMINISTRATION</td></tr>
+<tr><td>32</td><td>K.SHILPA RANI</td><td>DL in BUSINESS ADMINISTRATION</td></tr>
+<tr><td>33</td><td>K.ANURADHA</td><td>DL in TELUGU</td></tr>
+<tr><td>34</td><td>P.ANNAPURNA</td><td>DL in TELUGU</td></tr>
+<tr><td>35</td><td>V.SOUJANYA</td><td>DL in TELUGU</td></tr>
+<tr><td>36</td><td>T.VINUTHA</td><td>DL in ENGLISH</td></tr>
+<tr><td>37</td><td>K.SANTOSHA</td><td>DL in ENGLISH</td></tr>
+<tr><td>38</td><td>G.VANEETHA</td><td>DL in ENGLISH</td></tr>
+<tr><td>39</td><td>J.USHARANI</td><td>DL in BFT</td></tr>
+<tr><td>40</td><td>B.SONIYA</td><td>DL in BFT</td></tr>
+<tr><td>41</td><td>S.GAYATHRI</td><td>DL in BFT</td></tr>
+<tr><td>1</td><td>BABY</td><td>DL in PHYSICAL DIRECTOR</td></tr>
+<tr><td>2</td><td>ANITHA</td><td>DL in PHYSICAL DIRECTOR</td></tr>
+<tr><td>3</td><td>SUKANYA</td><td>DL in LIBRARIAN</td></tr>
+<tr><td>4</td><td>SRUTHI</td><td>DL in LIBRARIAN</td></tr>
+</tbody>
+
+</table>
+
+
+
+<!-- NON TEACHING STAFF TABLE -->
+
+<h2>Non-Teaching Staff</h2>
+
+<table>
+<thead>
+<tr>
+<th>S.No</th>
+<th>Employee Name</th>
+<th>Designation</th>
+</tr>
+</thead>
+
+<tbody>
+
+<tr><td>5</td><td>M.PRASANNA</td><td>HEALTH SUPERVISOR</td></tr>
+<tr><td>6</td><td>SWAPNA</td><td>HEALTH SUPERVISOR</td><tr><td>7</td><td>CHARITHA</td><td>JUNIOR ASSISTENT</td></tr>
+<tr><td>8</td><td>RINNY</td><td>JUNIOR ASSISTENT</td></tr>
+<tr><td>9</td><td>SWATHI</td><td>JUNIOR ASSISTENT</td></tr>
+</tr>
+</tbody>
+
+</table>
+
+</body>
+</html>

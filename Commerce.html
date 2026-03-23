@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Commerce Department</title>
+<script src="disableActions.js"></script>
+
+
+<style>
+body{
+font-family: Arial, sans-serif;
+margin:0;
+padding:0;
+background:#f5f7fa;
+}
+
+/* HEADER */
+
+.header{
+display:flex;
+align-items:center;
+justify-content:space-between;
+padding:10px 40px;
+background:white;
+border-bottom:3px solid #003366;
+}
+
+.header img{
+width:150px;
+height:150px;
+object-fit:contain;
+}
+
+.title{
+text-align:center;
+flex:1;
+padding:0 20px;
+}
+
+.title h1{
+margin:0;
+font-size:26px;
+color:#003366;
+font-weight:bold;
+}
+
+.location{
+font-weight:bold;
+margin-top:5px;
+}
+
+
+/* NAVIGATION */
+
+nav{
+background:#003366;
+text-align:center;
+position:sticky;
+top:0;
+z-index:1000;
+}
+
+nav ul{
+list-style:none;
+margin:0;
+padding:0;
+}
+
+nav ul li{
+display:inline-block;
+position:relative;
+}
+
+nav ul li a{
+display:block;
+padding:14px 20px;
+color:white;
+text-decoration:none;
+font-weight:bold;
+}
+
+nav ul li a:hover{
+background:#0055a5;
+}
+
+
+/* DROPDOWN */
+
+nav ul ul{
+display:none;
+position:absolute;
+background:#0055a5;
+min-width:200px;
+text-align:left;
+}
+
+nav ul ul li{
+display:block;
+}
+
+nav ul li:hover > ul{
+display:block;
+}
+
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+.header{
+flex-direction:column;
+text-align:center;
+}
+
+.header img{
+width:100px;
+height:100px;
+}
+
+.title h1{
+font-size:20px;
+}
+
+nav ul li{
+display:block;
+}
+
+}
+
+
+body{
+font-family: Arial, sans-serif;
+background-color:#f2f2f2;
+}
+
+h1{
+color:#2c3e50;
+}
+
+h2{
+color:#34495e;
+border-bottom:2px solid #2c3e50;
+padding-bottom:5px;
+}
+
+ul{
+line-height:1.8;
+}
+
+.section{
+background-color:white;
+padding:20px;
+border-radius:8px;
+margin:20px 0;
+}
+
+/* ✅ ABOUT SECTION ADDED */
+.about-box{
+display:flex;
+justify-content:space-between;
+align-items:center;
+gap:20px;
+}
+
+.about-text{
+width:65%;
+}
+
+.about-img{
+width:30%;
+text-align:center;
+}
+
+.about-img img{
+width:200px;
+border-radius:10px;
+}
+
+/* Faculty cards */
+
+.card{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px;
+margin:20px 0;
+border-radius:10px;
+}
+
+.bg1{ background:#fff2f2; }
+.bg2 { background: #F8F5FF; }   
+.bg3 { background: #F1FFF7; }   
+.bg4 { background: #FFF7F0; } 
+ 
+.achievement{
+  width:55%;
+  font-size:16px;
+  line-height:1.6;
+  padding-top:20px;  
+}
+
+.details{
+width:40%;
+text-align:center;
+}
+
+.details img{
+width:200px;
+height:200px;
+border-radius:50%;
+margin-bottom:5px;
+}
+
+.name{
+font-weight:bold;
+font-size:18px;
+}
+
+.qualification{
+color:#555;
+}
+
+</style>
+
+</head>
+
+<body oncontextmenu="return false;" onselectstart="return false">
+<!-- HEADER -->
+<div class="header">
+
+<img src="images/governament-logo1.jpeg" alt="Government Logo">
+
+<div class="title">
+<h1>
+MAHATMA JYOTHIBA PHULE <br>
+TELANGANA BACKWARD CLASSES <br>
+WELFARE RESIDENTIAL <br>
+DEGREE COLLEGE FOR WOMEN
+</h1>
+
+<div class="location">
+Medchal & Hyderabad
+</div>
+
+</div>
+
+<img src="images/mjp1.png">
+
+</div>
+
+
+<!-- NAVIGATION -->
+
+<nav>
+
+<ul>
+
+<li><a href="index.html">Home</a></li>
+
+<li>
+<a href="#">About</a>
+<ul>
+<li><a href="history.html">History</a></li>
+<li><a href="governing body.html">Governing Body</a></li>
+<li><a href="secretary.html">Secretary</a></li>
+<li><a href="principal.html">Principal</a></li>
+<li><a href="vice principal.html">Vice Principal</a></li>
+<li><a href="management.html">Management</a></li>
+</ul>
+</li>
+
+<li>
+<a href="#">Academics</a>
+<ul>
+<li><a href="admissions.html">Admissions</a></li>
+<li><a href="courses.html">Courses</a></li>
+<li><a href="course details.html">Course Details</a></li>
+
+<li><a href="examination.html">Examination Branch</a></li>
+</ul>
+</li>
+
+<li>
+<a href="#">Department & Faculty</a>
+<ul>
+<li><a href="languages.html">Languages</a></li>
+<li><a href="Physical_Science.html">Physical Science</a></li>
+<li><a href="life science.html">Life Science</a></li>
+<li><a href="arts.html">Arts</a></li>
+<li><a href="#">Commerce</a></li>
+<li><a href="bba.html">BBA</a></li>
+<li><a href="bft.html">BFT</a></li>
+<li><a href="PD_librarian.html">Physical Education and Librarians</a></li>
+
+<li><a href="Non_Teaching.html">Staff Nurses and Junior Assistants</a></li>
+
+
+</ul>
+</li>
+
+<li>
+<a href="#">Facilities</a>
+<ul>
+<li><a href="library.html">Library</a></li>
+<li><a href="labs.html">Labs</a></li>
+<li><a href="sports.html">Sports</a></li>
+<li><a href="events.html">Events</a></li>
+<li><a href="cultural.html">Cultural</a></li>
+<li><a href="industrial visits.html">Industrial Visits</a></li>
+<li><a href="nss.html">NSS</a></li>
+<li><a href="food-menu.html">Food Menu</a></li>
+<li><a href="health-cards.html">Health Cards</a></li>
+</ul>
+</li>
+
+<li><a href="placements.html">Placements</a></li>
+
+</ul>
+</nav>
+
+<div class="dept-code">📊 Department Code: COM-01</div>
+<h1>Department of Commerce</h1>
+
+<div class="section">
+<h2>About the Department</h2>
+
+<div class="about-box">
+
+<div class="about-text">
+<p>
+The Department of Commerce is committed to providing quality education in the field of business, finance, and accounting. It focuses on developing a strong foundation in core areas such as financial accounting, corporate accounting, taxation, business law, economics, and business management. The department aims to equip students with the knowledge and skills required to meet the challenges of the modern business world. Through a blend of theoretical learning and practical exposure, students gain a clear understanding of financial systems, market trends, and organizational practices.</p>
+
+<p>
+Special emphasis is given to skill development through seminars, workshops, projects, internships, and industry interaction. The department encourages analytical thinking, problem-solving ability, and professional ethics among students. Graduates of the Commerce program are well-prepared to pursue careers in banking, finance, accounting, corporate sectors, entrepreneurship, and higher studies such as M.Com, MBA, CA, and other professional courses.</p>
+</div>
+
+<div class="about-img">
+<img src="images/Commerce.jpg">
+</div>
+
+</div>
+
+</div>
+
+<div class="section">
+<h2>Programs Offered</h2>
+<ul>
+<li>B.Com (CA) – Bachelor of Commerce with Computer Applications</li>
+<li>B.Com (BA) – Bachelor of Commerce with Business Analytics</li>
+</ul>
+</div>
+
+<!-- Faculty -->
+
+<div class="card bg1">
+
+<div class="achievement">
+<strong>V. Gangavathi </strong>is a Degree lecturer in the Department of Commerce. She have accumulated a total of fifteen years of teaching experience in the field of higher education. She served as a Degree Lecturer for ten years, where she was actively involved in delivering academic instruction, guiding students, and contributing to their overall academic development. She worked as a Junior Lecturer for five years. She tenure at MJPTBCWREIS Sangareddy has provided  with valuable institutional and teaching experience. These years of service have helped to develop strong communication, mentoring, and classroom management skills.</div>
+<div class="details">
+<img src="images/Gangavathi.png">
+<div class="name">V. Gangavathi</div>
+<div class="qualification">M.Com, B.Ed, TG-SET</div>
+</div>
+</div>
+
+<div class="card bg2">
+<div class="achievement">
+<strong>M. Navaneetha Lakshmi </strong>is a Degree Lecturer in the Department of  Fnance. She is an academician serving as a Degree Lecturer (DL) in Commerce with M.Com and MBA in Finance qualifications. She has cleared the UGC-NET and Junior Research Fellowship (JRF) in Commerce and also qualified UGC-NET in Management. She was awarded the Junior Research Fellow position in Commerce in December 2019, recognizing her research abilities. She is passionate about teaching commerce, finance, and management, encouraging students to connect theory with real-world applications. Navaneetha actively participates in research and academic activities and is known for her dedication, leadership, and commitment to student success.</div>
+<div class="details">
+<img src="images/Navaneethalaxmi.png">
+<div class="name">M. Navaneetha Lakshmi</div>
+<div class="qualification">M.Com, MBA(Finance),</div>
+<div class="qualification">UGC-NET </div>
+</div>
+</div>
+
+<div class="card bg3">
+<div class="achievement">
+<strong>J. Maheshwari</strong> is a faculty in the department of Financial Accounting. She have successfully qualified for a Doctor of Philosophy (Ph.D.), demonstrating strong academic expertise and a commitment to research and higher education. She possess 2.5 years of teaching experience at Telangana Social Welfare Residential Degree College for Women. In addition,She gained 5 months of teaching experience at MJPTBCR Degree college. These experiences have significantly enhanced her ability to contribute effectively to teaching, research, and academic service.</div>
+<div class="details">
+<img src="images/Maheshwari.png">
+<div class="name">J. Maheshwari</div>
+<div class="qualification">M.Com(Finance)</div>
+</div>
+</div>
+
+<div class="card bg4">
+<div class="achievement">
+<strong>G. Thirupatha</strong> is a faculty in the Department of Commerce. She holds a Master of Commerce (M.Com) degree from the University College of Commerce and Business Management, Kakatiya University. She has qualified both the UGC-NET and TS-SET in Commerce, reflecting his strong academic foundation and commitment to excellence in the field. With two years of teaching experience at the degree college level, she has guided students in understanding commerce concepts while fostering an engaging and practical learning environment. Passionate about education, G. Thirupath continues to contribute to the academic community and inspire the next generation of commerce professionals.</div>
+<div class="details">
+<img src="images/Thirupatha.png">
+<div class="name">G. Thirupatha</div>
+<div class="qualification">M.Com(CA),</div>
+<div class="qualification"> UGC-NET and TS-SET in Commerce</div>
+</div>
+</div>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Physics Lab</title>
+<script src="disableActions.js"></script>
+    <style>
+body{
+font-family: Arial, sans-serif;
+margin:0;
+padding:0;
+background:#f5f7fa;
+}
+
+/* HEADER */
+
+.header{
+display:flex;
+align-items:center;
+justify-content:space-between;
+padding:10px 40px;
+background:white;
+border-bottom:3px solid #003366;
+}
+
+.header img{
+width:150px;
+height:150px;
+object-fit:contain;
+}
+
+.title{
+text-align:center;
+flex:1;
+padding:0 20px;
+}
+
+.title h1{
+margin:0;
+font-size:26px;
+color:#003366;
+font-weight:bold;
+}
+
+.location{
+font-weight:bold;
+margin-top:5px;
+}
+
+
+/* NAVIGATION */
+
+nav{
+background:#003366;
+text-align:center;
+position:sticky;
+top:0;
+z-index:1000;
+}
+
+nav ul{
+list-style:none;
+margin:0;
+padding:0;
+}
+
+nav ul li{
+display:inline-block;
+position:relative;
+}
+
+nav ul li a{
+display:block;
+padding:14px 20px;
+color:white;
+text-decoration:none;
+font-weight:bold;
+}
+
+nav ul li a:hover{
+background:#0055a5;
+}
+
+
+/* DROPDOWN */
+
+nav ul ul{
+display:none;
+position:absolute;
+background:#0055a5;
+min-width:200px;
+text-align:left;
+}
+
+nav ul ul li{
+display:block;
+}
+
+nav ul li:hover > ul{
+display:block;
+}
+
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+.header{
+flex-direction:column;
+text-align:center;
+}
+
+.header img{
+width:100px;
+height:100px;
+}
+
+.title h1{
+font-size:20px;
+}
+
+nav ul li{
+display:block;
+}
+
+}
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: white;
+            color: #000;
+        }
+        .content {
+            background-color: white; /*white */
+            padding: 20px;
+            border-radius: 10px;
+        }
+        h1 {
+            text-align: center;
+            color: #000;
+        }
+        h2, h3 {
+            color: #000;
+            margin-top: 20px;
+        }
+        p, ul {
+            line-height: 1.6;
+            margin: 10px 0;
+        }
+        ul {
+            margin-left: 20px;
+        }
+    </style>
+</head>
+<body oncontextmenu="return false;" onselectstart="return false">
+
+
+<!-- HEADER -->
+<div class="header">
+
+<img src="images/governament-logo1.jpeg" alt="Government Logo">
+
+<div class="title">
+<h1>
+MAHATMA JYOTHIBA PHULE <br>
+TELANGANA BACKWARD CLASSES <br>
+WELFARE RESIDENTIAL <br>
+DEGREE COLLEGE FOR WOMEN
+</h1>
+
+<div class="location">
+Medchal & Hyderabad
+</div>
+
+</div>
+
+<img src="images/mjp1.png">
+
+</div>
+
+
+<!-- NAVIGATION -->
+
+<nav>
+
+<ul>
+
+<li><a href="mjp.html">Home</a></li>
+
+<li>
+<a href="#">About</a>
+<ul>
+<li><a href="history.html">History</a></li>
+<li><a href="governing body.html">Governing Body</a></li>
+<li><a href="secretary.html">Secretary</a></li>
+<li><a href="principal.html">Principal</a></li>
+<li><a href="vice principal.html">Vice Principal</a></li>
+<li><a href="management.html">Management</a></li>
+</ul>
+</li>
+
+<li>
+<a href="#">Academics</a>
+<ul>
+<li><a href="admissions.html">Admissions</a></li>
+<li><a href="courses.html">Courses</a></li>
+<li><a href="course details.html">Course Details</a></li>
+
+<li><a href="examination.html">Examination Branch</a></li>
+</ul>
+</li>
+
+<li>
+<a href="#">Department & Faculty</a>
+<ul>
+<li><a href="languages.html">Languages</a></li>
+<li><a href="computer science.html">Computer Science</a></li>
+<li><a href="life science.html">Life Science</a></li>
+<li><a href="arts.html">Arts</a></li>
+<li><a href="commerce.html">Commerce</a></li>
+<li><a href="bba.html">BBA</a></li>
+<li><a href="bft.html">BFT</a></li>
+</ul>
+</li>
+
+<li>
+<a href="#">Facilities</a>
+<ul>
+<li><a href="library.html">Library</a></li>
+<li><a href="labs.html">Labs</a></li>
+<li><a href="sports.html">Sports</a></li>
+<li><a href="events.html">Events</a></li>
+<li><a href="cultural.html">Cultural</a></li>
+<li><a href="industrial visits.html">Industrial Visits</a></li>
+<li><a href="nss.html">NSS</a></li>
+<li><a href="food-menu.html">Food Menu</a></li>
+<li><a href="health-cards.html">Health Cards</a></li>
+</ul>
+</li>
+
+<li><a href="placements.html">Placements</a></li>
+
+</ul>
+</nav>
+
+
+    <div class="content">
+        <!-- Main Heading -->
+        <h1>Physics Lab</h1>
+
+        <!-- Physics Lab Section -->
+        <p>The Physics Lab provides hands-on experience to bridge theoretical concepts with practical application. It helps students to learn the concepts of physics through experiments and practical demonstrations. Students can perform experiments to understand different physical principles and relate theoretical knowledge with real observations.</p>
+
+        <!-- Importance of the Lab -->
+        <h3>Importance of the Lab</h3>
+        <p>The Physics Lab plays an important role in helping students understand physics concepts through experimentation. It enables students to verify theoretical principles and develop a deeper understanding of physical phenomena.</p>
+
+        <!-- Lab Goals and Objectives -->
+        <h3>Lab Goals and Objectives</h3>
+        <ul>
+            <li>Helps students learn physics concepts through practical experiments.</li>
+            <li>Provides experience in using instruments such as spectrometer, sonometer, Melde’s apparatus, ammeter, voltmeter, and rheostat.</li>
+            <li>Develops practical skills such as handling instruments and taking accurate observations.</li>
+            <li>Encourages students to analyze errors, create graphs, and draw conclusions from experiments.</li>
+        </ul>
+
+        <!-- Benefits of the Physics Lab -->
+        <h2>Benefits of the Physics Lab</h2>
+        <p>The Physics Lab helps students develop scientific skills such as handling instruments, taking observations, error analysis, creating graphs, and drawing conclusions. Through experiments, students can clearly understand different principles of physics and relate theoretical knowledge with practical results.</p>
+
+        <!-- Facilities and Equipment Section -->
+        <h2>Facilities and Equipment of Physics Lab</h2>
+        <p>The Physics Lab is equipped with various instruments and electrical components used for conducting experiments related to different branches of physics.</p>
+
+        <h3>Facilities:</h3>
+        <ul>
+            <li>Well-ventilated and organized laboratory space.</li>
+            <li>Laboratory tables arranged for performing experiments safely.</li>
+            <li>Storage space for instruments and electrical components.</li>
+            <li>Proper electrical supply for experimental setups.</li>
+        </ul>
+
+        <h3>Common Equipment and Tools:</h3>
+        <ul>
+            <li>Spectrometer for optical experiments.</li>
+            <li>Sonometer and Melde’s apparatus for studying vibrations and waves.</li>
+            <li>Electrical components such as ammeter, voltmeter, and rheostat.</li>
+            <li>Connecting wires and power supply units.</li>
+            <li>Measuring instruments used in physics experiments.</li>
+        </ul>
+
+        <!-- Usage Section -->
+        <h2>Usage of the Lab</h2>
+        <p>The Physics Lab is used by students to perform experiments and understand different concepts of physics such as mechanics, thermodynamics, optics, and electronics. By performing experiments, students can easily relate theoretical concepts with practical observations.</p>
+
+        <!-- Physics Lab Rules Section -->
+        <h2>Physics Lab Rules</h2>
+        <p>To ensure safety, efficiency, and proper learning in the Physics Lab, all students and staff must follow these rules:</p>
+        <ul>
+            <li>Always handle instruments carefully while performing experiments.</li>
+            <li>Follow the instructions given by the lab instructor.</li>
+            <li>Keep the laboratory workspace clean and organized.</li>
+            <li>Switch off electrical equipment after completing experiments.</li>
+            <li>Report any damaged instruments or electrical faults immediately.</li>
+            <li>Do not remove laboratory equipment without permission.</li>
+            <li>Record observations carefully and maintain proper lab records.</li>
+            <li>Maintain discipline and respect other students and lab staff.</li>
+        </ul>
+<!-- LAB USING GROUPS -->
+
+<div class="section groups">
+
+<h1>physics Lab Using Groups</h1>
+
+<ul>
+<li>MPCS</li>
+<li>MPC</li>
+
+
+</ul>
+
+    </div>
+
+</body>
+</html>

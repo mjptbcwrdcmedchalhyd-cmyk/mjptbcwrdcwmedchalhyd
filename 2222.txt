@@ -1,0 +1,300 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>STEM STUDENT TABLE</title>
+    <style>
+
+       
+            table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 6px;
+            text-align: center;
+            text color : WHITE ;
+        }
+
+h2 {
+    text-align: center;
+}
+        th {
+            background-color:VOILATE;
+ text color : WHITE ;
+        }
+       
+
+        /* Alternate row colors */
+        tr:nth-child(even) {
+            background-color: #FFE4E1;  
+        }
+
+        tr:nth-child(odd) {
+            background-color: #B0E0E6;  
+        }
+
+        /* Keep header color fixed */
+        tr:first-child {
+            background-color: INDIGO;
+        }
+th {
+    background-color: blue;
+    color: white;
+}
+    </style>
+</head>
+<body>
+<div style="width:100%; overflow:hidden; margin-bottom:20px;">
+<marquee behavior="scroll" direction="left" scrollamount="6">
+    <img src="Screenshot 2026-03-12 122453.png" width="250" height="150">
+    <img src="Screenshot 2026-03-12 122542.png" width="250" height="150">
+    <img src="Screenshot 2026-03-12 133453.png" width="250" height="150">
+    <img src="Screenshot 2026-03-12 133618.png" width="250" height="150">
+    <img src="Screenshot 2026-03-12 133736.png" width="250" height="150">
+    <img src="WhatsApp Image 2026-03-12 at 11.22.50 AM.png" width="250" height="150">
+    <img src="Screenshot 2026-03-12 122453.png" width="250" height="150">
+</marquee>
+</div>
+
+
+<h2>STEM STUDENTS LIST (2025 BATCH)</h2>
+
+
+<table>
+    <tr>
+        <th>S.No</th>
+        <th>Names</th>
+        <th>Groups</th>
+    </tr>
+    <tr><td>1</td><td>VADDE SRUJANA</td><td>MSCS</td></tr>
+    <tr><td>2</td><td>MYADHARI PRASANNA</td><td>MSCS</td></tr>
+    <tr><td>3</td><td>KURAPATI ANURADHA</td><td>MSCS</td></tr>
+    <tr><td>4</td><td>VANGURI SRAVANI</td><td>MSCS</td></tr>
+    <tr><td>5</td><td>PEDDAGONI SHRIVANI</td><td>MSCS</td></tr>
+    <tr><td>6</td><td>SAPETLA SHIVANEELA</td><td>MSCS</td></tr>
+    <tr><td>7</td><td>MOKURALA KAVYASREE</td><td>MSDS</td></tr>
+    <tr><td>8</td><td>MANGALI NAVYA</td><td>MSDS</td></tr>
+    <tr><td>9</td><td>GADDA GEETHA</td><td>MSDS</td></tr>
+    <tr><td>10</td><td>KARELLI SHIRISHA</td><td>MSDS</td></tr>
+    <tr><td>11</td><td>GUNDEMONI PAVANI</td><td>MSDS</td></tr>
+    <tr><td>12</td><td>KARNATI HEMA</td><td>MS(AI&ML)</td></tr>
+    <tr><td>13</td><td>GUNTHAPALLY ANNAPURNA</td><td>MS(AI&ML)</td></tr>
+    <tr><td>14</td><td>SUHASINI</td><td>MS(AI&ML)</td></tr>
+    <tr><td>15</td><td>GADDI RAKSHITHA</td><td>MS(AI&ML)</td></tr>
+    <tr><td>16</td><td>PYATA AKHILA</td><td>MS(AI&ML)</td></tr>
+    <tr><td>17</td><td>GILLI LAXMI</td><td>MS(AI&ML)</td></tr>
+    <tr><td>18</td><td>MEDI RAMYA</td><td>MS(AI&ML)</td></tr>
+    <tr><td>19</td><td>PERALA RESHMA</td><td>ANPHBC</td></tr>
+    <tr><td>20</td><td>PEERI VAISHNAVI</td><td>ANPHBC</td></tr>
+    <tr><td>21</td><td>YERRAGOLLA SANGEETHA </td><td>ANPHBC</td></tr>
+    <tr><td>22</td><td>KATHI KEERTHANA</td><td>ANPHBC</td></tr>
+    <tr><td>23</td><td>LOLAM UMAPRANAVASRI</td><td>ANPHBC</td></tr>
+    <tr><td>24</td><td>MERUGU RAVALIKA</td><td>NZC</td></tr>
+    <tr><td>25</td><td>NEELA DEEPIKA</td><td>NZC</td></tr>
+    <tr><td>26</td><td>MUNAGALA YASHASWINI</td><td>NZC</td></tr>
+    <tr><td>27</td><td>PENDRA SRAVANI</td><td>NZC</td></tr>
+    <tr><td>28</td><td>MUTTE MADHUMITHA</td><td>NZC</td></tr>
+    <tr><td>29</td><td>TUMMA YAMINI</td><td>NZC</td></tr>
+    <tr><td>30</td><td>BODA AKSHITHA</td><td>NZC</td></tr>
+    <tr><td>31</td><td>PUTTI VIJAYALAXMI</td><td>MBZC</td></tr>
+    <tr><td>32</td><td>MANGALI SHIVAREKHA</td><td>MBZC</td></tr>
+    <tr><td>33</td><td>VADTHYAVATH POOJA</td><td>MBZC</td></tr>
+    <tr><td>34</td><td>MAVILLA MOUNIKA</td><td>MBZC</td></tr>
+    <tr><td>35</td><td>GUJJARI ANUSHA</td><td>MBZC</td></tr>
+    <tr><td>36</td><td>BAIKANI ANUSHA</td><td>MBZC</td></tr>
+    <tr><td>37</td><td>AKKARAJU SRIVANI</td><td>MBZC</td></tr>
+    <tr><td>38</td><td>UPPARI SRIVANI</td><td>MBZC</td></tr>
+    <tr><td>39</td><td>TUPAKULA MANEESHA</td><td>MBZC</td></tr>
+    <tr><td>40</td><td>KETHAVATH PRIYANKA</td><td>MBZC</td></tr>
+    <tr><td>41</td><td>BANKULA SRAVANTHI</td><td>MBZC</td></tr>
+    <tr><td>42</td><td>KARBAL VAISHNAVI</td><td>MBZC</td></tr>
+    <tr><td>43</td><td>VANKARAMONI ABHINAYASRI</td><td>MBZC</td></tr>
+    <tr><td>44</td><td>KAMMARI SOUMYA</td><td>MPC</td></tr>
+    <tr><td>45</td><td>KOTHINTI TULASI</td><td>MPC</td></tr>
+    <tr><td>46</td><td>ENUGANDLA PRIYANKA</td><td>MPC</td></tr>
+    <tr><td>47</td><td>BORRA MOUNIKA</td><td>MPCS</td></tr>
+    <tr><td>48</td><td>BULLA SNEHA</td><td>MPCS</td></tr>
+    <tr><td>49</td><td>REPALLE JEEVITHA</td><td>MPCS</td></tr>
+    <tr><td>50</td><td>SRIPATHI VENNELA</td><td>MPCS</td></tr>
+    <tr><td>51</td><td>GONEMONI AKHILA</td><td>MPCS</td></tr>
+    <tr><td>52</td><td>MANDULA SAILAJA</td><td>MPCS</td></tr>
+    <tr><td>53</td><td>PASUPULA HEMALATHA</td><td>MPCS</td></tr>
+    <tr><td>54</td><td>AMGOTH NIKHITHA</td><td>MPCS</td></tr>
+    <tr><td>55</td><td>CHINTHAKAYALA RADHIKA</td><td>MPCS</td></tr>
+    <tr><td>56</td><td>GANGARAPU ANUSHA</td><td>MPCS</td></tr>
+    <tr><td>57</td><td>DAMAYAPALLI MALLESHWARI</td><td>MPCS</td></tr>
+    <tr><td>58</td><td>GOLLA SHAKUNTALA</td><td>MPCS</td></tr>
+    <tr><td>59</td><td>KATAMONI ARCHANA</td><td>MPCS</td></tr>
+    <tr><td>60</td><td>SULTHANPUR SINDHUJA</td><td>MPCS</td></tr>
+</table>
+
+ <style>
+            table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 6px;
+            text-align: center;
+            text color : WHITE ;
+        }
+h2 {
+    text-align: center;
+}
+        th {
+            background-color: BLUE;
+ text color : WHITE ;
+        }
+
+        /* Alternate row colors */
+        tr:nth-child(even) {
+            background-color: LIGHT BLUE;   /* Light gray */
+        }
+
+        tr:nth-child(odd) {
+            background-color: LAVENDER;   /* White */
+        }
+
+        /* Keep header color fixed */
+        tr:first-child {
+            background-color: INDIGO;
+        }
+th {
+    background-color: BLUE;
+    color: white;
+}
+    </style>
+</head>
+<body>
+<head>
+    <title>Stellar Scholarship - STEM Students(2025)</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f9;
+        }
+        h2 {
+            text-align: center;
+        }
+        table {
+            width: 80%;
+            margin: 20px auto;
+            border-collapse: collapse;
+            background-color: #ffffff;
+        }
+        th, td {
+            border: 1px solid #333;
+            padding: 10px;
+            text-align: center;
+        }
+        th {
+            background-color: VOILATE;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: #FFE4E1  ;
+        }
+         tr:nth-child(ODD) {
+            background-color:  #B0E0E6;
+        }
+
+    </style>
+</head>
+<body>
+
+    <h2>STEM Students - Stellar Scholarship Awardees(2026)</h2>
+
+    <table>
+        <tr>
+            <th>S.No</th>
+            <th>Student Name</th>
+            <th>Field of Study</th>
+            <th>Year</th>
+        </tr>
+        <tr><td>1</td><td>VADDE SRUJANA</td><td>MSCS-HYD</td><td>2026</td></tr>
+        <tr><td>2</td><td>SAPETLA SHIVANEELA</td><td>MSCS-HYD</td><td>2026</td></tr>
+        <tr><td>3</td><td>MANGALI NAVYA</td><td>MSDS-HYD</td><td>2026</td></tr>
+        <tr><td>4</td><td>LOLAM UMAPRANAVASRI</td><td>ANPHBC-HYD</td><td>2026</td></tr>
+        <tr><td>5</td><td>PENDRA SRAVANI</td><td>NZC-HYD</td><td>2026</td></tr>
+        <tr><td>6</td><td>PUTTI VIJAYALAXMI</td><td>MBZC-MED</td><td>2026</td></tr>
+        <tr><td>7</td><td>GUJJARI ANUSHA</td><td>MBZC-MED</td><td>2026</td></tr>
+        <tr><td>8</td><td>BAIKANI ANUSHA</td><td>MBZC-MED</td><td>2026</td></tr>
+        <tr><td>9</td><td>PASUPULA HEMALATHA</td><td>MPCS-MED</td><td>2026</td></tr>
+        <tr><td>10</td><td>MANDULA SAILAJA</td><td>MPCS-MED</td><td>2026</td></tr>
+        <tr><td>11</td><td>DAMAYAPALLI MALLESHWARI</td><td>MPCS-MED</td><td>2026</td></tr>
+       </table>
+<h2>STEM STUDENTS LIST (2026 BATCH)</h2>
+<table>
+    <tr>
+        <th>S.No</th>
+        <th>Names</th>
+        <th>Groups</th>
+    </tr>
+    <tr><td>1</td><td>GOLLA  MOUNIKA</td><td>MSCS</td></tr>
+    <tr><td>2</td><td>BOYA  AISHWARYA</td><td>MSCS</td></tr>
+    <tr><td>3</td><td>MUSHINI  LAXMI PRASNNA</td><td>MSCS</td></tr>
+    <tr><td>4</td><td>KATROTH  PAVANI</td><td>MSCS</td></tr>
+    <tr><td>5</td><td>KOLLAKADI  MEGHANA</td><td>MSCS</td></tr>
+    <tr><td>6</td><td>KUMMARI  VIJAYA LAKSHMI</td><td>MSCS</td></tr>
+    <tr><td>7</td><td>MEKALA  MADHAVI</td><td>MSCS</td></tr>
+    <tr><td>8</td><td>THOTA  AKHILA</td><td>MSCS</td></tr>
+    <tr><td>9</td><td>UPPUNUNTHALA  APARNA</td><td>MSCS</td></tr>
+    <tr><td>10</td><td>VAVILLA  SHRUTHI</td><td>MSCS</td></tr>
+    <tr><td>11</td><td>KATTA  ANUSHA</td><td>MSDS</td></tr>
+    <tr><td>12</td><td>KONDALA  ANSHIKA</td><td>MSDS</td></tr>
+    <tr><td>13</td><td>MORA  KEERTHANA</td><td>MSDS</td></tr>
+    <tr><td>14</td><td>GUNDIMALLA  KEERTHANA</td><td>MSDS</td></tr>
+    <tr><td>15</td><td>KALAL SINDHUJA</td><td>MSDS</td></tr>
+    <tr><td>16</td><td>NARRAMULA NAVYA</td><td>MSDS</td></tr>
+    <tr><td>17</td><td>RATHLAVATHA NIKITHARAJ</td><td>MSDS</td></tr>
+    <tr><td>18</td><td>SANKELLA GAYATHRI</td><td>MSDS</td></tr>
+    <tr><td>19</td><td>ANUGULA INDHU</td><td>MS(AI&ML)</td></tr>
+    <tr><td>20</td><td>JAJULA ANJALI</td><td>MS(AI&ML)</td></tr>
+    <tr><td>21</td><td>KESHAPAGA PADMASRI</td><td>MS(AI&ML)</td></tr>
+    <tr><td>22</td><td>MADUGULA RAJITHA</td><td>MS(AI&ML)</td></tr>
+    <tr><td>23</td><td>PEDDABUGGANOLA ANUSHA</td><td>MS(AI&ML)</td></tr>
+    <tr><td>24</td><td>SANGEM SRAVANI</td><td>ANPHBC</td></tr>
+    <tr><td>25</td><td>THALARI ASHWINI</td><td>ANPHBC</td></tr>
+    <tr><td>26</td><td>CHEVULA INDHU</td><td>NZC</td></tr>
+    <tr><td>27</td><td>GIRAGANI THRISHA</td><td>NZC</td></tr>
+    <tr><td>28</td><td>GOLLA AKHILA</td><td>NZC</td></tr>
+    <tr><td>29</td><td>KUKKALA PRATHYUSHA</td><td>NZC</td></tr>
+    <tr><td>30</td><td>ORUGANTI SHIVANI</td><td>NZC</td></tr>
+    <tr><td>31</td><td>BOLLAM SUCHITRA</td><td>MSCS</td></tr>
+    <tr><td>32</td><td>DOSADA SRIVANI</td><td>MSCS</td></tr>
+    <tr><td>33</td><td>GADDAMEEDI DEEPIKA</td><td>MSCS</td></tr>
+    <tr><td>34</td><td>KATROTH PAVITRA</td><td>MSCS</td></tr>
+    <tr><td>35</td><td>SADURLA  NANDINI</td><td>MSCS</td></tr>
+    <tr><td>36</td><td>SOWKUNTLA  NANDINI</td><td>MSCS</td></tr>
+    <tr><td>37</td><td>VELJARALA  ARCHANA</td><td>MSCS</td></tr>
+    <tr><td>38</td><td>CHINTHALA MAHATHI</td><td>MBZC</td></tr>
+    <tr><td>39</td><td>DEVANDA RAGINI</td><td>MBZC</td></tr>
+    <tr><td>40</td><td>GADEELA TANISHKA</td><td>MBZC</td></tr>
+    <tr><td>41</td><td>KAKOJU  LAVANYA</td><td>MBZC</td></tr>
+    <tr><td>42</td><td>KODUPAKA NIKITHA</td><td>MBZC</td></tr>
+    <tr><td>43</td><td>KOLURU KAVERI</td><td>MBZC</td></tr>
+    <tr><td>44</td><td>KOTHAPALLY MANASA</td><td>MBZC</td></tr>
+    <tr><td>45</td><td>MANGALI NEESHMA</td><td>MBZC</td></tr>
+    <tr><td>46</td><td>PALAKURTHI RASAGNA</td><td>MBZC</td></tr>
+    <tr><td>47</td><td>PARVEDA PAVANI</td><td>MBZC</td></tr>
+    <tr><td>48</td><td>RAILA LAXMIDEVI</td><td>MBZC</td></tr>
+    <tr><td>49</td><td>SARA GANGAVATHI</td><td>MBZC</td></tr>
+    <tr><td>50</td><td>YERRAGOLLA NANDINI</td><td>MBZC</td></tr>
+    <tr><td>51</td><td>THUMMALA NAVYA </td><td>MPC</td></tr>
+    <tr><td>52</td><td>YALALA NAGALAXMI</td><td>MPC</td></tr>
+    <tr><td>53</td><td>AILU RAJASREE</td><td>MPCS</td></tr>
+    <tr><td>54</td><td>GUDA GAYATHRI</td><td>MPCS</td></tr>
+    <tr><td>55</td><td>HARIJAN NANDINI</td><td>MPCS</td></tr>
+    <tr><td>56</td><td>KETHAVATH KEERTHI</td><td>MPCS</td></tr>
+    <tr><td>57</td><td>KOTHAKURVA AKANKSHA</td><td>MPCS</td></tr>
+    <tr><td>58</td><td>VENNA MANUSHA</td><td>MPCS</td></tr>
+    <tr><td>59</td><td>MASANPALLI SUJATHA</td><td>MPCS</td></tr>
+    <tr><td>60</td><td>NAKKARI SRAVANTHI</td><td>MPCS</td></tr>
+</table>
+
+</body>
+</html>

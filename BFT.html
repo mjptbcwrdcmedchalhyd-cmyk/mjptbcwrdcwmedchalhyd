@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Bachelor of Fashion Technology</title>
+<script src="disableActions.js"></script>
+
+<style>
+
+body{
+font-family: Arial, sans-serif;
+margin:0;
+padding:0;
+background:#f5f7fa;
+}
+
+/* HEADER */
+
+.header{
+display:flex;
+align-items:center;
+justify-content:space-between;
+padding:10px 40px;
+background:white;
+border-bottom:3px solid #003366;
+}
+
+.header img{
+width:150px;
+height:150px;
+object-fit:contain;
+}
+
+.title{
+text-align:center;
+flex:1;
+padding:0 20px;
+}
+
+.title h1{
+margin:0;
+font-size:26px;
+color:#003366;
+font-weight:bold;
+}
+
+.location{
+font-weight:bold;
+margin-top:5px;
+}
+
+
+/* NAVIGATION */
+
+nav{
+background:#003366;
+text-align:center;
+position:sticky;
+top:0;
+z-index:1000;
+}
+
+nav ul{
+list-style:none;
+margin:0;
+padding:0;
+}
+
+nav ul li{
+display:inline-block;
+position:relative;
+}
+
+nav ul li a{
+display:block;
+padding:14px 20px;
+color:white;
+text-decoration:none;
+font-weight:bold;
+}
+
+nav ul li a:hover{
+background:#0055a5;
+}
+
+
+/* DROPDOWN */
+
+nav ul ul{
+display:none;
+position:absolute;
+background:#0055a5;
+min-width:200px;
+text-align:left;
+}
+
+nav ul ul li{
+display:block;
+}
+
+nav ul li:hover > ul{
+display:block;
+}
+
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+.header{
+flex-direction:column;
+text-align:center;
+}
+
+.header img{
+width:100px;
+height:100px;
+}
+
+.title h1{
+font-size:20px;
+}
+
+nav ul li{
+display:block;
+}
+
+}
+
+
+body{
+font-family: Arial, sans-serif;
+background-color:#f2f2f2;
+}
+
+h1{
+color:#2c3e50;
+}
+
+h2{
+color:#34495e;
+border-bottom:2px solid #2c3e50;
+padding-bottom:5px;
+}
+
+ul{
+line-height:1.8;
+}
+
+.section{
+background-color:white;
+padding:20px;
+border-radius:8px;
+margin:20px 0;
+}
+
+.card{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px;
+margin:20px 0;
+border-radius:10px;
+}
+
+.bg1{ background:#e6ffff; }
+.bg2 { background:#fff9e6; }
+.bg3 { background:#fce6ff; }
+.achievement{
+width:50%;
+font-size:16px;
+}
+
+.details{
+width:40%;
+text-align:center;
+}
+
+.details img{
+width:200px;
+height:200px;
+border-radius:50%;
+margin-bottom:5px;
+}
+
+.name{
+font-weight:bold;
+font-size:18px;
+}
+
+.qualification{
+color:#555;
+}
+
+</style>
+
+</head>
+
+<body oncontextmenu="return false;" onselectstart="return false">
+
+<!-- HEADER -->
+<div class="header">
+
+<img src="images/governament-logo1.jpeg" alt="Government Logo">
+
+<div class="title">
+<h1>
+MAHATMA JYOTHIBA PHULE <br>
+TELANGANA BACKWARD CLASSES <br>
+WELFARE RESIDENTIAL <br>
+DEGREE COLLEGE FOR WOMEN
+</h1>
+
+<div class="location">
+Medchal & Hyderabad
+</div>
+
+</div>
+
+<img src="images/mjp1.png">
+
+</div>
+
+
+<!-- NAVIGATION -->
+
+<nav>
+
+<ul>
+
+<li><a href="index.html">Home</a></li>
+
+<li>
+<a href="#">About</a>
+<ul>
+<li><a href="history.html">History</a></li>
+<li><a href="governing body.html">Governing Body</a></li>
+<li><a href="secretary.html">Secretary</a></li>
+<li><a href="principal.html">Principal</a></li>
+<li><a href="vice principal.html">Vice Principal</a></li>
+<li><a href="management.html">Management</a></li>
+</ul>
+</li>
+
+<li>
+<a href="#">Academics</a>
+<ul>
+<li><a href="admissions.html">Admissions</a></li>
+<li><a href="courses.html">Courses</a></li>
+<li><a href="course details.html">Course Details</a></li>
+
+<li><a href="examination.html">Examination Branch</a></li>
+</ul>
+</li>
+
+<li>
+<a href="#">Department & Faculty</a>
+<ul>
+<li><a href="languages.html">Languages</a></li>
+<li><a href="Physical_Science.html">Physical Science</a></li>
+<li><a href="life science.html">Life Science</a></li>
+<li><a href="arts.html">Arts</a></li>
+<li><a href="commerce.html">Commerce</a></li>
+<li><a href="bba.html">BBA</a></li>
+<li><a href="#">BFT</a></li>
+<li><a href="PD_librarian.html">Physical Education and Librarians</a></li>
+
+<li><a href="Non_Teaching.html">Staff Nurses and Junior Assistants</a></li>
+
+
+</ul>
+</li>
+
+<li>
+<a href="#">Facilities</a>
+<ul>
+<li><a href="library.html">Library</a></li>
+<li><a href="labs.html">Labs</a></li>
+<li><a href="sports.html">Sports</a></li>
+<li><a href="events.html">Events</a></li>
+<li><a href="cultural.html">Cultural</a></li>
+<li><a href="industrial visits.html">Industrial Visits</a></li>
+<li><a href="nss.html">NSS</a></li>
+<li><a href="food-menu.html">Food Menu</a></li>
+<li><a href="health-cards.html">Health Cards</a></li>
+</ul>
+</li>
+
+<li><a href="placements.html">Placements</a></li>
+
+</ul>
+</nav>
+
+<div class="dept-code">👗 Department Code: BFT-01</div>
+<h1>Bachelor of Fashion Technology</h1>
+
+<div class="section">
+<h2>About the Department</h2>
+<p>
+The Bachelor of Fashion Technology (BFT) department focuses on fashion design,
+garment technology, textile science, and fashion innovation. The program prepares
+students for careers in fashion design, apparel production, textile industry,
+fashion marketing, and entrepreneurship.
+</p>
+
+<p>
+With experienced faculty, modern laboratories, and practical training,
+students gain hands-on experience in garment construction, fashion illustration,
+textile design, and fashion merchandising.
+</p>
+
+</div>
+<div class="section">
+
+<h2>Programs Offered</h2>
+<ul>
+<li>BFT (Bachelor of Fashion Technology)</li>
+</ul>
+</div>
+
+<!-- Faculty 1 -->
+
+<div class="card bg1">
+
+<div class="achievement">
+<strong>J. Usha Rani</strong> is a faculty in the Department of Fashion Technnology. She have two years of professional experience in fabric marketing, where she gained practical knowledge of textile products, market trends, and customer engagement strategies. This role helped to develop skills in sales, communication, and understanding consumer preferences within the textile industry. In addition to her industry experience, She worked as a Degree Lecturer in the Department of Fashion Technology for four years, where She taught and mentored students in fashion design, textile science, and related subjects. During this period, She was involved in curriculum planning, academic guidance, and organizing workshops to enhance student learning. These experiences allowed me to interact with diverse groups and understand their professional and social needs. It also enhanced her ability to apply practical knowledge in an academic setting. Overall, she combined experience in fabric marketing and teaching reflects her  commitment to professional growth and community development.</div>
+
+<div class="details">
+<img src="images/Usha rani.jpg">
+<div class="name">J. Usha Rani</div>
+<div class="qualification">B.Tech(Textile Technology)</div>
+</div>
+
+</div>
+
+<!-- Faculty 2 -->
+
+<div class="card bg2">
+
+<div class="achievement">
+<strong>B. Soniya </strong>is a faculty in the Department of Fashion Technology. She have one year of experience working as a Degree Lecturer in the Department of Fashion Technology. During this time, She actively contributed to curriculum delivery, lesson planning, and classroom management, ensuring a productive learning environment.She also mentored students in practical projects and assignments, helping them develop both technical and creative skills. She collaborated with colleagues to improve departmental processes and promote knowledge sharing. Her teaching experience strengthened her communication, leadership, and organizational abilities. It also reinforced her commitment to fostering professional growth and skill development in students.</div>
+<div class="details">
+<img src="images/Soniya.png">
+<div class="name">B. Soniya</div>
+<div class="qualification">B.A.(Honours)Fashion Design</div>
+</div>
+
+</div>
+
+<!-- Faculty 3 -->
+
+<div class="card bg3">
+
+<div class="achievement">
+<strong>S. Gayathri </strong>is a faculty in the Department of Fashion Technology. She have one year of professional experience working as a Textile Designer in the Handloom Department in Siddipet, where She was involved in designing and developing traditional and contemporary textile patterns. During this period, she gained hands-on experience with fabric selection, color coordination, and pattern creation, ensuring high-quality and market-relevant designs. She contributed to enhancing the aesthetic appeal and functionality of handloom products. This experience allowed to develop strong creative and technical skills in textile design.Working in this environment strengthened her  problem-solving, teamwork, and project management abilities. Overall, her  tenure in the Handloom Department reflects her dedication to creativity, craftsmanship, and the promotion of traditional textile arts.</div>
+<div class="details">
+<img src="images/Gayathri.png">
+<div class="name">S. Gayathri</div>
+<div class="qualification">B.A(Honours)Fashion Design</div>
+</div>
+
+</div>
+
+</body>
+</html>

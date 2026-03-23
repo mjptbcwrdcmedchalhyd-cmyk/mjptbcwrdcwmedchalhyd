@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fashion Technology Lab</title>
+<script src="disableActions.js"></script>
+
+<style>
+body{
+font-family: Arial, sans-serif;
+margin:0;
+padding:0;
+background:#f5f7fa;
+}
+
+/* HEADER */
+
+.header{
+display:flex;
+align-items:center;
+justify-content:space-between;
+padding:10px 40px;
+background:white;
+border-bottom:3px solid #003366;
+}
+
+.header img{
+width:150px;
+height:150px;
+object-fit:contain;
+}
+
+.title{
+text-align:center;
+flex:1;
+padding:0 20px;
+}
+
+.title h1{
+margin:0;
+font-size:26px;
+color:#003366;
+font-weight:bold;
+}
+
+.location{
+font-weight:bold;
+margin-top:5px;
+}
+
+
+/* NAVIGATION */
+
+nav{
+background:#003366;
+text-align:center;
+position:sticky;
+top:0;
+z-index:1000;
+}
+
+nav ul{
+list-style:none;
+margin:0;
+padding:0;
+}
+
+nav ul li{
+display:inline-block;
+position:relative;
+}
+
+nav ul li a{
+display:block;
+padding:14px 20px;
+color:white;
+text-decoration:none;
+font-weight:bold;
+}
+
+nav ul li a:hover{
+background:#0055a5;
+}
+
+
+/* DROPDOWN */
+
+nav ul ul{
+display:none;
+position:absolute;
+background:#0055a5;
+min-width:200px;
+text-align:left;
+}
+
+nav ul ul li{
+display:block;
+}
+
+nav ul li:hover > ul{
+display:block;
+}
+
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+.header{
+flex-direction:column;
+text-align:center;
+}
+
+.header img{
+width:100px;
+height:100px;
+}
+
+.title h1{
+font-size:20px;
+}
+
+nav ul li{
+display:block;
+}
+
+}
+
+
+body{
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 20px;
+    background-color: #f0f0f0;
+}
+
+h1{
+    color:black;
+}
+
+h2{
+    color:#333333;
+}
+
+h3{
+    color:#333333;
+}
+
+ul{
+    margin-bottom:20px;
+}
+
+li{
+    margin-bottom:10px;
+    color:#4D4D4D;
+}
+
+.section{
+    background:white;
+    padding:25px;
+    border-radius:8px;
+    box-shadow:0 0 8px rgba(0,0,0,0.2);
+    margin-bottom:20px;
+}
+
+ol{
+    margin-left:20px;
+    color:#4D4D4D;
+}
+
+ol li{
+    margin-bottom:10px;
+}
+
+.groups{
+    text-align:center;
+}
+
+.groups ul{
+    display:inline-block;
+    text-align:left;
+    font-size:20px;
+}
+</style>
+
+</head>
+
+<body oncontextmenu="return false;" onselectstart="re
+
+<!-- HEADER -->
+<div class="header">
+
+<img src="images/governament-logo1.jpeg" alt="Government Logo">
+
+<div class="title">
+<h1>
+MAHATMA JYOTHIBA PHULE <br>
+TELANGANA BACKWARD CLASSES <br>
+WELFARE RESIDENTIAL <br>
+DEGREE COLLEGE FOR WOMEN
+</h1>
+
+<div class="location">
+Medchal & Hyderabad
+</div>
+
+</div>
+
+<img src="images/mjp1.png">
+
+</div>
+
+
+<!-- NAVIGATION -->
+
+<nav>
+
+<ul>
+
+<li><a href="mjp.html">Home</a></li>
+
+<li>
+<a href="#">About</a>
+<ul>
+<li><a href="history.html">History</a></li>
+<li><a href="governing body.html">Governing Body</a></li>
+<li><a href="secretary.html">Secretary</a></li>
+<li><a href="principal.html">Principal</a></li>
+<li><a href="vice principal.html">Vice Principal</a></li>
+<li><a href="management.html">Management</a></li>
+</ul>
+</li>
+
+<li>
+<a href="#">Academics</a>
+<ul>
+<li><a href="admissions.html">Admissions</a></li>
+<li><a href="courses.html">Courses</a></li>
+<li><a href="course details.html">Course Details</a></li>
+
+<li><a href="examination.html">Examination Branch</a></li>
+</ul>
+</li>
+
+<li>
+<a href="#">Department & Faculty</a>
+<ul>
+<li><a href="languages.html">Languages</a></li>
+<li><a href="computer science.html">Computer Science</a></li>
+<li><a href="life science.html">Life Science</a></li>
+<li><a href="arts.html">Arts</a></li>
+<li><a href="commerce.html">Commerce</a></li>
+<li><a href="bba.html">BBA</a></li>
+<li><a href="bft.html">BFT</a></li>
+</ul>
+</li>
+
+<li>
+<a href="#">Facilities</a>
+<ul>
+<li><a href="library.html">Library</a></li>
+<li><a href="labs.html">Labs</a></li>
+<li><a href="sports.html">Sports</a></li>
+<li><a href="events.html">Events</a></li>
+<li><a href="cultural.html">Cultural</a></li>
+<li><a href="industrial visits.html">Industrial Visits</a></li>
+<li><a href="nss.html">NSS</a></li>
+<li><a href="food-menu.html">Food Menu</a></li>
+<li><a href="health-cards.html">Health Cards</a></li>
+</ul>
+</li>
+
+<li><a href="placements.html">Placements</a></li>
+
+</ul>
+</nav>
+
+
+
+<!-- ABOUT THE LAB -->
+
+<div class="section">
+
+<h1><i>About the Lab</i></h1>
+
+<ul>
+<li>The Fashion Technology laboratory provides a practical learning environment for developing skills in garment design and apparel production.</li>
+<li>The facility includes sewing machines, dress forms, pattern drafting tools, and other equipment required for garment construction and design activities.</li>
+<li>Students gain hands-on experience in body measurement, pattern development, garment assembly, and fashion illustration.</li>
+<li>The lab helps students understand the complete process of garment creation from design to final product.</li>
+</ul>
+
+<h3>Importance of the Lab</h3>
+
+<ul>
+<li>Provides practical exposure to garment construction and apparel design.</li>
+<li>Helps students apply theoretical concepts in real design situations.</li>
+<li>Encourages creativity and innovation in textile and fashion design.</li>
+<li>Supports skill development required for careers in the fashion and textile industry.</li>
+<li>Enhances both artistic and technical abilities.</li>
+</ul>
+
+<h3>Lab Goals and Objectives</h3>
+
+<ul>
+<li>Provide a fully equipped environment for fashion design and garment construction.</li>
+<li>Develop practical skills in body measurements and pattern drafting.</li>
+<li>Encourage creativity through fashion illustration and textile decoration.</li>
+<li>Support student learning in apparel production techniques.</li>
+<li>Improve technical and aesthetic skills through hands-on practice.</li>
+</ul>
+
+<h1><i>Benefits of Using the Lab</i></h1>
+
+<ul>
+<li>Students gain real experience in garment designing and stitching.</li>
+<li>Develop skills in pattern making, cutting, and garment assembly.</li>
+<li>Learn fabric surface decoration techniques such as screen printing, block printing, and fabric painting.</li>
+<li>Work with decorative materials like beads, sequins, and other embellishments.</li>
+<li>Improve creativity, craftsmanship, and professional design skills.</li>
+</ul>
+
+</div>
+
+
+<!-- FACILITIES AND RULES -->
+
+<div class="section">
+
+<h1><i>Facilities</i></h1>
+
+<ul>
+<li>The lab includes sewing machines, dress forms, and pattern drafting tools for garment construction.</li>
+<li>Workstations are provided for cutting, stitching, and designing garments.</li>
+<li>Special areas are available for fabric decoration techniques and design practice.</li>
+<li>The laboratory provides drawing tools such as pencils, sketch pens, and embroidery frames.</li>
+</ul>
+
+<h3>Equipment and Tools</h3>
+
+<ul>
+<li>Sewing machines for garment stitching and construction.</li>
+<li>Dress forms for garment fitting and design development.</li>
+<li>Pattern drafting tools for creating garment patterns.</li>
+<li>Embroidery frames for embroidery practice.</li>
+<li>Drawing tools such as pencils and sketch pens for fashion illustration.</li>
+</ul>
+
+<h3>Textile Decoration Techniques</h3>
+
+<ul>
+<li>Screen printing for fabric design.</li>
+<li>Block printing for decorative textile patterns.</li>
+<li>Dyeing techniques to create fabric colors and effects.</li>
+<li>Fabric painting for creative textile artwork.</li>
+<li>Use of beads, sequins, and embellishments to enhance garments.</li>
+</ul>
+
+<h3>Workspace</h3>
+
+<ul>
+<li>Organized workstations for garment cutting and stitching.</li>
+<li>Comfortable seating for long practical sessions.</li>
+<li>Separate areas for design, stitching, and textile decoration activities.</li>
+<li>Instructor supervision for guidance and safety.</li>
+</ul>
+
+<h1><i>Fashion Technology Lab Rules</i></h1>
+
+<ol>
+<li><b>Authorized Access Only:</b> Only students and faculty are allowed to use the laboratory.</li>
+<li><b>Use Equipment Carefully:</b> Sewing machines and tools must be handled carefully.</li>
+<li><b>Maintain Cleanliness:</b> Keep the workspace clean and organized.</li>
+<li><b>Follow Safety Guidelines:</b> All activities must follow established safety procedures.</li>
+<li><b>Handle Materials Properly:</b> Use fabrics, dyes, and decorative materials responsibly.</li>
+<li><b>Return Tools After Use:</b> All tools and equipment must be returned to their proper place.</li>
+<li><b>No Food or Drinks:</b> Eating or drinking inside the lab is not allowed.</li>
+<li><b>Follow Instructor Instructions:</b> Always follow guidance from the lab instructor.</li>
+</ol>
+
+</div>
+
+
+</div>
+
+</body>
+</html>

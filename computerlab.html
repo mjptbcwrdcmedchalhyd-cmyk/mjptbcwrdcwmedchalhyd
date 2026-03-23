@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Computer Science Lab</title>
+<script src="disableActions.js"></script>
+
+<style>
+body{
+font-family: Arial, sans-serif;
+margin:0;
+padding:0;
+background:#f5f7fa;
+}
+
+/* HEADER */
+
+.header{
+display:flex;
+align-items:center;
+justify-content:space-between;
+padding:10px 40px;
+background:white;
+border-bottom:3px solid #003366;
+}
+
+.header img{
+width:150px;
+height:150px;
+object-fit:contain;
+}
+
+.title{
+text-align:center;
+flex:1;
+padding:0 20px;
+}
+
+.title h1{
+margin:0;
+font-size:26px;
+color:#003366;
+font-weight:bold;
+}
+
+.location{
+font-weight:bold;
+margin-top:5px;
+}
+
+
+/* NAVIGATION */
+
+nav{
+background:#003366;
+text-align:center;
+position:sticky;
+top:0;
+z-index:1000;
+}
+
+nav ul{
+list-style:none;
+margin:0;
+padding:0;
+}
+
+nav ul li{
+display:inline-block;
+position:relative;
+}
+
+nav ul li a{
+display:block;
+padding:14px 20px;
+color:white;
+text-decoration:none;
+font-weight:bold;
+}
+
+nav ul li a:hover{
+background:#0055a5;
+}
+
+
+/* DROPDOWN */
+
+nav ul ul{
+display:none;
+position:absolute;
+background:#0055a5;
+min-width:200px;
+text-align:left;
+}
+
+nav ul ul li{
+display:block;
+}
+
+nav ul li:hover > ul{
+display:block;
+}
+
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+.header{
+flex-direction:column;
+text-align:center;
+}
+
+.header img{
+width:100px;
+height:100px;
+}
+
+.title h1{
+font-size:20px;
+}
+
+nav ul li{
+display:block;
+}
+
+}
+
+body{
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 20px;
+    background-color: #f0f0f0;
+}
+
+h1{
+    color:black;
+}
+
+h2{
+    color:#333333;
+}
+
+h3{
+    color:#333333;
+}
+
+ul{
+    margin-bottom:20px;
+}
+
+li{
+    margin-bottom:10px;
+    color:#4D4D4D;
+}
+
+.section{
+    background:white;
+    padding:25px;
+    border-radius:8px;
+    box-shadow:0 0 8px rgba(0,0,0,0.2);
+    margin-bottom:20px;
+}
+
+ol{
+    margin-left:20px;
+    color:#4D4D4D;
+}
+
+ol li{
+    margin-bottom:10px;
+}
+
+.groups{
+    text-align:center;
+}
+
+.groups ul{
+    display:inline-block;
+    text-align:left;
+    font-size:20px;
+}
+</style>
+
+</head>
+
+<body oncontextmenu="return false;" onselectstart="return false">
+
+<!-- HEADER -->
+<div class="header">
+
+<img src="images/governament-logo1.jpeg" alt="Government Logo">
+
+<div class="title">
+<h1>
+MAHATMA JYOTHIBA PHULE <br>
+TELANGANA BACKWARD CLASSES <br>
+WELFARE RESIDENTIAL <br>
+DEGREE COLLEGE FOR WOMEN
+</h1>
+
+<div class="location">
+Medchal & Hyderabad
+</div>
+
+</div>
+
+<img src="images/mjp1.png">
+
+</div>
+
+
+<!-- NAVIGATION -->
+
+<nav>
+
+<ul>
+
+<li><a href="mjp.html">Home</a></li>
+
+<li>
+<a href="#">About</a>
+<ul>
+<li><a href="history.html">History</a></li>
+<li><a href="governing body.html">Governing Body</a></li>
+<li><a href="secretary.html">Secretary</a></li>
+<li><a href="principal.html">Principal</a></li>
+<li><a href="vice principal.html">Vice Principal</a></li>
+<li><a href="management.html">Management</a></li>
+</ul>
+</li>
+
+<li>
+<a href="#">Academics</a>
+<ul>
+<li><a href="admissions.html">Admissions</a></li>
+<li><a href="courses.html">Courses</a></li>
+<li><a href="course details.html">Course Details</a></li>
+
+<li><a href="examination.html">Examination Branch</a></li>
+</ul>
+</li>
+
+<li>
+<a href="#">Department & Faculty</a>
+<ul>
+<li><a href="languages.html">Languages</a></li>
+<li><a href="computer science.html">Computer Science</a></li>
+<li><a href="life science.html">Life Science</a></li>
+<li><a href="arts.html">Arts</a></li>
+<li><a href="commerce.html">Commerce</a></li>
+<li><a href="bba.html">BBA</a></li>
+<li><a href="bft.html">BFT</a></li>
+</ul>
+</li>
+
+<li>
+<a href="#">Facilities</a>
+<ul>
+<li><a href="library.html">Library</a></li>
+<li><a href="labs.html">Labs</a></li>
+<li><a href="sports.html">Sports</a></li>
+<li><a href="events.html">Events</a></li>
+<li><a href="cultural.html">Cultural</a></li>
+<li><a href="industrial visits.html">Industrial Visits</a></li>
+<li><a href="nss.html">NSS</a></li>
+<li><a href="food-menu.html">Food Menu</a></li>
+<li><a href="health-cards.html">Health Cards</a></li>
+</ul>
+</li>
+
+<li><a href="placements.html">Placements</a></li>
+
+</ul>
+</nav>
+
+
+
+<!-- ABOUT THE LAB -->
+
+<div class="section">
+
+<h1><i>About the Lab</i></h1>
+
+<ul>
+<li>Provides a hands-on learning environment for programming, software development, networking, and advanced computing technologies.</li>
+<li>Allows students to practically apply classroom concepts and enhance technical problem-solving skills.</li>
+<li>Equipped with modern computers, high-speed internet, essential software, servers, and networking hardware.</li>
+<li>Supports experiments, innovative projects, coding skill development, and exploration of AI, data science, and cybersecurity.</li>
+</ul>
+
+<h3>Importance of the Lab</h3>
+
+<ul>
+<li>Bridges the gap between theoretical knowledge and practical application.</li>
+<li>Provides a safe environment for experimentation and real-world experience.</li>
+<li>Supports faculty and student research initiatives and collaborative projects.</li>
+<li>Fosters creativity, teamwork, critical thinking, and prepares students for technology careers.</li>
+<li>Access to modern tools ensures efficient and safe project execution.</li>
+</ul>
+
+<h3>Lab Goals and Objectives</h3>
+
+<ul>
+<li>Provide a fully equipped environment for hands-on learning.</li>
+<li>Support academic and research projects.</li>
+<li>Cultivate technical expertise and problem-solving abilities.</li>
+<li>Encourage innovation and facilitate team collaboration.</li>
+<li>Offer training in programming, software development tools, networking, cybersecurity, and emerging technologies.</li>
+<li>Provide opportunities for competitions, hackathons, and workshops to strengthen practical skills.</li>
+</ul>
+
+<h1><i>Benefits of Using the Lab</i></h1>
+
+<ul>
+<li>Gain practical experience that complements classroom learning.</li>
+<li>Develop proficiency in programming, software development, database management, and networking.</li>
+<li>Improve teamwork, project management, and research skills.</li>
+<li>Access to advanced tools, high-performance computing resources, and collaborative spaces.</li>
+<li>Prepare for successful careers in technology, research, and related fields.</li>
+</ul>
+
+</div>
+
+
+<!-- FACILITIES AND RULES -->
+
+<div class="section">
+
+<h1><i>Facilities</i></h1>
+
+<ul>
+<li>The lab has <b>50 modern computers</b> with high-performance processors and adequate RAM for programming, AI, and data science tasks.</li>
+<li>Equipped with <b>projectors</b> and display screens for teaching and presentations.</li>
+<li>Provides ergonomic seating and spacious workstations for comfortable learning and collaborative projects.</li>
+<li>Dedicated areas for research, workshops, and coding competitions.</li>
+</ul>
+
+<h3>Software Tools</h3>
+
+<ul>
+<li>Installed IDEs: Visual Studio Code, Eclipse, PyCharm, and NetBeans.</li>
+<li>Database software: MySQL, PostgreSQL, and MongoDB.</li>
+<li>Simulation and networking tools: Cisco Packet Tracer, GNS3.</li>
+<li>AI and data science tools: Python, R, TensorFlow, and MATLAB.</li>
+<li>Office and productivity software for documentation, presentations, and collaboration.</li>
+</ul>
+
+<h3>Networking and Internet</h3>
+
+<ul>
+<li>High-speed wired and wireless internet connectivity.</li>
+<li>Local area network (LAN) with dedicated servers for student projects and file sharing.</li>
+<li>Secure VPN access for remote learning and experiments.</li>
+<li>Networking equipment includes switches, routers, and firewalls for practical labs.</li>
+</ul>
+
+<h3>Seating & Workspace</h3>
+
+<ul>
+<li>Spacious workstations for individual and group projects.</li>
+<li>Ergonomic chairs and desks to ensure comfort during long lab sessions.</li>
+<li>Collaborative zones for team discussions and coding sessions.</li>
+<li>Separate areas for instructors to supervise and assist students.</li>
+</ul>
+
+<h1><i>Computer Science Lab Rules</i></h1>
+
+<ol>
+<li><b>Authorized Access Only:</b> Only students, faculty, and staff are allowed to use the lab.</li>
+<li><b>Use Computers Properly:</b> Use computers and software only for academic or lab-related purposes.</li>
+<li><b>No Unauthorized Software:</b> Do not install or uninstall software without permission.</li>
+<li><b>Internet Usage:</b> Access only academic or appropriate websites.</li>
+<li><b>Handle Hardware Carefully:</b> Do not tamper with computers or equipment.</li>
+<li><b>Report Issues Immediately:</b> Inform the lab supervisor about any problems.</li>
+<li><b>No Food or Drinks:</b> Eating or drinking is strictly prohibited.</li>
+<li><b>Maintain Silence:</b> Keep noise to a minimum.</li>
+<li><b>Use Assigned Accounts Only:</b> Do not share login credentials.</li>
+<li><b>Keep the Lab Clean:</b> Dispose of trash properly.</li>
+<li><b>Follow Lab Timings & Instructions:</b> Follow instructions from lab staff.</li>
+</ol>
+
+</div>
+
+
+<!-- LAB USING GROUPS -->
+
+<div class="section groups">
+
+<h1>Computer Lab Using Groups</h1>
+
+<ul>
+<li>MSCS</li>
+<li>MSDS</li>
+<li>AI & ML</li>
+<li>B.Com (CA)</li>
+<li>B.Com (BA)</li>
+<li>MPCS</li>
+<li>BBA</li>
+</ul>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NSS STUDENT TABLE</title>
+ <script src="disableActions.js"></script>
+
+    <style>
+
+body{
+font-family: Arial, sans-serif;
+margin:0;
+padding:0;
+background:#f5f7fa;
+}
+
+/* HEADER */
+
+.header{
+display:flex;
+align-items:center;
+justify-content:space-between;
+padding:10px 40px;
+background:white;
+border-bottom:3px solid #003366;
+}
+
+.header img{
+width:150px;
+height:150px;
+object-fit:contain;
+}
+
+.title{
+text-align:center;
+flex:1;
+padding:0 20px;
+}
+
+.title h1{
+margin:0;
+font-size:26px;
+color:#003366;
+font-weight:bold;
+}
+
+.location{
+font-weight:bold;
+margin-top:5px;
+}
+
+
+/* NAVIGATION */
+
+nav{
+background:#003366;
+text-align:center;
+position:sticky;
+top:0;
+z-index:1000;
+}
+
+nav ul{
+list-style:none;
+margin:0;
+padding:0;
+}
+
+nav ul li{
+display:inline-block;
+position:relative;
+}
+
+nav ul li a{
+display:block;
+padding:14px 20px;
+color:white;
+text-decoration:none;
+font-weight:bold;
+}
+
+nav ul li a:hover{
+background:#0055a5;
+}
+
+
+/* DROPDOWN */
+
+nav ul ul{
+display:none;
+position:absolute;
+background:#0055a5;
+min-width:200px;
+text-align:left;
+}
+
+nav ul ul li{
+display:block;
+}
+
+nav ul li:hover > ul{
+display:block;
+}
+
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+.header{
+flex-direction:column;
+text-align:center;
+}
+
+.header img{
+width:100px;
+height:100px;
+}
+
+.title h1{
+font-size:20px;
+}
+
+nav ul li{
+display:block;
+}
+
+}
+
+
+
+
+
+            table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 6px;
+            text-align: center;
+            text color : WHITE ;
+        }
+h2 {
+    text-align: center;
+}
+        th {
+            background-color:VOILATE;
+ text color : WHITE ;
+        }
+
+        /* Alternate row colors */
+        tr:nth-child(even) {
+            background-color: PINK;   /* Light gray */
+        }
+
+        tr:nth-child(odd) {
+            background-color: LAVENDER;   /* White */
+        }
+
+        /* Keep header color fixed */
+        tr:first-child {
+            background-color: INDIGO;
+        }
+th {
+    background-color: VOILATE;
+    color: white;
+}
+    </style>
+</head>
+<body oncontextmenu="return false;" onselectstart="return false">
+
+<!-- HEADER -->
+<div class="header">
+
+<img src="images/governament-logo1.jpeg" alt="Government Logo">
+
+<div class="title">
+<h1>
+MAHATMA JYOTHIBA PHULE <br>
+TELANGANA BACKWARD CLASSES <br>
+WELFARE RESIDENTIAL <br>
+DEGREE COLLEGE FOR WOMEN
+</h1>
+
+<div class="location">
+Medchal & Hyderabad
+</div>
+
+</div>
+
+<img src="images/mjp1.png">
+
+</div>
+
+
+<!-- NAVIGATION -->
+
+<nav>
+
+<ul>
+
+<li><a href="index.html">Home</a></li>
+
+<li>
+<a href="#">About</a>
+<ul>
+<li><a href="history.html">History</a></li>
+<li><a href="governing body.html">Governing Body</a></li>
+<li><a href="secretary.html">Secretary</a></li>
+<li><a href="principal.html">Principal</a></li>
+<li><a href="vice-principal.html">Vice Principal</a></li>
+<li><a href="management.html">Management</a></li>
+
+</ul>
+</li>
+
+<li>
+<a href="#">Academics</a>
+<ul>
+<li><a href="admissions.html">Admissions</a></li>
+<li><a href="courses.html">Courses</a></li>
+<li><a href="course-details.html">Course Details</a></li>
+<li><a href="examination.html">Examination Branch</a></li>
+</ul>
+</li>
+
+<li>
+<a href="#">Department & Faculty</a>
+<ul>
+<li><a href="languages.html">Languages</a></li>
+<li><a href="Physical_Science.html">Physical Science</a></li>
+<li><a href="life-science.html">Life Science</a></li>
+<li><a href="arts.html">Arts</a></li>
+<li><a href="commerce.html">Commerce</a></li>
+<li><a href="bba.html">BBA</a></li>
+<li><a href="bft.html">BFT</a></li>
+<li><a href="PD_librarian.html">Physical Education and Librarians</a></li>
+<li><a href="Non_Teaching.html">Staff Nurses and Junior Assistants</a></li>
+</ul>
+</li>
+
+<li>
+<a href="#">Facilities</a>
+<ul>
+<li><a href="library.html">Library</a></li>
+<li><a href="labs.html">Labs</a></li>
+<li><a href="sports.html">Sports</a></li>
+<li><a href="events.html">Events</a></li>
+<li><a href="cultural.html">Cultural</a></li>
+<li><a href="industrial visits.html">Industrial Visits</a></li>
+
+<li><a href="food-menu.html">Food Menu</a></li>
+<li><a href="health-cards.html">Health Cards</a></li>
+</ul>
+</li>
+
+<li><a href="placements.html">Placements</a></li>
+
+</ul>
+
+</nav>
+
+
+
+
+
+
+<h2>NSS STUDENTS LIST</h2>
+
+
+<table>
+    <tr>
+        <th>S.No</th>
+        <th>Names</th>
+        <th>Groups</th>
+    </tr>
+    <tr><td>1</td><td>V.Bindu</td><td>BA(HEP)</td></tr>
+    <tr><td>2</td><td>B.Pooja</td><td>BA(HEP)</td></tr>
+    <tr><td>3</td><td>J.Sravani</td><td>BA(HEP)</td></tr>
+    <tr><td>4</td><td>N.Meenakshi</td><td>BA(HEP)</td></tr>
+    <tr><td>5</td><td>K.Architha</td><td>BA(HEP)</td></tr>
+    <tr><td>6</td><td>K.Ravali</td><td>BSc(MPCs)</td></tr>
+    <tr><td>7</td><td>P.Shivani</td><td>BSc(MPCs)</td></tr>
+    <tr><td>8</td><td>V.Vaishali</td><td>BSc(MPCs)</td></tr>
+    <tr><td>9</td><td>B.Poojita</td><td>BSc(MPCs)</td></tr>
+    <tr><td>10</td><td>N.Swathi</td><td>BSc(MPCs)</td></tr>
+    <tr><td>11</td><td>J.Rakshitha</td><td>BSc(MBZC)</td></tr>
+    <tr><td>12</td><td>B.Chandana</td><td>BSc(MBZC)</td></tr>
+    <tr><td>13</td><td>K.Sravani</td><td>BSc(MBZC)</td></tr>
+    <tr><td>14</td><td>SK.Sameena</td><td>BSc(MBZC)</td></tr>
+    <tr><td>15</td><td>G.Himabindu</td><td>BCOM(CA)</td></tr>
+    <tr><td>16</td><td>B.Chaithanya</td><td>BSc(MBZC)</td></tr>
+    <tr><td>17</td><td>K.Shirisha</td><td>BSc(MPC)</td></tr>
+    <tr><td>18</td><td>V.Chandralekha</td><td>BSc(MPC)</td></tr>
+    <tr><td>19</td><td>B.Chandrakala</td><td>BSc(MPC)</td></tr>
+    <tr><td>20</td><td>P.Navya sree</td><td>BSc(MPC)</td></tr>
+    <tr><td>21</td><td>B.Shruthi</td><td>BSc(MPC)</td></tr>
+    <tr><td>22</td><td>V.Nandini</td><td>BSc(MSCs)</td></tr>
+    <tr><td>23</td><td>M.Aradhana</td><td>BSc(MSCs)</td></tr>
+    <tr><td>24</td><td>B.Sai harshitha</td><td>BSc(MSCs)</td></tr>
+    <tr><td>25</td><td>G.Akhila</td><td>BSc(MSCs)</td></tr>
+    <tr><td>26</td><td>J.Shivani</td><td>BSc(MSCs)</td></tr>
+    <tr><td>27</td><td>K.Hema bindu</td><td>B.com(CA)</td></tr>
+    <tr><td>28</td><td>P.Priyanka</td><td>B.com(CA)</td></tr>
+    <tr><td>29</td><td>P.Laxmi</td><td>B.com(CA)</td></tr>
+    <tr><td>30</td><td>B.Manisha</td><td>B.com(CA)</td></tr>
+    <tr><td>31</td><td>R.Srilatha</td><td>BSc(MPCs)</td></tr>
+    <tr><td>32</td><td>H.Nandini</td><td>BSc(MPCs)</td></tr>
+    <tr><td>33</td><td>G.Gayathri</td><td>BSc(MPCs)</td></tr>
+    <tr><td>34</td><td>K.Indu</td><td>BSc(MPCs)</td></tr>
+    <tr><td>35</td><td>K.Manasa</td><td>BSc(MBZC)</td></tr>
+    <tr><td>36</td><td>K.Nikitha</td><td> BSc(MBZC)</td></tr>
+    <tr><td>37</td><td>A.Divya</td><td>BSc(MBZC)</td></tr>
+    <tr><td>38</td><td>K.Kaveri</td><td>BSc(MBZC)</td></tr>
+    <tr><td>39</td><td>Y.Nandini</td><td>BSc(MBZC)</td></tr>
+    <tr><td>40</td><td>G.Deepika</td><td>BSc(MSCs)</td></tr>
+    <tr><td>41</td><td>B.Suchitra</td><td>BSc(MSCs)</td></tr>
+    <tr><td>42</td><td>V.Archana</td><td>BSc(MSCs)</td></tr>
+    <tr><td>43</td><td>S.Nandini</td><td>BSc(MSCs)</td></tr>
+    <tr><td>44</td><td>D.Srivani</td><td>BSc(MSCs)</td></tr>
+    <tr><td>45</td><td>G.Tejashwini</td><td>BSc(MPCs)</td></tr>
+    <tr><td>46</td><td>T.Varalaxmi</td><td>B.com(BA)</td></tr>
+    <tr><td>47</td><td>Kubra Fathima  Begam</td><td>B.com(BA)</td></tr>
+    <tr><td>48</td><td>P.Shruthi</td><td>B.com(BA)</td></tr>
+    <tr><td>49</td><td>V.Rani</td><td>B.com(BA)</td></tr>
+    <tr><td>50</td><td>B.Sageetha</td><td>B.com(BA)</td></tr>
+    <tr><td>51</td><td>C.Manasa</td><td>B.com(CA)</td></tr>
+    <tr><td>52</td><td>V.Nissi</td><td>B.com(CA)</td></tr>
+    <tr><td>53</td><td>R.Swathi</td><td>B.com(CA)</td></tr>
+    <tr><td>54</td><td>G.Vaishnavi</td><td>B.com(CA)</td></tr>
+    <tr><td>55</td><td>J.Sravanthi</td><td>B.com(CA)</td></tr>
+    <tr><td>56</td><td>K.Shirisha</td><td>BA(HEP)</td></tr>
+    <tr><td>57</td><td>G.Savitha</td><td>BA(HEP)</td></tr>
+    <tr><td>58</td><td>C.Bhavani</td><td>BA(HEP)</td></tr>
+    <tr><td>59</td><td>K.Geethanjali</td><td>BA(HEP)</td></tr>
+    <tr><td>60</td><td>Afreen</td><td>BA(HEP)</td></tr>
+    <tr><td>61</td><td>K.Chandrakala</td><td>BA(HEP)</td></tr>
+    <tr><td>62</td><td>Y.Nagalaxmi</td><td>BSc(MPC)</td></tr>
+    <tr><td>63</td><td>M.Nikhitha</td><td>BSc(MPC)</td></tr>
+    <tr><td>64</td><td>M.Sujatha</td><td>BSc(MPC)</td></tr>
+    <tr><td>65</td><td>G.Nandini</td><td>BSc(MPC)</td></tr>
+      <tr><td>66</td><td>T.Navya</td><td>BSc(MPC)</td></tr>
+    <tr><td>67</td><td>K.Vaishnavi</td><td>B.com(CA)</td></tr>
+    <tr><td>68</td><td>Tasmiya Begum</td><td>B.com(CA)</td></tr>
+    <tr><td>69</td><td>G.Mahalaxmi</td><td>B.com(CA)</td></tr>
+    <tr><td>70</td><td>V.Ravali</td><td>B.com(CA)</td></tr>
+    <tr><td>71</td><td>M.Bhuvaneshwari</td><td>B.com(CA)</td></tr>
+    <tr><td>72</td><td>CH.Pooja</td><td>B.com(CA)</td></tr>
+    <tr><td>73</td><td>S.Varnitha</td><td>B.com(CA)</td></tr>
+    <tr><td>74</td><td>V.Sreeja</td><td>B.com(BA)</td></tr>
+    <tr><td>75</td><td>P.Amulya</td><td>B.com(BA)</td></tr>
+    <tr><td>76</td><td>A.Sathvika reddy</td><td>B.com(BA)</td></tr>
+    <tr><td>77</td><td>R.Meenakshi</td><td>B.com(BA)</td></tr>
+    <tr><td>78</td><td>C.Akhila</td><td>B.com(BA)</td></tr>
+    <tr><td>79</td><td>B.Trisha</td><td>BA(PPGEP)</td></tr>
+    <tr><td>80</td><td>B.Shivani</td><td>BA(PPGEP)</td></tr>
+    <tr><td>81</td><td>A.Roja</td><td>BA(PPGEP)</td></tr>
+    <tr><td>82</td><td>D.Sreeja</td><td>BA(PPGEP)</td></tr>
+    <tr><td>83</td><td>V.Sravani</td><td>BA(PPGEP)</td></tr>
+    <tr><td>84</td><td>M.Dhanalaxmi</td><td>BSc(MBZC)</td></tr>
+    <tr><td>85</td><td>U.Srivani</td><td>BSc(MBZC)</td></tr>
+    <tr><td>86</td><td>B.Sravanthi</td><td>BSc(MBZC)</td></tr>
+    <tr><td>87</td><td>G.Shireesha</td><td>BSc(MBZC)</td></tr>
+    <tr><td>88</td><td>T.Maneesha</td><td>BSc(MBZC)</td></tr>
+    <tr><td>89</td><td>R.Jeevitha</td><td>BSc(MPCs)</td></tr>
+    <tr><td>90</td><td>U.Sri Harshitha</td><td>BSc(MPCs)</td></tr>
+    <tr><td>91</td><td>B.Sneha</td><td>BSc(MPCs)</td></tr>
+    <tr><td>92</td><td>C.Radhika</td><td>BSc(MPCs)</td></tr>
+    <tr><td>93</td><td>C.Sai Pooja</td><td>BSc(MPCs)</td></tr>
+    <tr><td>94</td><td>K.Mounika</td><td>BSc(MPC)</td></tr>
+    <tr><td>95</td><td>M.Meenakshi</td><td>BSc(MPC)</td></tr>
+     <tr><td>96</td><td>K.Sowmya</td><td>BSc(MPC)</td></tr>
+    <tr><td>97</td><td>K.Maheshwari</td><td>BSc(MPC)</td></tr>
+    <tr><td>98</td><td>K.Tulasi</td><td>BSc(MPC)</td></tr>
+    <tr><td>99</td><td>P.Sai Supriya</td><td>BA(HEP)</td></tr>
+    <tr><td>100</td><td>I.Laxmi Prasanneshwari</td><td>BA(HEP)</td></tr>
+    <tr><td>101</td><td>K.Akhila</td><td>BA(HEP)</td></tr>
+    <tr><td>102</td><td>K.Anjali</td><td>BA(HEP)</td></tr>
+    <tr><td>103</td><td>V.Kusuma Sree</td><td>BA(HEP)</td></tr>
+    <tr><td>104</td><td>R.Laxmi Devi</td><td>BA(HEP)</td></tr>
+    <tr><td>105</td><td>K.Sai Sree</td><td>BA(HEP)</td></tr>
+    <tr><td>106</td><td>Y.Vaishnavi</td><td>BA(HEP)</td></tr>
+
+
+
+
+</table>
+
+</body>
+</html>

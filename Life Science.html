@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Departments</title>
+<script src="disableActions.js"></script>
+
+<style>
+
+body{
+font-family: Arial, sans-serif;
+margin:0;
+padding:0;
+background:#f5f7fa;
+}
+
+/* HEADER */
+
+.header{
+display:flex;
+align-items:center;
+justify-content:space-between;
+padding:10px 40px;
+background:white;
+border-bottom:3px solid #003366;
+}
+
+.header img{
+width:150px;
+height:150px;
+object-fit:contain;
+}
+
+.title{
+text-align:center;
+flex:1;
+padding:0 20px;
+}
+
+.title h1{
+margin:0;
+font-size:26px;
+color:#003366;
+font-weight:bold;
+}
+
+.location{
+font-weight:bold;
+margin-top:5px;
+}
+
+
+/* NAVIGATION */
+
+nav{
+background:#003366;
+text-align:center;
+position:sticky;
+top:0;
+z-index:1000;
+}
+
+nav ul{
+list-style:none;
+margin:0;
+padding:0;
+}
+
+nav ul li{
+display:inline-block;
+position:relative;
+}
+
+nav ul li a{
+display:block;
+padding:14px 20px;
+color:white;
+text-decoration:none;
+font-weight:bold;
+}
+
+nav ul li a:hover{
+background:#0055a5;
+}
+
+
+/* DROPDOWN */
+
+nav ul ul{
+display:none;
+position:absolute;
+background:#0055a5;
+min-width:200px;
+text-align:left;
+}
+
+nav ul ul li{
+display:block;
+}
+
+nav ul li:hover > ul{
+display:block;
+}
+
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+.header{
+flex-direction:column;
+text-align:center;
+}
+
+.header img{
+width:100px;
+height:100px;
+}
+
+.title h1{
+font-size:20px;
+}
+
+nav ul li{
+display:block;
+}
+
+}
+body{
+font-family: Arial, sans-serif;
+margin:40px;
+background-color:#f4f6f9;
+}
+
+h1{
+color:#2c3e50;
+}
+
+h2{
+color:#34495e;
+border-bottom:2px solid #2c3e50;
+padding-bottom:5px;
+}
+
+.dept-code{
+background-color:#2c3e50;
+color:white;
+padding:8px 15px;
+display:inline-block;
+border-radius:5px;
+margin-bottom:15px;
+}
+
+.section{
+background-color:#ffffff;
+padding:2px;
+border-radius:10px;
+margin-top:20px;
+box-shadow:0 2px 5px rgba(0,0,0,0.1);
+}
+
+ul{
+line-height:1.8;
+}
+
+/* About department image layout */
+.about-box{
+display:flex;
+justify-content:space-between;
+align-items:center;
+gap:20px;
+margin-top:10px;
+}
+
+.about-text{
+width:65%;
+}
+
+.about-img{
+width:30%;
+text-align:center;
+}
+
+.about-img img{
+width:200px;
+border-radius:10px;
+}
+
+/* Card styles for faculty */
+.card {
+    display: flex;
+    justify-content:space-between;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius:10px;
+}
+
+.achievement{
+  width:55%;
+  font-size:16px;
+  line-height:1.6;
+  padding-top:25px;  
+}
+
+.details {
+    width: 40%;
+    text-align: center;
+}
+
+.details img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-bottom: 5px;
+}
+
+.name {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.qualification {
+    color: #555;
+}
+
+/* Light background colors */
+.bg1 { background: #EAF4FF; }
+.bg2{ background: #F3E8FF ; }
+.bg4 { background: #FFF9E6; }
+.bg5 { background: #F5F7FA; }
+.bg6 { background: #FDECEF; }
+.bg7{ background: #F1F8E9; }
+.bg8 { background: #E8F5E9; }
+.bg9 { background: #E0F7FA; }
+
+</style>
+
+</head>
+
+<body oncontextmenu="return false;" onselectstart="return false">
+<!-- HEADER -->
+<div class="header">
+
+<img src="images/governament-logo1.jpeg" alt="Government Logo">
+
+<div class="title">
+<h1>
+MAHATMA JYOTHIBA PHULE <br>
+TELANGANA BACKWARD CLASSES <br>
+WELFARE RESIDENTIAL <br>
+DEGREE COLLEGE FOR WOMEN
+</h1>
+
+<div class="location">
+Medchal & Hyderabad
+</div>
+
+</div>
+
+<img src="images/mjp1.png">
+
+</div>
+
+
+<!-- NAVIGATION -->
+
+<nav>
+
+<ul>
+
+<li><a href="index.html">Home</a></li>
+
+<li>
+<a href="#">About</a>
+<ul>
+<li><a href="history.html">History</a></li>
+<li><a href="governing body.html">Governing Body</a></li>
+<li><a href="secretary.html">Secretary</a></li>
+<li><a href="principal.html">Principal</a></li>
+<li><a href="vice principal.html">Vice Principal</a></li>
+<li><a href="management.html">Management</a></li>
+</ul>
+</li>
+
+<li>
+<a href="#">Academics</a>
+<ul>
+<li><a href="admissions.html">Admissions</a></li>
+<li><a href="courses.html">Courses</a></li>
+<li><a href="course details.html">Course Details</a></li>
+
+<li><a href="examination.html">Examination Branch</a></li>
+</ul>
+</li>
+
+<li>
+<a href="#">Department & Faculty</a>
+<ul>
+<li><a href="languages.html">Languages</a></li>
+<li><a href="Physical_Science.html">Physical Science</a></li>
+<li><a href="#">Life Science</a></li>
+<li><a href="arts.html">Arts</a></li>
+<li><a href="commerce.html">Commerce</a></li>
+<li><a href="bba.html">BBA</a></li>
+<li><a href="bft.html">BFT</a></li>
+<li><a href="PD_librarian.html">Physical Education and Librarians</a></li>
+
+<li><a href="Non_Teaching.html">Staff Nurses and Junior Assistants</a></li>
+
+
+</ul>
+</li>
+
+<li>
+<a href="#">Facilities</a>
+<ul>
+<li><a href="library.html">Library</a></li>
+<li><a href="labs.html">Labs</a></li>
+<li><a href="sports.html">Sports</a></li>
+<li><a href="events.html">Events</a></li>
+<li><a href="cultural.html">Cultural</a></li>
+<li><a href="industrial visits.html">Industrial Visits</a></li>
+<li><a href="nss.html">NSS</a></li>
+<li><a href="food-menu.html">Food Menu</a></li>
+<li><a href="health-cards.html">Health Cards</a></li>
+</ul>
+</li>
+
+<li><a href="placements.html">Placements</a></li>
+
+</ul>
+</nav>
+
+
+<!-- Life Sciences Section with left-text and right-image layout -->
+<div class="section">
+<h2>Life Sciences</h2>
+<div class="about-box">
+<div class="about-text">
+<ul>
+<li>Microbiology</li>
+<li>Botany</li>
+<li>Zoology</li>
+<li>Nutrition</li>
+</ul>
+</div>
+<div class="about-img">
+<img src="images/life science.jpg">
+</div>
+</div>
+</div>
+
+<!-- Microbiology -->
+<div class="dept-code">🦠 Department Code: MIC-01</div>
+<h1>Department of Microbiology</h1>
+
+<div class="section">
+<h2>About the Department</h2>
+<div class="about-box">
+<div class="about-text">
+<p>
+The Department of Microbiology focuses on the study of microorganisms, their roles in health, environment, and industry.
+</p>
+<p>
+The department provides students with strong theoretical knowledge along with practical laboratory and research experience. With experienced faculty and well-equipped laboratories, students are encouraged to develop microbiological research skills and contribute to public health and scientific innovation.
+</p>
+</div>
+</div>
+</div>
+
+<div class="section">
+<h2>Programs Offered</h2>
+<ul>
+<li>B.Sc (MBZC)</li>
+</ul>
+</div>
+
+<div class="card bg8">
+<div class="achievement">
+<strong>A.Vineetha</strong> is a Degree Lecturer in Department of Microbiology. She was awarded the Gold Medal in the National poster presentation competition conducted at Osmania University. In addition to this achievement, she secured the State 1st Rank in the TREIRB Gurukula Degree Lecturer Examination conducted by the Telangana Residential Educational Institutions Recruitment Board. These accomplishments together demonstrate her commitment to intellectual growth, effective communication of knowledge, and sustained pursuit of distinction in both teaching and research-oriented endeavors.
+</div>
+<div class="details">
+<img src="images/Vineetha.png">
+<div class="name">A.Vineetha</div>
+<div class="qualification">M.Sc in Microbiology, ICAR-NET, TSSET, GATE-XL</div>
+</div>
+</div>
+
+<!-- Botany -->
+<div class="dept-code">🌿 Department Code: BOT-01</div>
+<h1>Department of Botany</h1>
+
+<div class="section">
+<h2>About the Department</h2>
+<div class="about-box">
+<div class="about-text">
+<p>
+The Department of Botany focuses on the scientific study of plants and their vital role in the environment.
+</p>
+<p>
+The department provides students with strong knowledge in plant biology, ecology, and biodiversity through both theoretical learning and practical laboratory work. With experienced faculty and well-equipped laboratories, students are encouraged to develop research skills and environmental awareness. The department aims to promote conservation, sustainable development, and a deeper understanding of plant life.
+</p>
+</div>
+</div>
+</div>
+
+<div class="section">
+<h2>Programs Offered</h2>
+<ul>
+<li>B.Sc (ANPHBC)</li>
+</ul>
+</div>
+
+<div class="card bg4">
+<div class="achievement">
+<strong>K.Vanisri </strong>is a Degree Lecturer in the Department of Botany. She began her teaching career in 2018 as a TGT in Bioscience at TSWREIS in Addagudur, where She developed a strong foundation in secondary-level science education. In 2019, She joined MJPTBCWREIS as a Junior Lecturer in Botany and served in this role until 2024. In 2024, She was appointed as a Degree Lecturer in Botany at MJPTBCWRDC, Kalwakurthy. In this role,She continue to guide undergraduate students with a focus on scientific thinking and academic excellence. Her professional journey reflects continuous growth and commitment to quality education. In recognition of her contributions to teaching, "She was honored with the Best Teacher Award" by the District Collector of Nagarkurnool on September 5, 2024.
+</div>
+<div class="details">
+<img src="images/Vanisri.png">
+<div class="name">K.Vanisri</div>
+<div class="qualification">M.Sc, B.Ed, TG-SET</div>
+</div>
+</div>
+
+<!-- Zoology -->
+<div class="dept-code">🔬 Department Code: ZOO-01</div>
+<h1>Department of Zoology</h1>
+
+<div class="section">
+<h2>About the Department</h2>
+<div class="about-box">
+<div class="about-text">
+<p>
+The Department of Zoology focuses on the scientific study of animals, their structure, behavior, evolution, and ecological roles.
+</p>
+<p>
+The department provides students with strong theoretical knowledge along with practical laboratory and field-based learning experiences. With experienced faculty and well-equipped laboratories, students are encouraged to develop research skills and environmental awareness. The department aims to promote the conservation of wildlife and a deeper understanding of animal diversity and life processes.
+</p>
+</div>
+</div>
+</div>
+
+<div class="section">
+<h2>Programs Offered</h2>
+<ul>
+<li>B.Sc (NZC)</li>
+<li>B.Sc (MBZC)</li>
+</ul>
+</div>
+
+<div class="section">
+<h2>Our Faculty</h2>
+
+<div class="card bg8">
+<div class="achievement">
+<strong>A.Deepthi</strong> is a Degree Lecturer in the Department of Zoology. She have over seven years of experience as a Degree Lecturer. Her academic journey has been enriched by pursuing a Ph.D. At Osmania University, where her research focused on Ecotoxicology, emphasizing the study of environmental contaminants and their effects on ecosystems. Throughout her career, she have demonstrated a commitment to fostering an engaging learning environment and promoting scientific inquiry among students. She have been actively involved in designing practical laboratory sessions, supervising research projects, and integrating modern pedagogical methods to enhance learning outcomes. Her research work has allowed to collaborate with interdisciplinary teams, contributing to publications and presenting findings at national conferences. She have also participated in workshops, seminars, and faculty development programs to refine her skills and knowledge. Passionate about both teaching and research, She aim to inspire the next generation of environmental scientists while advancing understanding in ecotoxicology.
+</div>
+<div class="details">
+<img src="images/A.Deepthi.png">
+<div class="name">A.Deepthi</div>
+<div class="qualification">M.Sc, B.Ed, TS-SET</div>
+</div>
+</div>
+
+<div class="card bg9">
+<div class="achievement">
+<strong>N.Suvarna</strong> is a Degree Lecturer in the Department of Zoology. She have successfully qualified in multiple government recruitment examinations and served in important public service positions over the years. In 2009, She qualified for the Group-II examination under the Non-Executive cadre, marking the beginning of her engagement with government service. In 2013, She was selected and worked as a Hostel Welfare Officer, where She was responsible for student welfare, hostel administration, and the overall well-being of residents. In 2018, She was appointed as a Trained Graduate Teacher (TGT) in the Telangana Backward Classes Welfare Department. She again qualified the Group-II examination in 2019 and, in the same year, was appointed as a Junior Lecturer (JL) in the Backward Classes Welfare Department, where She played an active role in higher secondary education and student mentoring. These appointments demonstrate her steady academic merit, professional growth, and long-standing dedication to public service, particularly in the fields of education and social welfare.
+</div>
+<div class="details">
+<img src="images/suvarna.jpeg">
+<div class="name">N.Suvarna</div>
+<div class="qualification">M.Sc (Zoology), B.Ed</div>
+</div>
+</div>
+
+<!-- Nutrition -->
+<div class="dept-code">🥗 Department Code: NUT-01</div>
+<h1>Department of Nutrition</h1>
+
+<div class="section">
+<h2>About the Department</h2>
+<div class="about-box">
+<div class="about-text">
+<p>
+The Department of Nutrition focuses on the study of food, diet, and health sciences to promote well-being.
+</p>
+<p>
+The department provides students with theoretical knowledge along with practical experience in nutrition and dietetics. With experienced faculty, students are encouraged to develop research skills and health awareness. The department aims to promote healthy lifestyles, scientific understanding of food, and overall student wellness.
+</p>
+</div>
+</div>
+</div>
+
+<div class="section">
+<h2>Programs Offered</h2>
+<ul>
+<li>B.Sc (NZC)</li>
+<li>B.Sc (ANPHBC)</li>
+</ul>
+</div>
+
+<div class="section">
+<h2>Our Faculty</h2>
+
+<div class="card bg8">
+<div class="achievement">
+<strong>Mounika </strong>is a faculty in the Department of Nutrition. Her postgraduate qualification in M.H.Sc. (Food Science and Nutrition). She have three years of teaching experience at MJPTBCWR Degree College in Hyderabad. She is committed to fostering awareness about balanced nutrition, food safety, and healthy lifestyle practices. Her experience has helped me develop strong teaching, mentoring, and communication skills. She consistently strive to maintain high academic standards and encourage critical thinking among students. She aim to contribute effectively to academic development and student success in the field of Nutrition and Health Sciences.
+</div>
+<div class="details">
+<img src="images/Mounika.png">
+<div class="name">Mounika</div>
+<div class="qualification">ICAR-JRF, UGC-NET</div>
+</div>
+</div>
+
+<div class="card bg9">
+<div class="achievement">
+<strong>D.Mani Srinivas</strong> is a faculty in Nutrition Department. Worked as a Dietitian at KIMS HOSPITAL(SunShine). She have Four years of experience as a Degree Lecturer in Nutrition at MJPTBCWRDC, Hyderabad. She also gained 6 months of professional experience at AIIMS(All India Institute of Medical Sciences) College, where she contributed to academic and institutional activities related to the field of nutrition. This experience allowed to further strengthen her knowledge and practical understanding of nutrition education. She have developed strong communication, teaching, and organizational skills through these roles.
+</div>
+<div class="details">
+<img src="images/Manisrinivas.png">
+<div class="name">D.Mani Srinivas</div>
+<div class="qualification">M.Sc (Nutrition & Dietetics)</div>
+</div>
+</div>
+
+</body>
+</html>

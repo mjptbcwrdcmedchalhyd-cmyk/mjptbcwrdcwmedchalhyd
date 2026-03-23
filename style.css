@@ -1,0 +1,249 @@
+
+   body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f5f7fa;
+}
+
+
+.carousel {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    background: #000;
+}
+.carousel-item {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+transition: opacity 2s ease;
+}
+
+.carousel-item.active {
+    opacity: 1;
+    z-index: 1;
+}
+
+
+.slide-image {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+}
+     .container {
+      display: flex;
+      flex-wrap: wrap;
+      max-width: 1000px;
+      margin: 40px auto;
+      background: #fff;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    .left {
+      flex: 1;
+      min-width: 300px;
+      background: #e9f1fb;
+      padding: 20px;
+      text-align: center;
+    }
+    .left img {
+      max-width: 100%;
+      border-radius: 8px;
+      margin-bottom: 15px;
+    }
+    .left h2 {
+      color: #003366;
+      margin: 10px 0;
+    }
+    .right {
+      flex: 2;
+      min-width: 300px;
+      padding: 30px;
+    }
+    .right h1 {
+      color: #003366;
+      margin-bottom: 20px;
+    }
+    .right h3 {
+      margin-top: 0;
+      color: #0055a5;
+    }
+    .right p {
+      line-height: 1.6;
+      margin-bottom: 15px;
+      color: #333;
+    }
+    .signature {
+      margin-top: 20px;
+      font-weight: bold;
+      color: #003366;
+    }
+   
+    /* Header Section */
+    .header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 40px;
+    }
+
+    .header img {
+      width: 160px;
+      height: 160px;
+      object-fit: contain;
+    }
+
+    .title {
+      text-align: center;
+      flex: 1;
+      padding: 0 20px;
+    }
+
+    .title h1 {
+      margin: 0;
+      font-size: 26px;
+    }
+
+    .location {
+      font-weight: bold;
+      margin-top: 5px;
+    }
+
+    /* Navigation Bar */
+    nav {
+      background-color: #003366;
+      text-align: center;
+     position: sticky;
+    top: 0;
+    z-index: 1000;
+    }
+
+    nav ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      display: inline-block;
+    }
+
+    nav ul li {
+      display: inline-block;
+      position: relative;
+    }
+
+    nav ul li a {
+      display: block;
+      padding: 12px 20px;
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+    }
+
+    nav ul li a:hover {
+      background-color: #0055a5;
+    }
+
+    /* Dropdown */
+    nav ul ul {
+      display: none;
+      position: absolute;
+      background-color: #0055a5;
+      min-width: 200px;
+      text-align: left;
+    }
+
+    nav ul ul li {
+      display: block;
+    }
+
+    nav ul li:hover > ul {
+      display: block;
+    }
+
+  .why-choose {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1100px;
+    margin: 50px auto;
+    background: #fff;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  .why-choose .left {
+    flex: 1;
+    min-width: 300px;
+    background: #f0f6ff;
+    text-align: center;
+    padding: 20px;
+  }
+  .why-choose .left img {
+    max-width: 100%;
+    border-radius: 8px;
+  }
+  .why-choose .right {
+    flex: 2;
+    min-width: 300px;
+    padding: 30px;
+  }
+  .why-choose .right h2 {
+    color: #003366;
+    margin-bottom: 20px;
+  }
+  .why-choose .right p {
+    line-height: 1.7;
+    color: #333;
+    margin-bottom: 15px;
+    text-align: justify;
+  }
+* {
+    box-sizing: border-box;
+}
+
+
+
+@media (max-width: 768px) {
+
+  .header {
+    flex-direction: column;
+    text-align: center;
+   background-color: #ffffff;
+    border-bottom: 3px solid #003366;
+  }
+
+  .header img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .title h1 {
+    font-size: 18px;
+  margin: 0;
+    font-size: 24px;
+    color: #003366;
+  }
+
+  nav ul li {
+    display: block;
+  }
+
+  .container,
+  .why-choose {
+    flex-direction: column;
+  }
+
+  .carousel {
+    height: 250px;
+  }
+
+  .carousel-item .slide-image {
+    height: 250px;
+  }
+}
+

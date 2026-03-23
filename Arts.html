@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Departments</title>
+<script src="disableActions.js"></script>
+
+
+
+</script>
+
+<style>
+
+body{
+font-family: Arial, sans-serif;
+margin:0;
+padding:0;
+background:#f5f7fa;
+}
+
+/* HEADER */
+
+.header{
+display:flex;
+align-items:center;
+justify-content:space-between;
+padding:10px 40px;
+background:white;
+border-bottom:3px solid #003366;
+}
+
+.header img{
+width:150px;
+height:150px;
+object-fit:contain;
+}
+
+.title{
+text-align:center;
+flex:1;
+padding:0 20px;
+}
+
+.title h1{
+margin:0;
+font-size:26px;
+color:#003366;
+font-weight:bold;
+}
+
+.location{
+font-weight:bold;
+margin-top:5px;
+}
+
+
+/* NAVIGATION */
+
+nav{
+background:#003366;
+text-align:center;
+position:sticky;
+top:0;
+z-index:1000;
+}
+
+nav ul{
+list-style:none;
+margin:0;
+padding:0;
+}
+
+nav ul li{
+display:inline-block;
+position:relative;
+}
+
+nav ul li a{
+display:block;
+padding:14px 20px;
+color:white;
+text-decoration:none;
+font-weight:bold;
+}
+
+nav ul li a:hover{
+background:#0055a5;
+}
+
+
+/* DROPDOWN */
+
+nav ul ul{
+display:none;
+position:absolute;
+background:#0055a5;
+min-width:200px;
+text-align:left;
+}
+
+nav ul ul li{
+display:block;
+}
+
+nav ul li:hover > ul{
+display:block;
+}
+
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+.header{
+flex-direction:column;
+text-align:center;
+}
+
+.header img{
+width:100px;
+height:100px;
+}
+
+.title h1{
+font-size:20px;
+}
+
+nav ul li{
+display:block;
+}
+
+}
+
+body{
+font-family: Arial, sans-serif;
+background-color:#f2f2f2;
+}
+
+h1{
+color:#2c3e50;
+}
+
+h2{
+color:#34495e;
+border-bottom:2px solid #2c3e50;
+padding-bottom:5px;
+}
+
+ul{
+line-height:1.8;
+}
+
+/* WHITE BACKGROUND ADDED FOR ABOUT & PROGRAMS SECTIONS */
+
+.section{
+background-color:white;
+padding:20px;
+border-radius:8px;
+margin:20px 0;
+}
+
+/* Card layout */
+
+.card{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px;
+margin:20px 0;
+border-radius:10px;
+}
+
+/* Light background colors */
+
+.bg11{ background:#fff2f2; }
+.bg12{ background:#f2ffe6; }
+.bg13{ background:#e6f9ff; }
+.bg14{ background:#fff5e6; }
+
+.achievement{
+  width:55%;
+  font-size:16px;
+  line-height:1.6;
+  padding-top:20px;  
+}
+
+
+.details{
+width:40%;
+text-align:center;
+}
+
+.details img{
+width:200px;
+height:200px;
+border-radius:50%;
+margin-bottom:5px;
+}
+
+.name{
+font-weight:bold;
+font-size:18px;
+}
+
+.qualification{
+color:#555;
+}
+
+</style>
+
+</head>
+
+<body oncontextmenu="return false;" onselectstart="return false">
+
+<!-- HEADER -->
+<div class="header">
+
+<img src="images/governament-logo1.jpeg" alt="Government Logo">
+
+<div class="title">
+<h1>
+MAHATMA JYOTHIBA PHULE <br>
+TELANGANA BACKWARD CLASSES <br>
+WELFARE RESIDENTIAL <br>
+DEGREE COLLEGE FOR WOMEN
+</h1>
+
+<div class="location">
+Medchal & Hyderabad
+</div>
+
+</div>
+
+<img src="images/mjp1.png">
+
+</div>
+
+
+<!-- NAVIGATION -->
+
+<nav>
+
+<ul>
+
+<li><a href="index.html">Home</a></li>
+
+<li>
+<a href="#">About</a>
+<ul>
+<li><a href="history.html">History</a></li>
+<li><a href="governing body.html">Governing Body</a></li>
+<li><a href="secretary.html">Secretary</a></li>
+<li><a href="principal.html">Principal</a></li>
+<li><a href="vice principal.html">Vice Principal</a></li>
+<li><a href="management.html">Management</a></li>
+</ul>
+</li>
+
+<li>
+<a href="#">Academics</a>
+<ul>
+<li><a href="admissions.html">Admissions</a></li>
+<li><a href="courses.html">Courses</a></li>
+<li><a href="course details.html">Course Details</a></li>
+
+<li><a href="examination.html">Examination Branch</a></li>
+</ul>
+</li>
+
+<li>
+<a href="#">Department & Faculty</a>
+<ul>
+<li><a href="languages.html">Languages</a></li>
+<li><a href="Physical_Science.html">Physical Science</a></li>
+<li><a href="life science.html">Life Science</a></li>
+<li><a href="#">Arts</a></li>
+<li><a href="commerce.html">Commerce</a></li>
+<li><a href="bba.html">BBA</a></li>
+<li><a href="bft.html">BFT</a></li>
+<li><a href="PD_librarian.html">Physical Education and Librarians</a></li>
+
+<li><a href="Non_Teaching.html">Staff Nurses and Junior Assistants</a></li>
+
+
+</ul>
+</li>
+
+<li>
+<a href="#">Facilities</a>
+<ul>
+<li><a href="library.html">Library</a></li>
+<li><a href="labs.html">Labs</a></li>
+<li><a href="sports.html">Sports</a></li>
+<li><a href="events.html">Events</a></li>
+<li><a href="cultural.html">Cultural</a></li>
+<li><a href="industrial visits.html">Industrial Visits</a></li>
+<li><a href="nss.html">NSS</a></li>
+<li><a href="food-menu.html">Food Menu</a></li>
+<li><a href="health-cards.html">Health Cards</a></li>
+</ul>
+</li>
+
+<li><a href="placements.html">Placements</a></li>
+
+</ul>
+</nav>
+
+<!-- Arts -->
+
+<div class="section">
+<h2>Arts</h2>
+
+<ul>
+<li>History</li>
+<li>Public Policy</li>
+<li>Economics</li>
+<li>Poltical Science</li>
+</ul>
+</div>
+
+
+<!-- History -->
+
+<div class="dept-code">📜 Department Code: HIS-01</div>
+<h1>Department of History</h1>
+
+<div class="section">
+<h2>About the Department</h2>
+<p>
+The Department of History focuses on the study of past civilizations,
+cultures, political movements, and global historical developments.
+The program prepares students for careers in education, research,
+civil services, archaeology, and heritage management.
+</p>
+
+<p>
+With experienced faculty and a research-oriented curriculum,
+students gain deep knowledge in ancient, medieval, and modern history,
+historical research methods, archival studies, and critical analysis
+of historical sources.
+</p>
+</div>
+
+<div class="section">
+<h2>Programs Offered</h2>
+<ul>
+<li>B.A (HEP)</li>
+<li>B.A (PPGEP)</li>
+</ul>
+</div>
+
+<div class="card bg12">
+
+<div class="achievement">
+<strong>SK. Sameerunnisa Begum </strong> is a Degree Lecturer in the Department of History. She deeply honored to share that She have been awarded the Gold Medal in M.A. (History) from Osmania University. This achievement has strengthened her passion for the study of history and reinforced her  commitment to excellence in research and scholarship. It inspires her to continue exploring the depths of historical knowledge, contribute meaningfully to the academic community, and uphold the highest standards of integrity and diligence in her  future endeavors. She views this honor not merely as a recognition of past efforts, but as a motivating force to strive for continued learning, meaningful contributions, and leadership in the field of history.</div>
+<div class="details">
+<img src="images/Sameera.png">
+<div class="name">SK. Sameerunnisa Begum</div>
+<div class="qualification">M.A(History)</div>
+</div>
+
+</div>
+
+
+<!-- Public Policy -->
+
+<div class="dept-code">🏛️ Department Code: PPL-01</div>
+<h1>Department of Public Policy</h1>
+
+<div class="section">
+<h2>About the Department</h2>
+<p>
+The Department of Public Policy focuses on policy analysis,
+governance, public administration, and social development.
+The program prepares students for careers in government,
+public service, NGOs, research institutions, and international organizations.
+</p>
+
+<p>
+With experienced faculty and a policy-driven curriculum,
+students gain expertise in public administration, policy evaluation,
+economic and social policy design, data-driven decision making,
+and sustainable development strategies.
+</p>
+</div>
+
+<div class="section">
+<h2>Programs Offered</h2>
+<ul>
+<li>B.A(PPGEP)</li>
+</ul>
+</div>
+
+<div class="card bg11">
+
+<div class="achievement">
+<strong>E. Nagalaxmi </strong>is a Degree Lecturer in the Department of Public Administration. She delighted to share that She have secured the State Second Rank in the TREIRB Gurukula DL Examination. Achieving a top rank at the state level in a highly competitive examination conducted by the Telangana Residential Educational Institutions Recruitment Board (TREIRB) reflects her dedication, perseverance, and strong commitment to academic excellence. This success is the result of consistent hard work, focused preparation, and a deep interest in the field of education. Competing with many capable candidates across the state and securing the second rank has been both an honor and a motivating experience. </div>
+<div class="details">
+<img src="images/E.Nagalaxmi.png">
+<div class="name">E. Nagalaxmi</div>
+<div class="qualification">M.A(Public Administration)</div>
+</div>
+
+</div>
+
+
+<!-- Economics -->
+
+<div class="dept-code">📈 Department Code: ECO-01</div>
+<h1>Department of Economics</h1>
+
+<div class="section">
+<h2>About the Department</h2>
+<p>
+The Department of Economics focuses on economic theory, policy analysis,
+financial systems, and quantitative research. The program prepares students
+for careers in government, business, finance, research, and academia.
+</p>
+
+<p>
+With experienced faculty, modern laboratories, and an industry-oriented curriculum,
+students gain practical exposure in statistical analysis, econometrics, policy evaluation,
+and global economic trends.
+</p>
+</div>
+
+<div class="section">
+<h2>Programs Offered</h2>
+<ul>
+<li>B.A (HEP)</li>
+<li>B.A (PPGEP)</li>
+</ul>
+</div>
+
+
+<div class="card bg13">
+
+<div class="achievement">
+<strong>B. Pooja </strong>is a faculty in the Department of Economice. She qualified the SET in 2023. Additionally,She secured the 3rd rank at the state level in PG-CET. Over the past three years, She have served as a Degree Lecturer in a reputable society, where she have developed and delivered comprehensive curricula. She focus on fostering analytical abilities and problem-solving skills among students. She passionate about leveraging her  expertise to support student success and contribute to institutional growth. Overall, She committed to promoting a culture of continuous learning, innovation, and excellence in higher education.</div>
+<div class="details">
+<img src="images/Pooja.png">
+<div class="name">B. Pooja</div>
+<div class="qualification">M.A(Economics)</div>
+</div>
+
+</div>
+
+
+
+<!-- Political Science -->
+
+<div class="dept-code">🏛️ Department Code: POL-01</div>
+<h1>Department of Political Science</h1>
+
+<div class="section">
+<h2>About the Department</h2>
+<p>
+The Department of Political Science focuses on political theory,
+governance, public administration, international relations,
+and comparative politics. The program prepares students for careers
+in civil services, law, public administration, diplomacy,
+journalism, and research.
+</p>
+
+<p>
+With experienced faculty and a dynamic curriculum,
+students develop strong analytical skills in political analysis,
+constitutional studies, public policy, and global political systems.
+</p>
+</div>
+
+<div class="section">
+<h2>Programs Offered</h2>
+<ul>
+<li>B.A (HEP)</li>
+<li>B.A (PPGEP)</li>
+</ul>
+</div>
+
+<div class="card bg14">
+
+<div class="achievement">
+<strong>K. Sridevi </strong> is a  faculty in the Department of Political science. She have successfully qualified SET in 2023 and UGC NET, and she hold a Ph.D. Over the past three years, She have worked as a Degree Lecturer. In addition to her  teaching responsibilities, She have served as a career counselor, providing personalized guidance to students and helping them navigate their academic and professional pathways. She committed to promoting academic growth, developing students’ skills, and contributing to the overall success of the institution She serve.</div>
+<div class="details">
+<img src="images/Sridevi.png">
+<div class="name">K. Sridevi</div>
+<div class="qualification">MA(Poltical Science)</div>
+</div>
+
+</div>
+
+</body>
+</html>

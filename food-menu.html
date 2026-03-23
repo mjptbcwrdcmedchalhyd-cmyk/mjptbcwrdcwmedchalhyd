@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>4 Week Food Menu</title>
+ <script src="disableActions.js"></script>
+
+<style>
+
+
+
+body{
+font-family: Arial, sans-serif;
+margin:0;
+padding:0;
+background:#f5f7fa;
+}
+
+/* HEADER */
+
+.header{
+display:flex;
+align-items:center;
+justify-content:space-between;
+padding:10px 40px;
+background:white;
+border-bottom:3px solid #003366;
+}
+
+.header img{
+width:150px;
+height:150px;
+object-fit:contain;
+}
+
+.title{
+text-align:center;
+flex:1;
+padding:0 20px;
+}
+
+.title h1{
+margin:0;
+font-size:26px;
+color:#003366;
+font-weight:bold;
+}
+
+.location{
+font-weight:bold;
+margin-top:5px;
+}
+
+
+/* NAVIGATION */
+
+nav{
+background:#003366;
+text-align:center;
+position:sticky;
+top:0;
+z-index:1000;
+}
+
+nav ul{
+list-style:none;
+margin:0;
+padding:0;
+}
+
+nav ul li{
+display:inline-block;
+position:relative;
+}
+
+nav ul li a{
+display:block;
+padding:14px 20px;
+color:white;
+text-decoration:none;
+font-weight:bold;
+}
+
+nav ul li a:hover{
+background:#0055a5;
+}
+
+
+/* DROPDOWN */
+
+nav ul ul{
+display:none;
+position:absolute;
+background:#0055a5;
+min-width:200px;
+text-align:left;
+}
+
+nav ul ul li{
+display:block;
+}
+
+nav ul li:hover > ul{
+display:block;
+}
+
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+.header{
+flex-direction:column;
+text-align:center;
+}
+
+.header img{
+width:100px;
+height:100px;
+}
+
+.title h1{
+font-size:20px;
+}
+
+nav ul li{
+display:block;
+}
+
+}
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 40px;
+    background-color: FFFFFF; /* Light page background */
+    overflow-x: auto;
+}
+
+/* Title */
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+/* Table */
+table {
+    border-collapse: collapse;
+    width: 100%;
+    min-width: 2000px;
+    background:WHITE;
+   box-shadow: 0 0 10px rgba(255,192,203,0.5); /* subtle pink shadow */
+}
+
+/* All cells */
+th, td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    vertical-align: top;
+    font-size: 13px;
+}
+
+/* ALL HEADINGS BOLD */
+th {
+    font-weight: bold;
+    text-align: center;
+    color: #333;
+}
+
+/* Day Column */
+.day {
+    font-weight: bold;
+  box-shadow: 0 0 10px rgba(255,192,203,0.5); /* subtle pink shadow */
+    text-align: center;
+    width: 100px;
+}
+
+
+
+
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 20px;
+        background-color: light blue;
+    }
+
+    h2 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    table {
+        border-collapse: collapse;
+        width: 100%;
+        min-width: 2000px;
+        background: white;
+        box-shadow: 0 0 10px rgba(0,0,0,0.08);
+    }
+
+    th, td {
+        border: 1px solid #ccc;
+        padding: 8px;
+        vertical-align: top;
+        font-size: 13px;
+    }
+
+    th {
+        font-weight: bold;
+        text-align: center;
+        color: #333;
+    }
+
+    /* Day Column */
+    .day {
+        font-weight: bold;
+      background-color: #F08080 !important;
+        text-align: center;
+        width: 100px;
+    }
+
+    /* ===== WEEK HEADER COLORS ===== */
+
+    /* Week 1 */
+    th:nth-child(n+2):nth-child(-n+6) {
+        background-color: #FFFACD ;
+    }
+
+    /* Week 2 */
+    th:nth-child(n+7):nth-child(-n+11) {
+        background-color: #FFFACD;
+    }
+
+    /* Week 3 */
+    th:nth-child(n+12):nth-child(-n+16) {
+        background-color: #FFFACD;
+    }
+
+    /* Week 4 */
+    th:nth-child(n+17):nth-child(-n+21) {
+        background-color: #FFFACD;
+    }
+
+    /* ===== WEEK BODY COLORS ===== */
+
+    /* Week 1 */
+    td:nth-child(n+2):nth-child(-n+6) {
+        background-color: #87CEEB ;
+    }
+
+    /* Week 2 */
+    td:nth-child(n+7):nth-child(-n+11) {
+        background-color: #d19fe8;
+    }
+
+    /* Week 3 */
+    td:nth-child(n+12):nth-child(-n+16) {
+        background-color: PINK ;
+    }
+
+    /* Week 4 */
+    td:nth-child(n+17):nth-child(-n+21) {
+        background-color: #d8bfd8  ;
+    }
+
+    /* Hover effect (optional professional touch) */
+    tr:hover td {
+        background-color: #F5FFFA !important;
+    }
+
+    /* Print Friendly */
+    @media print {
+        body {
+            background: white;
+        }
+        table {
+            box-shadow: none;
+        }
+    }
+
+
+
+
+        body {
+            font-family: Arial, sans-serif;
+            overflow-x: auto;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            min-width: 2000px;
+        }
+        th, td {
+            border: 1px solid #000;
+            padding: 8px;
+            vertical-align: top;
+            font-size: 13px;
+        }
+        th {
+            background-color: #FFFACD ;
+            text-align: center;
+        }
+        .day {
+            font-weight: bold;
+            background-color: #e6e6e6;
+        }
+    </style>
+</head>
+<body oncontextmenu="return false;" onselectstart="return false">
+
+
+
+
+<!-- HEADER -->
+<div class="header">
+
+<img src="images/governament-logo1.jpeg" alt="Government Logo">
+
+<div class="title">
+<h1>
+MAHATMA JYOTHIBA PHULE <br>
+TELANGANA BACKWARD CLASSES <br>
+WELFARE RESIDENTIAL <br>
+DEGREE COLLEGE FOR WOMEN
+</h1>
+
+<div class="location">
+Medchal & Hyderabad
+</div>
+
+</div>
+
+<img src="images/mjp1.png">
+
+</div>
+
+
+<!-- NAVIGATION -->
+
+<nav>
+
+<ul>
+
+<li><a href="index.html">Home</a></li>
+
+<li>
+<a href="#">About</a>
+<ul>
+<li><a href="history.html">History</a></li>
+<li><a href="governing body.html">Governing Body</a></li>
+<li><a href="secretary.html">Secretary</a></li>
+<li><a href="principal.html">Principal</a></li>
+<li><a href="vice principal.html">Vice Principal</a></li>
+<li><a href="management.html">Management</a></li>
+</ul>
+</li>
+
+<li>
+<a href="#">Academics</a>
+<ul>
+<li><a href="admissions.html">Admissions</a></li>
+<li><a href="courses.html">Courses</a></li>
+<li><a href="course details.html">Course Details</a></li>
+<li><a href="examination.html">Examination Branch</a></li>
+</ul>
+</li>
+
+<li>
+<a href="#">Department & Faculty</a>
+<ul>
+<li><a href="languages.html">Languages</a></li>
+<li><a href="Physical_Science.html">Physical Science</a></li>
+<li><a href="life science.html">Life Science</a></li>
+<li><a href="arts.html">Arts</a></li>
+<li><a href="commerce.html">Commerce</a></li>
+<li><a href="bba.html">BBA</a></li>
+<li><a href="bft.html">BFT</a></li>
+<li><a href="PD_librarian.html">Physical Education and Librarians</a></li>
+
+<li><a href="Non_Teaching.html">Staff Nurses and Junior Assistants</a></li>
+
+
+</ul>
+</li>
+
+<li>
+<a href="#">Facilities</a>
+<ul>
+<li><a href="library.html">Library</a></li>
+<li><a href="labs.html">Labs</a></li>
+<li><a href="sports.html">Sports</a></li>
+<li><a href="events.html">Events</a></li>
+<li><a href="cultural.html">Cultural</a></li>
+<li><a href="industrial visits.html">Industrial Visits</a></li>
+<li><a href="nss.html">NSS</a></li>
+<li><a href="food-menu.html">Food Menu</a></li>
+<li><a href="health-cards.html">Health Cards</a></li>
+</ul>
+</li>
+
+<li><a href="placements.html">Placements</a></li>
+
+</ul>
+
+</nav>
+
+<h2 align="center">Monthly Food Menu Plan</h2>
+
+<table>
+    <tr>
+        <th rowspan="2">Day</th>
+        <th colspan="5">Week One</th>
+        <th colspan="5">Week Two</th>
+        <th colspan="5">Week Three</th>
+        <th colspan="5">Week Four</th>
+    </tr>
+    <tr>
+        <th>Breakfast</th><th>Break</th><th>Lunch</th><th>Snacks</th><th>Dinner</th>
+        <th>Breakfast</th><th>Break</th><th>Lunch</th><th>Snacks</th><th>Dinner</th>
+        <th>Breakfast</th><th>Break</th><th>Lunch</th><th>Snacks</th><th>Dinner</th>
+        <th>Breakfast</th><th>Break</th><th>Lunch</th><th>Snacks</th><th>Dinner</th>
+    </tr>
+
+    <!-- MONDAY -->
+    <tr>
+        <td class="day">Monday</td>
+
+        <!-- Week 1 -->
+        <td>1. Kichidi with Tomato Chutney<br>2. Ragi Java with Jaggery</td>
+        <td>Banana</td>
+        <td>
+            1. Rice<br>
+            2. Curry - Aloo Capsicum<br>
+            3. Pala Kura Dal<br>
+            4. Ghee<br>
+            5. Rasam<br>
+            6. Curd<br>
+            7. Onion Boiled Egg Curry
+        </td>
+        <td>Boiled Shenigalu</td>
+        <td>
+            1. Rice<br>
+            2. Curry - Chikkudukaya<br>
+            3. Pudina Kothamira Chutney<br>
+            4. Sambar (Carrot + Tomato + Sorakai)<br>
+            5. Butter Milk
+        </td>
+
+        <!-- Week 2 -->
+        <td>1. Kichidi with Tomato Chutney<br>2. Ragi Java with Jaggery</td>
+        <td>Banana/Guava</td>
+        <td>
+            1. Rice<br>
+            2. Curry - Aloo Vankaya<br>
+            3. Thotakura Dal<br>
+            4. Ghee<br>
+            5. Rasam<br>
+            6. Curd<br>
+            7. Onion Egg Curry
+        </td>
+        <td>Boiled Bobbarlu</td>
+        <td>
+            1. Rice<br>
+            2. Vankaya Fry<br>
+            3. Vegetable Chutney - Beerakaya<br>
+            4. Sambar (Carrot + Tomato + Sorakai)<br>
+            5. Butter Milk
+        </td>
+
+        <!-- Week 3 -->
+        <td>1. Kichidi with Tomato Chutney<br>2. Ragi Java with Jaggery</td>
+        <td>Banana</td>
+        <td>
+            1. Rice<br>
+            2. Curry - Aloo Capsicum<br>
+            3. Dal with leafy vegetable - Pala Kura<br>
+            4. Ghee<br>
+            5. Rasam<br>
+            6. Curd<br>
+            7. Onion Boiled Egg Curry
+        </td>
+        <td>Boiled Senegal</td>
+        <td>
+            1. Rice<br>
+            2. Curry - Sorakaya<br>
+            3. Vegetable Chutney - Pudina<br>
+            4. Sambar (Carrot + Tomato + Sorakai)<br>
+            5. Butter Milk
+        </td>
+
+        <!-- Week 4 -->
+        <td>1. Kichidi with Tomato Chutney<br>2. Ragi Java with Jaggery</td>
+        <td>Banana</td>
+        <td>
+            1. Rice<br>
+            2. Curry - Aloo Capsicum<br>
+            3. Tomato Dal<br>
+            4. Ghee<br>
+            5. Rasam<br>
+            6. Curd<br>
+            7. Onion Egg Curry
+        </td>
+        <td>Boiled Bobbarlu</td>
+        <td>
+            1. Rice<br>
+            2. Kakarkaya Fry<br>
+            3. Vegetable Chutney - Pudina Kothamira<br>
+            4. Sambar (Carrot + Tomato + Sorakai)<br>
+            5. Butter Milk
+        </td>
+    </tr>
+<!-- TUESDAY -->
+<tr>
+<td class="day">Tuesday</td>
+
+<!-- Week 1 -->
+<td>1. Idly with Sambar<br>2. Milk with Boost</td>
+<td>Guava/Banana</td>
+<td>1. Rice<br>2. Curry - Beetroot<br>3. Dosakaya Pappu<br>4. Ghee<br>5. Rasam<br>6. Curd<br>7. Boiled Egg</td>
+<td>Fried Pallilu and Bellam</td>
+<td>1. Rice<br>2. Curry - Cabbage<br>3. Tomato Chutney<br>4. Sambar (Carrot + Tomato + Sorakai)<br>5. Butter Milk</td>
+
+<!-- Week 2 -->
+<td>1. Idly with Sambar<br>2. Milk with Boost</td>
+<td>Banana</td>
+<td>1. Rice<br>2. Curry - Carrot<br>3. Tomato Dal<br>4. Ghee<br>5. Rasam<br>6. Curd<br>7. Boiled Egg</td>
+<td>Fried Pallilu and Bellam</td>
+<td>1. Rice<br>2. Curry - Dosakaya<br>3. Vegetable Chutney - Cabbage<br>4. Sambar (Carrot + Tomato + Sorakai)<br>5. Butter Milk</td>
+
+<!-- Week 3 -->
+<td>1. Idly with Sambar<br>2. Milk with Boost</td>
+<td>Banana/Guava</td>
+<td>1. Rice<br>2. Curry - Dondakaya<br>3. Tomato Dal<br>4. Ghee<br>5. Rasam<br>6. Curd<br>7. Boiled Egg</td>
+<td>Fried Pallilu and Bellam</td>
+<td>1. Rice<br>2. Curry – Potlakaya/Vankaya<br>3. Vegetable Chutney - Tomato<br>4. Sambar (Carrot + Tomato + Sorakai)<br>5. Butter Milk</td>
+
+<!-- Week 4 -->
+<td>1. Idly with Sambar<br>2. Milk with Boost</td>
+<td>Banana/Guava</td>
+<td>1. Rice<br>2. Curry - Beetroot<br>3. Palakura Dal<br>4. Ghee<br>5. Rasam<br>6. Curd<br>7. Boiled Egg</td>
+<td>Fried Pallilu and Bellam</td>
+<td>1. Rice<br>2. Curry - Cabbage<br>3. Vegetable Chutney - Tomato<br>4. Sambar (Carrot + Tomato + Sorakai)<br>5. Butter Milk</td>
+</tr>
+
+<!-- WEDNESDAY -->
+<tr>
+<td class="day">Wednesday</td>
+
+<!-- Week 1 -->
+<td>1. Tamarind Pulihora with Nuvvula podi<br>2. Milk with Boost</td>
+<td>Banana</td>
+<td>1. Bagara Rice + Chicken Curry / Meal Maker Kurma (Veg)<br>2. Curd<br>3. Sambar</td>
+<td>Ginger Tea</td>
+<td>1. Rice<br>2. Curry - Sorakaya<br>3. Sambar (Carrot + Tomato + Sorakai)<br>4. Butter Milk</td>
+
+<!-- Week 2 -->
+<td>1. Tamarind Pulihora with Nuvvula podi<br>2. Milk with Boost</td>
+<td>Banana/Papaya</td>
+<td>1. Veg Biryani + Aloo Kurma<br>2. Curd<br>3. Fried Boiled Egg Curry</td>
+<td>Boiled Batani</td>
+<td>1. Rice<br>2. Curry - Sorakaya<br>3. Gongura Chutney<br>4. Sambar (Carrot + Tomato + Sorakai)<br>5. Butter Milk</td>
+
+<!-- Week 3 -->
+<td>1. Tamarind Pulihora with Nuvvula podi<br>2. Milk with Boost</td>
+<td>Banana</td>
+<td>1. Bagara Rice + Chicken Curry / Meal Maker Kurma (Veg)<br>2. Curd<br>3. Sambar</td>
+<td>Ginger Tea</td>
+<td>1. Rice<br>2. Curry - Beerakaya<br>3. Sambar (Carrot + Tomato + Sorakai)<br>4. Butter Milk</td>
+
+<!-- Week 4 -->
+<td>1. Tamarind Pulihora with Nuvvula podi<br>2. Ragi Java with Jaggery</td>
+<td>Banana</td>
+<td>1. Veg Biryani + Aloo Kurma<br>2. Curd<br>3. Boiled Egg - Tomato Curry</td>
+<td>Boiled Batani</td>
+<td>1. Rice<br>2. Curry - Sorakaya<br>3. Gongura Chutney<br>4. Sambar (Carrot + Tomato + Sorakai)<br>5. Butter Milk</td>
+</tr>
+<!-- THURSDAY -->
+<tr>
+<td class="day">Thursday</td>
+
+<!-- Week 1 -->
+<td>1. Bonda/Vada with Palli Chutney<br>2. Ragi Java with Jaggery</td>
+<td>Banana/Papaya</td>
+<td>1. Rice<br>2. Curry - Carrot<br>3. Tomato Dal<br>4. Ghee<br>5. Rasam<br>6. Curd<br>7. Fried Boiled Egg Curry</td>
+<td>Boiled Batani</td>
+<td>1. Rice<br>2. Curry - Beerakaya<br>3. Vegetable Chutney - Dondakaya<br>4. Sambar (Carrot + Tomato + Sorakai)<br>5. Butter Milk</td>
+
+<!-- Week 2 -->
+<td>1. Bonda/Vada with Palli Chutney<br>2. Ragi Java with Jaggery</td>
+<td>Banana</td>
+<td>1. Rice<br>2. Curry - Bendakaya<br>3. Munagaku Dal<br>4. Ghee<br>5. Rasam<br>6. Curd<br>7. Boiled Egg</td>
+<td>Millet Biscuits</td>
+<td>1. Rice<br>2. Curry - Beerakaya<br>3. Vegetable Chutney - Dosakaya<br>4. Sambar (Carrot + Tomato + Sorakai)<br>5. Butter Milk</td>
+
+<!-- Week 3 -->
+<td>1. Bonda/Vada with Palli Chutney<br>2. Ragi Java with Jaggery</td>
+<td>Banana/Papaya</td>
+<td>1. Rice<br>2. Curry - Cabbage<br>3. Tomato Dal<br>4. Ghee<br>5. Rasam<br>6. Curd<br>7. Tomato Boiled Egg Curry</td>
+<td>Millet Biscuits</td>
+<td>1. Rice<br>2. Curry - Capsicum<br>3. Vegetable Chutney - Gongura Pachimirchi<br>4. Sambar (Carrot + Tomato + Sorakai)<br>5. Butter Milk</td>
+
+<!-- Week 4 -->
+<td>1. Bonda with Palli Chutney<br>2. Milk with Boost</td>
+<td>Banana/Papaya</td>
+<td>1. Rice<br>2. Curry - Bendakaya<br>3. Munagaku Dal<br>4. Ghee<br>5. Rasam<br>6. Curd<br>7. Boiled Egg</td>
+<td>Millet Biscuits</td>
+<td>1. Rice<br>2. Curry - Chikkudukaya<br>3. Vegetable Chutney - Tomato<br>4. Sambar (Carrot + Tomato + Sorakai)<br>5. Butter Milk</td>
+</tr>
+
+<!-- FRIDAY -->
+<tr>
+<td class="day">Friday</td>
+
+<!-- Week 1 -->
+<td>1. Upma (Wheat Rava) with Tomato Chutney<br>2. Ragi Java with Jaggery</td>
+<td>Banana</td>
+<td>1. Rice<br>2. Curry - Chamagadda/Kandagadda<br>3. Munagaku Dal<br>4. Ghee<br>5. Rasam<br>6. Curd<br>7. Boiled Egg Curry</td>
+<td>Boiled Pesarlu</td>
+<td>1. Rice<br>2. Curry - Goru Chikkudu<br>3. Vegetable Chutney - Dondakaya<br>4. Sambar (Carrot + Tomato + Sorakai)<br>5. Butter Milk</td>
+
+<!-- Week 2 -->
+<td>1. Upma (Bombay Rava) with Putnalu Chutney<br>2. Ragi Java with Jaggery</td>
+<td>Banana</td>
+<td>1. Rice<br>2. Curry - Kandagadda/Chamagadda<br>3. Tomato Dal<br>4. Ghee<br>5. Rasam<br>6. Curd<br>7. Boiled Egg Curry</td>
+<td>Boiled Pesarlu</td>
+<td>1. Rice<br>2. Curry - Capsicum<br>3. Vegetable Chutney - Palakura<br>4. Sambar (Carrot + Tomato + Sorakai)<br>5. Butter Milk</td>
+
+<!-- Week 3 -->
+<td>1. Upma (Wheat Rava) with Tomato Chutney<br>2. Ragi Java with Jaggery</td>
+<td>Banana</td>
+<td>1. Rice<br>2. Curry - Carrot<br>3. Dal with Dosakaya<br>4. Ghee<br>5. Rasam<br>6. Curd<br>7. Boiled Egg</td>
+<td>Boiled Pesarlu</td>
+<td>1. Rice<br>2. Curry - Cauliflower<br>3. Vegetable Chutney - Beerakaya<br>4. Sambar (Carrot + Tomato + Sorakai)<br>5. Butter Milk</td>
+
+<!-- Week 4 -->
+<td>1. Upma (Bombay Rava) with Putnalu Chutney<br>2. Ragi Java with Jaggery</td>
+<td>Banana</td>
+<td>1. Rice<br>2. Curry - Kandagadda/Chamagadda<br>3. Tomato Dal<br>4. Ghee<br>5. Rasam<br>6. Curd<br>7. Boiled Egg</td>
+<td>Boiled Pesarlu</td>
+<td>1. Rice<br>2. Curry - Potlakaya/Vankaya<br>3. Vegetable Chutney - Dondakaya<br>4. Sambar (Carrot + Tomato + Sorakai)<br>5. Butter Milk</td>
+</tr>
+
+<!-- SATURDAY -->
+<tr>
+<td class="day">Saturday</td>
+
+<!-- Week 1 -->
+<td>1. Rice Pongali with Putnalu Chutney<br>2. Milk with Boost</td>
+<td>Banana/Watermelon/Sapota</td>
+<td>1. Rice<br>2. Curry - Bendakaya<br>3. Ghee<br>4. Rasam<br>5. Curd<br>6. Tomato Boiled Egg Curry</td>
+<td>Onion Pakoda</td>
+<td>1. Rice<br>2. Curry - Dosakaya<br>3. Gongura Pachimirchi Chutney<br>4. Sambar (Carrot + Tomato + Sorakai)<br>5. Butter Milk</td>
+
+<!-- Week 2 -->
+<td>1. Jeera Rice with Tomato Chutney<br>2. Milk with Boost</td>
+<td>Banana/Watermelon/Sapota</td>
+<td>1. Rice<br>2. Curry - Goru Chikkudukaya<br>3. Dal with Leafy Vegetable<br>4. Ghee<br>5. Rasam<br>6. Curd<br>7. Boiled Egg</td>
+<td>Egg Bajji</td>
+<td>1. Rice<br>2. Curry - Cauliflower<br>3. Vegetable Chutney - Tomato<br>4. Sambar (Carrot + Tomato + Sorakai)<br>5. Butter Milk</td>
+
+<!-- Week 3 -->
+<td>1. Rice Pongal with Putnalu Chutney<br>2. Milk with Boost</td>
+<td>Banana/Watermelon/Sapota</td>
+<td>1. Rice<br>2. Curry - Bendakaya<br>3. Tomato Dal<br>4. Ghee<br>5. Rasam<br>6. Curd<br>7. Boiled Egg</td>
+<td>Onion Pakoda</td>
+<td>1. Rice<br>2. Curry - Chikkudukaya<br>3. Vegetable Chutney - Dondakaya<br>4. Sambar (Carrot + Tomato + Sorakai)<br>5. Butter Milk</td>
+
+<!-- Week 4 -->
+<td>1. Jeera Rice with Tomato Chutney<br>2. Milk with Boost</td>
+<td>Banana/Watermelon/Sapota</td>
+<td>1. Rice<br>2. Curry - Carrot<br>3. Thotakura Dal<br>4. Ghee<br>5. Rasam<br>6. Curd</td>
+<td>Egg Bajji</td>
+<td>1. Rice<br>2. Curry - Capsicum<br>3. Vegetable Chutney - Dosakaya<br>4. Sambar (Carrot + Tomato + Sorakai)<br>5. Butter Milk</td>
+</tr>
+
+<!-- SUNDAY -->
+<tr>
+<td class="day">Sunday</td>
+
+<!-- Week 1 -->
+<td>Poori with Chole Masala</td>
+<td>Banana</td>
+<td>1. Bagara Rice<br>2. Mutton Curry / Meal Maker (Veg)<br>3. Sambar<br>4. Curd</td>
+<td>Ginger Tea</td>
+<td>1. Rice<br>2. Curry - Sorakaya<br>3. Sambar (Carrot + Tomato + Sorakai)<br>4. Butter Milk</td>
+
+<!-- Week 2 -->
+<td>Chapathi with Aloo Kurma</td>
+<td>Banana</td>
+<td>1. Bagara Rice<br>2. Chicken Curry / Meal Maker (Veg)<br>3. Sambar<br>4. Curd</td>
+<td>Ginger Tea</td>
+<td>1. Rice<br>2. Curry - Beerakaya<br>3. Sambar (Carrot + Tomato + Sorakai)<br>4. Butter Milk</td>
+
+<!-- Week 3 -->
+<td>Poori with Chole Masala</td>
+<td>Banana</td>
+<td>1. Bagara Rice<br>2. Mutton Curry / Meal Maker (Veg)<br>3. Curd<br>4. Sambar</td>
+<td>Ginger Tea</td>
+<td>1. Rice<br>2. Curry - Beerakaya<br>3. Sambar (Carrot + Tomato + Sorakai)<br>4. Butter Milk</td>
+
+<!-- Week 4 -->
+<td>Chapathi with Aloo Kurma</td>
+<td>Banana</td>
+<td>1. Bagara Rice<br>2. Chicken Curry / Meal Maker (Veg)<br>3. Curd<br>4. Sambar</td>
+<td>Ginger Tea</td>
+<td>1. Rice<br>2. Curry - Beerakaya<br>3. Sambar (Carrot + Tomato + Sorakai)<br>4. Butter Milk</td>
+</tr>
+</table> <!-- End of your food menu table -->
+
+<!-- NOTE & SIGNATURE SECTION BELOW THE TABLE -->
+<div style="width:100%; margin-top:30px; display:flex; justify-content:space-between;">
+
+    <!-- Left Side Note -->
+    <div style="width:60%; font-size:16px;">
+        <strong>NOTE:</strong><br>
+        Chicken : 4-times in a month (every 2nd & 4th Sunday) and (every 2nd & 4th Wednesday)<br>
+        Mutton : 2-times in a month (every 1st & 3rd Sunday)<br>
+        Eggs : Daily except on days Mutton & Chicken serve
+    </div>
+
+    <!-- Right Side Signature -->
+    <div style="width:35%; text-align:right; font-size:16px;">
+        <strong>SECRETARY,</strong><br>
+        MJPTBCWREIS
+    </div>
+
+</div>
+
+    
+
+</table>
+
+</body>
+</html> 
+
+

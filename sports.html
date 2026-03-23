@@ -1,0 +1,397 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Sports</title>
+ <script src="disableActions.js"></script>
+
+<style>
+
+body{
+font-family: Arial, sans-serif;
+margin:0;
+padding:0;
+background:#f5f7fa;
+}
+
+/* HEADER */
+
+.header{
+display:flex;
+align-items:center;
+justify-content:space-between;
+padding:10px 40px;
+background:white;
+border-bottom:3px solid #003366;
+}
+
+.header img{
+width:150px;
+height:150px;
+object-fit:contain;
+}
+
+.title{
+text-align:center;
+flex:1;
+padding:0 20px;
+}
+
+.title h1{
+margin:0;
+font-size:26px;
+color:#003366;
+font-weight:bold;
+}
+
+.location{
+font-weight:bold;
+margin-top:5px;
+}
+
+
+/* NAVIGATION */
+
+nav{
+background:#003366;
+text-align:center;
+position:sticky;
+top:0;
+z-index:1000;
+}
+
+nav ul{
+list-style:none;
+margin:0;
+padding:0;
+}
+
+nav ul li{
+display:inline-block;
+position:relative;
+}
+
+nav ul li a{
+display:block;
+padding:14px 20px;
+color:white;
+text-decoration:none;
+font-weight:bold;
+}
+
+nav ul li a:hover{
+background:#0055a5;
+}
+
+
+/* DROPDOWN */
+
+nav ul ul{
+display:none;
+position:absolute;
+background:#0055a5;
+min-width:200px;
+text-align:left;
+}
+
+nav ul ul li{
+display:block;
+}
+
+nav ul li:hover > ul{
+display:block;
+}
+
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+.header{
+flex-direction:column;
+text-align:center;
+}
+
+.header img{
+width:100px;
+height:100px;
+}
+
+.title h1{
+font-size:20px;
+}
+
+nav ul li{
+display:block;
+}
+
+}
+
+
+
+
+
+body{
+    font-family: Arial, sans-serif;
+    background-color:#f2f2f2;
+    text-align:center;
+}
+
+h2{
+    background-color:purple;
+    color:white;
+    padding:15px;
+}
+
+faculty-card img{
+    width:100%;
+    height:200px;
+    object-fit:cover;
+    border-radius:8px;
+}
+
+.gallery{
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+    gap:20px;
+    padding:20px;
+}
+
+.sport{
+    background:white;
+    border-radius:10px;
+    box-shadow:0 2px 5px rgba(0,0,0,0.2);
+    padding:10px;
+}
+
+.sport img{
+    width:100%;
+    height:150px;
+    object-fit:cover;
+    border-radius:8px;
+}
+
+.name{
+    font-weight:bold;
+    margin-top:10px;
+}
+
+.sport a{
+text-decoration:none;
+color:black;
+display:block;
+}
+
+h3{
+    margin-top:40px;
+}
+</style>
+
+</head>
+
+<body oncontextmenu="return false;" onselectstart="return false">
+<!-- HEADER -->
+<div class="header">
+
+<img src="images/governament-logo1.jpeg" alt="Government Logo">
+
+<div class="title">
+<h1>
+MAHATMA JYOTHIBA PHULE <br>
+TELANGANA BACKWARD CLASSES <br>
+WELFARE RESIDENTIAL <br>
+DEGREE COLLEGE FOR WOMEN
+</h1>
+
+<div class="location">
+Medchal & Hyderabad
+</div>
+
+</div>
+
+<img src="images/mjp1.png">
+
+</div>
+
+
+<!-- NAVIGATION -->
+
+<nav>
+
+<ul>
+
+<li><a href="index.html">Home</a></li>
+
+<li>
+<a href="#">About</a>
+<ul>
+<li><a href="history.html">History</a></li>
+<li><a href="governing body.html">Governing Body</a></li>
+<li><a href="secretary.html">Secretary</a></li>
+<li><a href="principal.html">Principal</a></li>
+<li><a href="vice principal.html">Vice Principal</a></li>
+<li><a href="management.html">Management</a></li>
+</ul>
+</li>
+
+<li>
+<a href="#">Academics</a>
+<ul>
+<li><a href="admissions.html">Admissions</a></li>
+<li><a href="courses.html">Courses</a></li>
+<li><a href="course details.html">Course Details</a></li>
+
+<li><a href="examination.html">Examination Branch</a></li>
+</ul>
+</li>
+
+<li>
+<a href="#">Department & Faculty</a>
+<ul>
+<li><a href="languages.html">Languages</a></li>
+<li><a href="Physical_Science.html">Physical Science</a></li>
+<li><a href="life science.html">Life Science</a></li>
+<li><a href="arts.html">Arts</a></li>
+<li><a href="commerce.html">Commerce</a></li>
+<li><a href="bba.html">BBA</a></li>
+<li><a href="bft.html">BFT</a></li>
+<li><a href="PD_librarian.html">Physical Education and Librarians</a></li>
+<li><a href="Non_Teaching.html">Staff Nurses and Junior Assistants</a></li>
+</ul>
+</li>
+
+<li>
+<a href="#">Facilities</a>
+<ul>
+<li><a href="library.html">Library</a></li>
+<li><a href="labs.html">Labs</a></li>
+<li><a href="events.html">Events</a></li>
+<li><a href="cultural.html">Cultural</a></li>
+<li><a href="industrial visits.html">Industrial Visits</a></li>
+<li><a href="nss.html">NSS</a></li>
+<li><a href="food-menu.html">Food Menu</a></li>
+<li><a href="health-cards.html">Health Cards</a></li>
+</ul>
+</li>
+
+<li><a href="placements.html">Placements</a></li>
+
+</ul>
+
+</nav>
+
+
+<h2>Sports Gallery</h2>
+
+</div>
+</div>
+
+<h3>Outdoor Games</h3>
+
+<div class="gallery">
+
+<div class="sport">
+<a href="rugby.html">
+<img src="images/rugby2.png">
+<div class="name">Rugby</div>
+</a>
+</div>
+
+<div class="sport">
+<a href="kabaddi.html">
+<img src="images/kabadi1.png">
+<div class="name">Kabaddi</div>
+</a>
+</div>
+
+<div class="sport">
+<a href="khokho.html">
+<img src="images/kho-kho1.png">
+<div class="name">Kho-kho</div>
+</a>
+</div>
+
+<div class="sport">
+<a href="volleyball.html">
+<img src="images/vallyball3.png">
+<div class="name">Volley ball</div>
+</a>
+</div>
+
+<div class="sport">
+<a href="handball.html">
+<img src="images/handball1.png">
+<div class="name">Hand ball</div>
+</a>
+</div>
+
+<div class="sport">
+<a href="tennikoit.html">
+<img src="images/ringball2.png">
+<div class="name">Tennikoit</div>
+</a>
+</div>
+
+<div class="sport">
+<a href="softball.html">
+<img src="images/softball1.png">
+<div class="name">soft ball</div>
+</a>
+</div>
+
+<div class="sport">
+<a href="athletics.html">
+<img src="images/athletics2.png">
+<div class="name">Athletics</div>
+</a>
+</div>
+
+</div>
+
+<h3>Indoor Games</h3>
+
+<div class="gallery">
+
+<div class="sport">
+<a href="chess.html">
+<img src="images/chess1.png">
+<div class="name">Chess</div>
+</a>
+</div>
+
+<div class="sport">
+<a href="carrom.html">
+<img src="images/carrom1.png">
+<div class="name">Carrom</div>
+</a>
+</div>
+
+<div class="sport">
+<a href="badminton.html">
+<img src="images/badminton1.png">
+<div class="name">Badminton</div>
+</a>
+</div>
+
+<div class="sport">
+<a href="Taekwondo.html">
+<img src="images/taikando5.png">
+<div class="name">Taekwondo</div>
+</a>
+</div>
+
+<div class="sport">
+<a href="Yoga.html">
+<img src="images/yoga4.png">
+<div class="name">Yoga</div>
+</a>
+</div>
+
+
+
+</div>
+
+</body>
+</html>
+ .

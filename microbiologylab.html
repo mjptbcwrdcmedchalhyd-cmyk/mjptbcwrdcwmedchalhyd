@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Microbiology Lab</title>
+<script src="disableActions.js"></script>
+
+    <style>
+body{
+font-family: Arial, sans-serif;
+margin:0;
+padding:0;
+background:#f5f7fa;
+}
+
+/* HEADER */
+
+.header{
+display:flex;
+align-items:center;
+justify-content:space-between;
+padding:10px 40px;
+background:white;
+border-bottom:3px solid #003366;
+}
+
+.header img{
+width:150px;
+height:150px;
+object-fit:contain;
+}
+
+.title{
+text-align:center;
+flex:1;
+padding:0 20px;
+}
+
+.title h1{
+margin:0;
+font-size:26px;
+color:#003366;
+font-weight:bold;
+}
+
+.location{
+font-weight:bold;
+margin-top:5px;
+}
+
+
+/* NAVIGATION */
+
+nav{
+background:#003366;
+text-align:center;
+position:sticky;
+top:0;
+z-index:1000;
+}
+
+nav ul{
+list-style:none;
+margin:0;
+padding:0;
+}
+
+nav ul li{
+display:inline-block;
+position:relative;
+}
+
+nav ul li a{
+display:block;
+padding:14px 20px;
+color:white;
+text-decoration:none;
+font-weight:bold;
+}
+
+nav ul li a:hover{
+background:#0055a5;
+}
+
+
+/* DROPDOWN */
+
+nav ul ul{
+display:none;
+position:absolute;
+background:#0055a5;
+min-width:200px;
+text-align:left;
+}
+
+nav ul ul li{
+display:block;
+}
+
+nav ul li:hover > ul{
+display:block;
+}
+
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+.header{
+flex-direction:column;
+text-align:center;
+}
+
+.header img{
+width:100px;
+height:100px;
+}
+
+.title h1{
+font-size:20px;
+}
+
+nav ul li{
+display:block;
+}
+
+}
+
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: white;
+            padding: 20px;
+            margin: 0;
+        }
+
+        h1 {
+            text-align: center;
+            color: #003366;
+            margin-bottom: 10px;
+        }
+        h2{
+           text-align: center;
+            color: #004080;
+            margin-top: 30px;
+            margin-bottom: 15px;
+        }
+        h3 {
+           text-align: center;
+            color: #004080;
+            margin-top: 30px;
+            margin-bottom: 15px;
+        }
+
+        ul {
+            font-size: 16px;
+            line-height: 1.8;
+            margin-bottom: 20px;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        strong {
+            color: #002244;
+        }
+    </style>
+</head>
+<body oncontextmenu="return false;" onselectstart="return false">
+
+
+
+<!-- HEADER -->
+<div class="header">
+
+<img src="images/governament-logo1.jpeg" alt="Government Logo">
+
+<div class="title">
+<h1>
+MAHATMA JYOTHIBA PHULE <br>
+TELANGANA BACKWARD CLASSES <br>
+WELFARE RESIDENTIAL <br>
+DEGREE COLLEGE FOR WOMEN
+</h1>
+
+<div class="location">
+Medchal & Hyderabad
+</div>
+
+</div>
+
+<img src="images/mjp1.png">
+
+</div>
+
+
+<!-- NAVIGATION -->
+
+<nav>
+
+<ul>
+
+<li><a href="mjp.html">Home</a></li>
+
+<li>
+<a href="#">About</a>
+<ul>
+<li><a href="history.html">History</a></li>
+<li><a href="governing body.html">Governing Body</a></li>
+<li><a href="secretary.html">Secretary</a></li>
+<li><a href="principal.html">Principal</a></li>
+<li><a href="vice principal.html">Vice Principal</a></li>
+<li><a href="management.html">Management</a></li>
+</ul>
+</li>
+
+<li>
+<a href="#">Academics</a>
+<ul>
+<li><a href="admissions.html">Admissions</a></li>
+<li><a href="courses.html">Courses</a></li>
+<li><a href="course details.html">Course Details</a></li>
+
+<li><a href="examination.html">Examination Branch</a></li>
+</ul>
+</li>
+
+<li>
+<a href="#">Department & Faculty</a>
+<ul>
+<li><a href="languages.html">Languages</a></li>
+<li><a href="computer science.html">Computer Science</a></li>
+<li><a href="life science.html">Life Science</a></li>
+<li><a href="arts.html">Arts</a></li>
+<li><a href="commerce.html">Commerce</a></li>
+<li><a href="bba.html">BBA</a></li>
+<li><a href="bft.html">BFT</a></li>
+</ul>
+</li>
+
+<li>
+<a href="#">Facilities</a>
+<ul>
+<li><a href="library.html">Library</a></li>
+<li><a href="labs.html">Labs</a></li>
+<li><a href="sports.html">Sports</a></li>
+<li><a href="events.html">Events</a></li>
+<li><a href="cultural.html">Cultural</a></li>
+<li><a href="industrial visits.html">Industrial Visits</a></li>
+<li><a href="nss.html">NSS</a></li>
+<li><a href="food-menu.html">Food Menu</a></li>
+<li><a href="health-cards.html">Health Cards</a></li>
+</ul>
+</li>
+
+<li><a href="placements.html">Placements</a></li>
+
+</ul>
+</nav>
+
+
+
+    <!-- About the Lab Section -->
+    <h1>About the Microbiology Lab</h1>
+    <ul>
+        <li>In the Department of Microbiology, regular practical sessions are conducted so that students gain hands-on experience as well as practical knowledge.</li>
+        <li>The microbiology laboratory allows students to study microorganisms such as bacteria, fungi, algae, and viruses.</li>
+        <li>Students learn various laboratory techniques including culturing microorganisms, staining methods, and microscopic observation.</li>
+        <li>The lab provides a controlled environment where students can safely perform scientific experiments.</li>
+        <li>It helps students understand microbial life and its role in health, environment, and industry.</li>
+    </ul>
+
+    <!-- Importance -->
+    <h3>Importance of the Microbiology Lab</h3>
+    <ul>
+        <li>Helps students understand microorganisms and their characteristics through practical observation.</li>
+        <li>Bridges the gap between theoretical microbiology concepts and laboratory practice.</li>
+        <li>Provides opportunities to learn important techniques like sterilization, culturing, and microbial identification.</li>
+        <li>Supports research and experimentation in fields such as medicine, agriculture, and biotechnology.</li>
+        <li>Improves analytical thinking and scientific investigation skills.</li>
+    </ul>
+
+    <!-- Lab Goals and Objectives -->
+    <h3>Lab Goals and Objectives</h3>
+    <ul>
+        <li>To provide students with practical knowledge of microbiological techniques.</li>
+        <li>To develop skills in handling microscopes and laboratory equipment.</li>
+        <li>To teach students how to isolate, culture, and identify microorganisms.</li>
+        <li>To encourage scientific research and innovation in microbiology.</li>
+        <li>To ensure students understand laboratory safety procedures and hygiene practices.</li>
+    </ul>
+
+    <!-- Benefits -->
+    <h1>Benefits of the Microbiology Lab</h1>
+    <ul>
+        <li>Students gain hands-on experience working with microorganisms.</li>
+        <li>Improves laboratory skills and scientific observation abilities.</li>
+        <li>Helps students understand the role of microbes in health, disease, and the environment.</li>
+        <li>Prepares students for careers in medical laboratories, research centers, biotechnology industries, and pharmaceuticals.</li>
+        <li>Enhances practical knowledge which supports academic learning and research.</li>
+    </ul>
+
+    <!-- Equipment Section -->
+    <h1>Microbiology Equipment</h1>
+    <ul>
+        <li><strong>Incubator:</strong> Used to grow and maintain microbial cultures at controlled temperatures.</li>
+        <li><strong>Microscope:</strong> Essential for observing microorganisms like bacteria, fungi, and algae.</li>
+        <li><strong>Specimen Slides:</strong> Prepared slides of fungi and algae for study under the microscope.</li>
+        <li><strong>Autoclave:</strong> Used for sterilizing equipment, media, and laboratory tools using high-pressure steam.</li>
+        <li><strong>Diagnostic Tests:</strong> Kits and methods used to identify microbial infections and characteristics.</li>
+        <li><strong>Petri Dishes & Culture Media:</strong> For growing and isolating microorganisms.</li>
+        <li><strong>Pipettes & Inoculating Loops:</strong> For transferring and handling microorganisms safely.</li>
+        <li><strong>Lab Glassware:</strong> Beakers, flasks, and test tubes for culturing and experiments.</li>
+        <li><strong>Protective Equipment:</strong> Gloves, lab coats, and masks to maintain safety and prevent contamination.</li>
+    </ul>
+
+    <!-- Lab Rules Section -->
+    <h1>Microbiology Lab Rules</h1>
+    <ul>
+        <li><strong>Wear safety gear:</strong> Always wear safety goggles, a lab coat, and closed-toe shoes to protect yourself from spills and splashes.</li>
+        <li><strong>Follow instructions:</strong> Never start an experiment until your teacher gives the okay. Follow every step exactly as written or told.</li>
+        <li><strong>No food or drink:</strong> Never eat, drink, or chew gum in the lab.</li>
+        <li><strong>Know your equipment:</strong> Locate the fire extinguisher, eyewash station, safety shower, and first aid kit before starting.</li>
+        <li><strong>Handle chemicals carefully:</strong> Never taste or directly smell chemicals. Use the "wafting" technique if needed.</li>
+        <li><strong>Tie back hair and loose clothing:</strong> Keep long hair tied back and remove dangling jewelry.</li>
+        <li><strong>Keep it clean:</strong> Maintain a tidy workspace. Keep bags and coats in designated areas.</li>
+        <li><strong>Report accidents immediately:</strong> Inform your teacher about any spill, breakage, or injury right away.</li>
+        <li><strong>Dispose of waste properly:</strong> Use the specific waste containers provided.</li>
+        <li><strong>Never work alone:</strong> Only perform experiments when a teacher or supervisor is present.</li>
+        <li><strong>Wash your hands:</strong> Always wash hands thoroughly with soap and water after lab work.</li>
+    </ul>
+
+    <!-- Lab Usage / Career Preparation Section -->
+    <h2>Lab Usage and Career Preparation</h2>
+    <ul>
+        <li>Students gain hands-on experience working with microorganisms.</li>
+        <li>Improves laboratory skills and scientific observation abilities.</li>
+        <li>Helps students understand the role of microbes in health, disease, and the environment.</li>
+        <li>Prepares students for careers in medical laboratories, research centers, biotechnology industries, and pharmaceuticals.</li>
+        <li>Enhances practical knowledge supporting academic learning and research.</li>
+    </ul>
+
+    <!-- Main Heading and Group at Bottom -->
+    <h1>Microbiology Lab using group</h1>
+    <h3>MBZC</h3>
+
+</body>
+</html>

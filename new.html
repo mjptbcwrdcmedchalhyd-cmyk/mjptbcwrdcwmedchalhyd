@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>BBA Department</title>
+<script>
+document.addEventListener('contextmenu',function(Event){
+event.preventDefault();
+});
+
+document.addEventListener('keydown',function(event){
+if((event.ctrlKey && event.key.toLowerCase() === 'p')||(event.ctrlKey && event.key.toLowerCase() === 'c')){
+event.preventDefault();
+}});
+</script>
+
+<style>
+
+body{
+font-family: Arial, sans-serif;
+background-color:#f2f2f2;
+}
+
+h1{
+color:#2c3e50;
+}
+
+h2{
+color:#34495e;
+border-bottom:2px solid #2c3e50;
+padding-bottom:5px;
+}
+
+ul{
+line-height:1.8;
+}
+
+.section{
+background-color:white;
+padding:20px;
+border-radius:8px;
+margin:20px 0;
+}
+
+/* ✅ NEW CODE FOR ABOUT SECTION */
+.about-box{
+display:flex;
+justify-content:space-between;
+align-items:center;
+gap:20px;
+}
+
+.about-text{
+width:65%;
+}
+
+.about-img{
+width:30%;
+text-align:center;
+}
+
+.about-img img{
+width:200px;
+border-radius:10px;
+}
+
+/* Faculty cards */
+
+.card{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px;
+margin:20px 0;
+border-radius:10px;
+}
+
+.bg1{ background:#fff2f2; }
+.bg2{ background:#f2ffe6; }
+.bg3{ background:#e6f9ff; }
+
+.achievement{
+width:50%;
+font-size:18px;
+margin-top:40px;
+}
+
+.details{
+width:40%;
+text-align:center;
+}
+
+.details img{
+width:200px;
+height:200px;
+border-radius:50%;
+margin-bottom:5px;
+}
+
+.name{
+font-weight:bold;
+font-size:18px;
+}
+
+.qualification{
+color:#555;
+}
+
+</style>
+
+</head>
+
+<body oncontextmenu="return false;" onselectstart="return false">
+
+<div class="dept-code">📊 Department Code: BBA-01</div>
+<h1>Bachelor of Business Administration</h1>
+
+<!-- ✅ UPDATED ABOUT SECTION -->
+
+<div class="section about-box">
+
+<div class="about-text">
+<h2>About the Department</h2>
+
+<p>
+The Bachelor of Business Administration (BBA) department focuses on
+developing students' knowledge in business management, finance,
+marketing, entrepreneurship, and organizational leadership.
+</p>
+
+<p>
+The program prepares students for careers in corporate management,
+banking, entrepreneurship, marketing, and business consulting.
+With experienced faculty and practical learning methods,
+students gain strong analytical, managerial, and decision-making skills.
+</p>
+</div>
+
+<div class="about-img">
+<img src="images/bba.jpg" alt="BBA Department">
+</div>
+
+</div>
+
+<h2>Programs Offered</h2>
+<ul>
+<li>Bachelor of Business Administration (BBA)</li>
+</ul>
+
+<!-- Faculty 1 -->
+
+<div class="card bg1">
+<div class="achievement">
+<strong>Dr. A. Latha</strong> ...
+</div>
+<div class="details">
+<img src="images/Latha.png">
+<div class="name">Dr. A. Latha</div>
+<div class="qualification">Ph.D(Business Management)</div>
+</div>
+</div>
+
+<!-- Faculty 2 -->
+
+<div class="card bg2">
+<div class="achievement">
+<strong>K. Shilpa Rani</strong> ...
+</div>
+<div class="details">
+<img src="images/Shilpa.png">
+<div class="name">K. Shilpa Rani</div>
+<div class="qualification">MBA,UGC-NET</div>
+</div>
+</div>
+
+<!-- Faculty 3 -->
+
+<div class="card bg3">
+<div class="achievement">
+<strong>G. Shirisha</strong> ...
+</div>
+<div class="details">
+<img src="images/G.Shirisha.png">
+<div class="name">G. Shirisha</div>
+<div class="qualification">MBA,UGC-NET & JRF,TG-SET</div>
+</div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Departments</title>
+<script src="disableActions.js"></script>
+
+
+<style>
+body{
+font-family: Arial, sans-serif;
+margin:0;
+padding:0;
+background:#f5f7fa;
+}
+
+/* HEADER */
+
+.header{
+display:flex;
+align-items:center;
+justify-content:space-between;
+padding:10px 40px;
+background:white;
+border-bottom:3px solid #003366;
+}
+
+.header img{
+width:150px;
+height:150px;
+object-fit:contain;
+}
+
+.title{
+text-align:center;
+flex:1;
+padding:0 20px;
+}
+
+.title h1{
+margin:0;
+font-size:26px;
+color:#003366;
+font-weight:bold;
+}
+
+.location{
+font-weight:bold;
+margin-top:5px;
+}
+
+
+/* NAVIGATION */
+
+nav{
+background:#003366;
+text-align:center;
+position:sticky;
+top:0;
+z-index:1000;
+}
+
+nav ul{
+list-style:none;
+margin:0;
+padding:0;
+}
+
+nav ul li{
+display:inline-block;
+position:relative;
+}
+
+nav ul li a{
+display:block;
+padding:14px 20px;
+color:white;
+text-decoration:none;
+font-weight:bold;
+}
+
+nav ul li a:hover{
+background:#0055a5;
+}
+
+
+/* DROPDOWN */
+
+nav ul ul{
+display:none;
+position:absolute;
+background:#0055a5;
+min-width:200px;
+text-align:left;
+}
+
+nav ul ul li{
+display:block;
+}
+
+nav ul li:hover > ul{
+display:block;
+}
+
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+.header{
+flex-direction:column;
+text-align:center;
+}
+
+.header img{
+width:100px;
+height:100px;
+}
+
+.title h1{
+font-size:20px;
+}
+
+nav ul li{
+display:block;
+}
+
+}
+
+
+body{
+font-family: Arial, sans-serif;
+margin:40px;
+background-color:#f4f6f9;
+}
+
+/* 🔥 NEW ABOUT SECTION STYLE */
+.about-box{
+display:flex;
+justify-content:space-between;
+align-items:center;
+gap:30px;
+}
+
+.about-text{
+width:60%;
+}
+
+.about-image{
+width:40%;
+}
+
+.about-image img{
+width:100%;
+border-radius:10px;
+}
+
+/* existing styles (UNCHANGED) */
+
+h1{color:#2c3e50;}
+h2{color:#34495e;border-bottom:2px solid #2c3e50;padding-bottom:5px;}
+
+.dept-code{
+background-color:#2c3e50;
+color:white;
+padding:8px 15px;
+display:inline-block;
+border-radius:5px;
+margin-bottom:15px;
+}
+
+.section{
+background-color:#ffffff;
+padding:20px;
+border-radius:8px;
+margin-top:20px;
+box-shadow:0 2px 5px rgba(0,0,0,0.1);
+}
+
+.card{
+display:flex;
+justify-content:space-between;
+padding:15px;
+margin:10px 0;
+border-radius:10px;
+}
+
+.bg1{ background:#EAF4FF;}
+.bg2{ background:#F3E8FF;}
+.bg3{ background:#E8F5E9;}
+.bg4{ background:#FFF9E6;}
+.bg5{ background:#F5F7FA;}
+.bg6{ background:#FDECEF;}
+.bg7{ background:#F1F8E9;}
+.bg8{ background:#FFF1E6;}
+.bg9{ background:#E0F7FA;}
+
+.achievement{width:55%;line-height:1.6;padding-top:25px;}
+.details{width:40%;text-align:center;}
+
+.details img{
+width:200px;
+height:200px;
+border-radius:50%;
+}
+
+.name{font-weight:bold;}
+.qualification{color:#555;}
+</style>
+</head>
+
+<body oncontextmenu="return false;" onselectstart="return false">
+
+<!-- HEADER -->
+<div class="header">
+
+<img src="images/governament-logo1.jpeg" alt="Government Logo">
+
+<div class="title">
+<h1>
+MAHATMA JYOTHIBA PHULE <br>
+TELANGANA BACKWARD CLASSES <br>
+WELFARE RESIDENTIAL <br>
+DEGREE COLLEGE FOR WOMEN
+</h1>
+
+<div class="location">
+Medchal & Hyderabad
+</div>
+
+</div>
+
+<img src="images/mjp1.png">
+
+</div>
+
+
+<!-- NAVIGATION -->
+
+<nav>
+
+<ul>
+
+<li><a href="index.html">Home</a></li>
+
+<li>
+<a href="#">About</a>
+<ul>
+<li><a href="history.html">History</a></li>
+<li><a href="governing body.html">Governing Body</a></li>
+<li><a href="secretary.html">Secretary</a></li>
+<li><a href="principal.html">Principal</a></li>
+<li><a href="vice principal.html">Vice Principal</a></li>
+<li><a href="management.html">Management</a></li>
+</ul>
+</li>
+
+<li>
+<a href="#">Academics</a>
+<ul>
+<li><a href="admissions.html">Admissions</a></li>
+<li><a href="courses.html">Courses</a></li>
+<li><a href="course details.html">Course Details</a></li>
+
+<li><a href="examination.html">Examination Branch</a></li>
+</ul>
+</li>
+
+<li>
+<a href="#">Department & Faculty</a>
+<ul>
+<li><a href="languages.html">Languages</a></li>
+<li><a href="#">Physical Science</a></li>
+<li><a href="life science.html">Life Science</a></li>
+<li><a href="arts.html">Arts</a></li>
+<li><a href="commerce.html">Commerce</a></li>
+<li><a href="bba.html">BBA</a></li>
+<li><a href="bft.html">BFT</a></li>
+<li><a href="PD_librarian.html">Physical Education and Librarians</a></li>
+
+<li><a href="Non_Teaching.html">Staff Nurses and Junior Assistants</a></li>
+
+
+</ul>
+</li>
+
+<li>
+<a href="#">Facilities</a>
+<ul>
+<li><a href="library.html">Library</a></li>
+<li><a href="labs.html">Labs</a></li>
+<li><a href="sports.html">Sports</a></li>
+<li><a href="events.html">Events</a></li>
+<li><a href="cultural.html">Cultural</a></li>
+<li><a href="industrial visits.html">Industrial Visits</a></li>
+<li><a href="nss.html">NSS</a></li>
+<li><a href="food-menu.html">Food Menu</a></li>
+<li><a href="health-cards.html">Health Cards</a></li>
+</ul>
+</li>
+
+<li><a href="placements.html">Placements</a></li>
+
+</ul>
+</nav>
+
+
+<!-- Computer Science -->
+<div class="dept-code">💻 Department Code: CSE-01</div>
+<h1>Department of Computer Science</h1>
+
+<div class="section">
+<h2>About the Department</h2>
+
+<div class="about-box">
+
+<div class="about-text">
+<p>The Department of Computer Science is dedicated to providing high-quality education in computing and modern technologies. It focuses on building strong foundations in programming, software development, data structures, and data management.The department encourages innovation, research, and practical learning through well-equipped laboratories and experienced faculty. Students are trained to develop problem-solving skills and logical thinking, which are essential in today’s technology-driven world.</p>
+
+<p>With a curriculum designed to meet industry standards, the department prepares students for successful careers in fields such as software development, data science, artificial intelligence, and information technology. It also promotes continuous learning and professional growth to help students adapt to the rapidly evolving IT industry.The department also emphasizes holistic development by encouraging students to participate in seminars, workshops, technical events, and project-based learning. It fosters a collaborative environment where students can explore emerging technologies such as cloud computing, cybersecurity, and machine learning. Through continuous guidance and mentorship, the department aims to nurture creativity, teamwork, and leadership skills, enabling students to excel both academically and professionally.</p>
+</div>
+
+<div class="about-image">
+<img src="images/computer science.jpg">
+</div>
+
+</div>
+</div>
+<div class="section">
+
+<h2>Programs Offered</h2>
+
+<ul>
+<li>B.Sc (MSCs)</li>
+<li>B.Sc (Data Science)</li>
+<li>B.Sc (AIML)</li>
+<li>B.Sc (MPCs)</li>
+</ul>
+
+</div>
+
+<!-- Faculty  -->
+
+<div class="card bg1">
+<div class="achievement">
+<strong>P. V. Nagalakshmi</strong> is an experienced IT Professional and Educator with over 17 years of experience in Information Technology. She is a Sun certified Java programmer(SCJP) who achieved a high score in the certification, demonstrating strong expertise in Java programming and Object oriented concepts. Through out her career, she has been involved in software development, programming training and academic mentoring,specializing in core Java, advanced Java technologies and software development methodologies. She is known for her clear teaching style, practical demonstrations and ability to simplify complex programming concepts. As a guest lecturer, she has shared valuable insights on Java programming, industry expectations and career opportunities in the software field. Through her dedication to teaching and profssional excellence, P.V.Nagalakshmi continues to guide an inspire students to build strong programming skills and pursue successful careers in the IT industry.She had published more than 8 papers in National and International Journals and presented papers in National and International conferences.
+</div>
+<div class="details">
+<img src="images/Nagalaxmi.png">
+<div class="name">P. V. Nagalakshmi</div>
+<div class="qualification">MCA, MTech</div>
+</div>
+</div>
+
+<div class="card bg2">
+<div class="achievement">
+<strong>Sana Siddiqua</strong> is a Degree Lecturer - Regular - in Department of Computer Science. She secured the 7th position at the university level in her Bachelor of Engineering degree from Osmania University in 2013 and recieved Silver medal for the same. Following this, she worked as a Java Software Developer at EPAM India Pvt. Ltd., where she gained practical experience in software development, programming, and application design in Big data analytics technologies. She then served as a Project Scientist at the National Remote Sensing Centre, contributing to research and development in geospatial technologies. During this tenure, she played a key role in developing the Government web portal “Yuktdhara” for Geo-MGNREGA, which is now used nationwide for planning and monitoring rural development projects. She have consistently combined engineering expertise with practical applications to contribute to nationally important initiatives. She has also received job offers from MNCS such as Wipro, Accenture, and Cyient. Overall, her academic achievements and professional experience highlight her capability to drive meaningful technological and societal impact.
+</div>
+<div class="details">
+<img src="images/sana siddiqua.jpg">
+<div class="name">Sana Siddiqua</div>
+<div class="qualification">B.E(I.T)(O.U), M.TECH(C.S.E)JNTUH, TS.NET</div>
+</div>
+</div>
+
+<div class="card bg3">
+<div class="achievement">
+<strong>Vuppala Vara Laxmi </strong>is a Degree Lecturer in Computer Science. She holds an M.Tech in Computer science from University College of Engineering, Osmania University. She qualified the UGC–NET examination in Computer Science in 2020 and the GATE examination in Computer Science in 2017, and secured the State 16th Rank in the TS-PGECET examination in 2018 in Computer Science. She began her professional career as a Software Engineer with Infosys pvt Ltd, where she completed three months of training as a Software Analyst at the Infosys Global Education centre, Mysuru campus(Feb,2016 to June,2016) duriong which she was trained in several technical subjects including python. NET, OOPS,DataStructures, RDBMS(SQL). She later worked as a Software Engineer at Hexagon Capability Center India from 2016 to 2018, where she actively contributed to software development and product enhancement activities. During her tenure, she received the Star Award for showing her expertise in successfully upgrading a software product which was built in C++ to C#. NET in EUCW Team in HCCI. Her areas of Interest include Artificial Intelligence and Machine Learning. With a strong blend of Industry Experience and academic achievements , she is committed to guiding students in building strong foundations in computer science.
+</div>
+<div class="details">
+<img src="images/Varalaxmi.png">
+<div class="name">Vuppala Vara Laxmi</div>
+<div class="qualification">MTech(C.S.E) from O.U, B.E(C.S.E),</div>
+<div class="qualification">(JNTUH),UGC-NET,GATE qualified</div>
+</div>
+</div>
+
+<div class="card bg6">
+<div class="achievement">
+<strong>Sana Firdous </strong> is a faculty in the Department of Computer Science. She completed her M.Tech in 2015 with First Class Distinction. She has published a research paper titled “Preserving Location Privacy in Geo-Social Applications” and brings with her 2 years of teaching experience. Currently, she is serving as a Guest Lecturer in Computer Science and Engineering at MJPTBCWRDC. Her passion lies in teaching, research, and knowledge sharing, and she continues to inspire students through her dedication to academic excellence and innovation.
+</div>
+<div class="details">
+<img src="images/sana firdous.jpg">
+<div class="name">Sana Firdous</div>
+<div class="qualification">M.Sc(DataScience)</div>
+</div>
+</div>
+
+<div class="card bg8">
+<div class="achievement">
+<strong>B.Divya Jyothi </strong> is a faculty in the Department of Data Science. Her research paper titled “Liver Cancer Classification” was successfully published in the International Research Journal of Engineering and Technology (IRJET), a reputable peer-reviewed journal that publishes innovative research in engineering and technology fields. The methodology includes data preprocessing, feature extraction, and classification techniques to improve diagnostic accuracy. The results demonstrate the potential of intelligent systems in supporting medical diagnosis and reducing human error. The publication of this work in IRJET reflects its academic relevance and contribution to the field of medical data analysis. Overall, the paper provides valuable insights into the application of computational methods for liver cancer detection and classification.
+</div>
+<div class="details">
+<img src="images/Divyajyothi.png">
+<div class="name">B.Divya Jyothi</div>
+<div class="qualification">M.Sc(DataScience)</div>
+</div>
+</div>
+
+
+
+<!-- Mathematics -->
+<div class="dept-code">📐 Department Code: MATH-01</div>
+<h1>Department of Mathematics</h1>
+
+<div class="section">
+<h2>About the Department</h2>
+
+<div class="about-box">
+
+<div class="about-text">
+<p>The Department of Mathematics is dedicated to developing strong analytical thinking and problem-solving skills among students. It provides a solid foundation in both pure and applied mathematics, covering key areas such as algebra, calculus, statistics, and mathematical modeling. The department focuses on conceptual understanding and logical reasoning, which are essential for various scientific and technological fields. With experienced faculty and a supportive learning environment, students are encouraged to explore mathematical concepts deeply and apply them to real-world situations.</p>
+<p>In addition to academic excellence, the department promotes critical thinking, research aptitude, and precision in problem-solving. It prepares students for higher education and diverse career opportunities in fields such as education, data analysis, finance, and research.</p>
+</div>
+
+<div class="about-image">
+<img src="images/mathematics.jpg">
+</div>
+
+</div>
+</div>
+
+<div class="section">
+
+<h2>Programs Offered</h2>
+
+<ul>
+
+<li>B.Sc (MSCs)</li>
+<li>B.Sc (Data Science)</li>
+<li>B.Sc (AIML)</li>
+<li>B.Sc (MPC)</li>
+<li>B.Sc (MPCs)</li>
+
+</ul>
+
+</div>
+
+
+
+<div class="card bg4">
+    <div class="achievement">
+<strong>G. Prathibha</strong>is a Degree lecturer in the Department of Mathematics. She highly experienced and dedicated educator with over two decades of teaching experience, reflecting her long-standing commitment to academic excellence and the holistic development of students. She graduated as a topper in her  degree, demonstrating a strong academic foundation, discipline, and mastery of her subject. Over the course of her career, she designed and delivered comprehensive curricula tailored to students learning needs. Her experience has enabled her to guide students in research, critical thinking, and professional development. She ensure that students are well-prepared for higher education and future careers. Overall, her  career reflects a dedication to education, student development, and the reputation of the institution she serve.</div>
+    <div class="details">
+        <img src="images/Prathibha.png">
+        <div class="name">G. Prathibha</div>
+        <div class="qualification">M.Sc(Mathematics), TG-SET</div>
+    </div>
+</div>
+
+
+<div class="card bg5">
+   <div class="achievement">
+<strong>P. Lavanya</strong> is currently serving as a Degree Lecturer in Mathematics at MJPTBCWR Degree College for Women, Medchal. She holds Master’s degrees in Mathematics and Statistics and has qualified the State Eligibility Test (SET). She has over 9 years of teaching experience in reputed institutions, including St. Francis College for Women, Begumpet. She has taught both undergraduate and postgraduate Mathematics courses, guiding students in developing strong analytical and problem-solving skills. She is a Gold Medalist from Osmania University for securing the highest marks in M.Sc. Mathematics. She actively participates in webinars and seminars to enhance her teaching and stay updated with developments in mathematics education.</div>
+    <div class="details">
+        <img src="images/Lavanya.png">
+        <div class="name">P. Lavanya</div>
+        <div class="qualification">M.Sc(mathematics)</div>
+    </div>
+</div>
+
+
+<div class="card bg6">
+   <div class="achievement">
+<strong>Manjula</strong> is a Degree Lecturer in the Department of Mathematics at MJPTBCWR Degree College for Women, Hyderabad. She holds an M.Sc. in Mathematics from Osmania University and has qualified the TS-SET examination. She has more than 15 years of teaching experience in higher education institutions. She previously worked at Sri Indu College of Engineering and TKR College of Engineering, teaching Engineering Mathematics. She also holds a patent related to structural and fluid dynamics. She has successfully completed several NPTEL certification courses to enhance her teaching and subject knowledge. Her dedication to teaching earned her the Best Faculty Award. She has also received multiple Gold Medals for her academic excellence during her studies.</div>
+    <div class="details">
+        <img src="images/Manjula.png">
+        <div class="name">Manjula</div>
+        <div class="qualification">M.Sc.(Mathematics), TS-SET</div>
+    </div>
+</div>
+
+
+<div class="card bg7">
+   <div class="achievement">
+<strong>K. Dhana lakshmi</strong> is a Degree lecturer in the Department of Mathematics. She had served in various responsible Government and institutional positions. She worked as a Post Graduate Teacher (PGT) in the Social Welfare Department. She was also appointed as Junior Lecturer (JL) in the Mahatma Jyotiba Phule Telangana Backward Classes Welfare Department (MJPTBC Welfare), playing an active role in higher secondary education and academic mentoring. In addition, she served as a Junior Assistant in the Southern Power Distribution Company of Telangana. Further, she worked as a Junior Assistant in the District Court (Jilla Court), where she was involved in official documentation, clerical responsibilities, and court administration. These diverse roles reflect her  ability to adapt to different professional environments, her  experience in both academic and administrative sectors, and her  commitment to serving in public institutions with efficiency, responsibility, and dedication.</div>
+    <div class="details">
+        <img src="images/Dhanalaxmi.png">
+        <div class="name">K. Dhana Laxmi</div>
+        <div class="qualification">M.Sc(Mathematics), B.Ed</div>
+    </div>
+</div>
+
+
+
+<!-- Statistics -->
+<div class="dept-code">📊 Department Code: STAT-01</div>
+<h1>Department of Statistics</h1>
+
+<div class="section">
+<h2>About the Department</h2>
+
+<div class="about-box">
+
+<div class="about-text">
+<p>The Department of Statistics focuses on the study of data analysis, probability, and statistical methods used for effective decision-making. It provides students with strong quantitative and analytical skills through a combination of theoretical knowledge and practical applications. The department emphasizes the use of modern statistical tools and techniques to interpret real-world data. Students are trained in areas such as data collection, analysis, interpretation, and visualization, which are essential in today’s data-driven world.</p>
+<p>The department aims to build a strong foundation for students who wish to pursue higher studies or careers in emerging fields such as data science, business analytics, artificial intelligence, and market research. Through continuous guidance and mentorship, students are prepared to meet industry demands and excel in competitive environments. With experienced faculty and a supportive academic environment, the department encourages critical thinking, research, and problem-solving abilities. It prepares students for careers in data analysis, research, finance, healthcare, and various industries where data plays a crucial role.</p>
+</div>
+
+<div class="about-image">
+<img src="images/Statistics.jpg">
+</div>
+
+</div>
+</div>
+<div class="section">
+<h2>Programs Offered</h2>
+<ul>
+<li>B.Sc (MSCs)</li>
+<li>B.Sc (Data Science)</li>
+<li>B.Sc (AIML)</li>
+</ul>
+</div>
+
+<div class="section">
+<h2>Our Faculty</h2>
+
+<div class="card bg8">
+<div class="achievement">
+<strong>Dr. T. Deepthi </strong>is a faculty in the Department of Statistics. She have been awarded both the Junior Research Fellowship (JRF) and Senior Research Fellowship (SRF) for pursuing her Ph.D. With 17 years of teaching experience, she have contributed significantly to higher education through effective instruction and academic mentoring. She have served as Joint Secretary of the Society for Development of Statistics (SDS) and have published more than 13 research articles in reputed national and international journals. She also worked as a Project Fellow from June 2013 to September 2014 under a Major Research Project funded by the University Grants Commission (UGC), participated in 11 national and international conferences, and served on examination panels, demonstrating her active involvement in teaching, research, and academic service.</div>
+    <div class="details">
+        <img src="images/T.Deepthi.png">
+        <div class="name">Dr. T. Deepthi</div>
+        <div class="qualification">Ph.D(Statistics)</div>
+    </div>
+</div>
+
+<div class="card bg9">
+<div class="achievement">
+<strong>Dr. Ranjitha Chul </strong>is a Degree Lecturer in the Department of Statistics. She was dedicated academic professional with 9 years of teaching experience at the degree level, committed to excellence in both education and research. She have been awarded a Ph.D., complemented by an M.Sc. in Statistics, where she was honored with a gold medal for outstanding academic performance. She have successfully cleared TS-SET and UGC-NET, and she was a proud recipient of the INSPIRE Scholarship, recognizing her research potential. Her research contributions include two international publications, with one indexed in Scopus, reflecting her  active engagement in the global scientific community. She have attended eight international and national conferences to present her work and stay updated with emerging trends in her  field. Additionally,She actively organize various conferences and workshops, contributing to academic discourse and professional development. Life member of “Indian Society for Probability and Statistics”. Life member of “Society for Development of Statistics”.</div>
+    <div class="details">
+        <img src="images/ranjitha.png">
+        <div class="name">Dr. Ranjitha Chul</div>
+        <div class="qualification">Ph.D(Statistics), TS-SET, UGC-NET</div>
+    </div>
+   </div>
+
+</div>
+</div>
+
+
+
+<!-- Physics -->
+<div class="dept-code">💡 Department Code: PHY-01</div>
+<h1>Department of Physics</h1>
+
+<div class="section">
+<h2>About the Department</h2>
+
+<div class="about-box">
+
+<div class="about-text">
+<p>The Department of Physics provides foundation in theoretical and applied physics.</p>
+<p>Encourages research and practical learning.</p>
+</div>
+
+</div>
+</div>
+<div class="section">
+
+<h2>Programs Offered</h2>
+
+<ul>
+
+<li>B.Sc (MPC)</li>
+<li>B.Sc (MPCs)</li>
+</ul>
+
+</div>
+
+<div class="card bg1">
+    <div class="achievement">
+<strong>M.Ravali</strong> is a faculty in the Department of Physics. Her specialization in Electronics and Instrumentation from University college of science, Osmania University. Worked as Junior Lecturer in Megha Junior College, ECIL(2021-2022).She possess 5 years of teaching experience as a Degree Lecturer in Physics at the undergraduate level. Worked as Degree Lecturer in Omega degree college, ECIL(2022-2023). During her teaching career, she have been actively involved in delivering comprehensive lectures in core physics subjects and specialized topics related to electronics and instrumentation through her  experience.</div>
+    <div class="details">
+        <img src="images/Ravali.png">
+        <div class="name">M.Ravali</div>
+        <div class="qualification">M.Sc(Physics), B.Ed</div>
+    </div>
+</div>
+
+
+<!-- Chemistry -->
+<div class="dept-code">🧪 Department Code: CHE-01</div>
+<h1>Department of Chemistry</h1>
+
+<div class="section">
+<h2>About the Department</h2>
+
+<div class="about-box">
+
+<div class="about-text">
+<p>The Department of Chemistry focuses on organic, inorganic and physical chemistry.</p>
+<p>Encourages research and lab experience.</p>
+</div>
+
+</div>
+</div>
+<div class="section">
+
+<h2>Programs Offered</h2>
+
+<ul>
+
+<li>B.Sc (MPC)</li>
+<li>B.Sc (ANPHBC)</li>
+<li>B.Sc (MBZC)</li>
+<li>B.Sc (NZC)</li>
+
+
+</ul>
+
+</div>
+
+<div class="card bg1">
+    <div class="achievement">
+<strong>N.Baby</strong> is a Degree Lecturer in the Department of Chemistry. She successfully qualified the CSIR–UGC-NET examination. In addition to this prestigious qualification, She secured the State 1st Rank in the TREIRB Gurukula Examination (Girls category) conducted by the Telangana Residential Educational Institutions Recruitment Board. She have 11 years of Teaching Experience. These achievements reflect her  consistent dedication to rigorous study, her  ability to excel in highly competitive examinations, and her  commitment to academic and professional growth. Together, they signify not only personal accomplishment but also her  readiness to contribute effectively to higher education and research through strong subject mastery, disciplined preparation, and sustained pursuit of excellence.</div>
+    <div class="details">
+        <img src="images/Baby.png">
+        <div class="name">N.Baby</div>
+        <div class="qualification">M.Sc(Chemistry), B.Ed(phd Pursuing)</div>
+    </div>
+</div>
+
+<div class="card bg9">
+<div class="achievement">
+<strong>P. Annapurna</strong> is a Degree Lecturer in the Department of  Chemistry. She is currently working as a degree lecturer in the Department of Chemistry at MJPTBCWRDC(W). She completed her M.Sc. in Chemistry in 2013 from University College of Science, Osmania University and her B.Ed in 2014 from Palamur University. She has qualified the State Eligibility Test and possesses 9 years of teaching experience. Her professional journey includes working as a contract school assistant teacher for 1 year (2017–2018) at Ashram School, Kotha Pally, Mahabubnagar, as a trained graduate teacher for 1 year (2018–2019) at Social Welfare Residential School, Marikal, and as a junior lecturer in Chemistry for 5 years (2019–2024) at MJPTBCWRJC. Since 2024, she has been serving as a degree lecturer at MJPTBCWRDC (W). She is skilled in mentoring, lab management, and innovative, collaborative teaching practices.</div>
+    <div class="details">
+        <img src="images/Annapurna.png">
+        <div class="name">Annapurna</div>
+        <div class="qualification">M.Sc(Chemistry)</div>
+    </div>
+</div>
+
+
+<div class="card bg8">
+    <div class="achievement">
+<strong>K. Shirisha</strong>  is a faculty in the Department of Chemistry. She completed her M.Sc. in Chemistry with a specialization in Organic Chemistry from Palamuru University. She joined MJPTBCWRDC as a faculty member 4 months ago. She is deeply passionate about teaching and is committed to fostering students academic development in Chemistry. Through her dedication, she aims to enhance students’ understanding of the subject and contribute positively to their educational growth.</div>
+    <div class="details">
+        <img src="images/K.Shirisha.jpg">
+        <div class="name">K.Shirisha</div>
+        <div class="qualification"> M.Sc(Chemistry)</div>
+    </div>
+</div>
+
+
+
+</body>
+</html>

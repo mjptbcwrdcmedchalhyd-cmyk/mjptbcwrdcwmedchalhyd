@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>College Admissions</title>
+<script src="disableActions.js"></script>
+
+
+
+<style>
+body{
+font-family: Arial, sans-serif;
+margin:0;
+padding:0;
+background:#f5f7fa;
+}
+
+/* HEADER */
+
+.header{
+display:flex;
+align-items:center;
+justify-content:space-between;
+padding:10px 40px;
+background:white;
+border-bottom:3px solid #003366;
+}
+
+.header img{
+width:150px;
+height:150px;
+object-fit:contain;
+}
+
+.title{
+text-align:center;
+flex:1;
+padding:0 20px;
+}
+
+.title h1{
+margin:0;
+font-size:26px;
+color:#003366;
+font-weight:bold;
+}
+
+.location{
+font-weight:bold;
+margin-top:5px;
+}
+
+
+/* NAVIGATION */
+
+nav{
+background:#003366;
+text-align:center;
+position:sticky;
+top:0;
+z-index:1000;
+}
+
+nav ul{
+list-style:none;
+margin:0;
+padding:0;
+}
+
+nav ul li{
+display:inline-block;
+position:relative;
+}
+
+nav ul li a{
+display:block;
+padding:14px 20px;
+color:white;
+text-decoration:none;
+font-weight:bold;
+}
+
+nav ul li a:hover{
+background:#0055a5;
+}
+
+
+/* DROPDOWN */
+
+nav ul ul{
+display:none;
+position:absolute;
+background:#0055a5;
+min-width:200px;
+text-align:left;
+}
+
+nav ul ul li{
+display:block;
+}
+
+nav ul li:hover > ul{
+display:block;
+}
+
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+.header{
+flex-direction:column;
+text-align:center;
+}
+
+.header img{
+width:100px;
+height:100px;
+}
+
+.title h1{
+font-size:20px;
+}
+
+nav ul li{
+display:block;
+}
+
+}
+
+
+
+h1 {
+  color: #ADD8E6;
+  margin-left: 40px;
+}
+body{
+font-family: Arial, Helvetica, sans-serif;
+margin:0;
+background:#f4f6f9;
+color:#333;
+}
+
+header{
+background:#003366;
+color:white;
+padding:20px;
+text-align:center;
+}
+
+nav{
+background:#0055a5;
+padding:10px;
+text-align:center;
+}
+
+nav a{
+color:white;
+margin:0 15px;
+text-decoration:none;
+font-weight:bold;
+}
+
+/* Reduced hero space */
+.hero{
+background:url('https://images.unsplash.com/photo-1523050854058-8df90110c9f1') center/cover;
+height:120px;
+display:flex;
+align-items:center;
+justify-content:center;
+color:white;
+font-size:36px;
+font-weight:bold;
+text-shadow:2px 2px 5px black;
+}
+
+.container{
+width:90%;
+max-width:1100px;
+margin:auto;
+padding:30px 0;
+}
+
+.section-title{
+font-size:28px;
+margin-bottom:20px;
+color:#003366;
+}
+
+/* Programs table */
+
+.program-table{
+width:100%;
+border-collapse:collapse;
+background:white;
+box-shadow:0 2px 8px rgba(0,0,0,0.1);
+}
+
+.program-table th,
+.program-table td{
+padding:12px;
+border:1px solid #ddd;
+text-align:left;
+}
+
+.program-table th{
+background:#003366;
+color:white;
+}
+
+.program-table tr:nth-child(even){
+background:#f2f2f2;
+}
+
+.process li{
+margin-bottom:10px;
+}
+
+.dates table{
+width:100%;
+border-collapse:collapse;
+}
+
+.dates th, .dates td{
+padding:10px;
+border:1px solid #ddd;
+text-align:left;
+}
+
+footer{
+background:#003366;
+color:white;
+text-align:center;
+padding:20px;
+margin-top:40px;
+}
+
+</style>
+</head>
+
+<body oncontextmenu="return false;" onselectstart="return false">
+
+
+<!-- HEADER -->
+<div class="header">
+
+<img src="images/governament-logo1.jpeg" alt="Government Logo">
+
+<div class="title">
+<h1>
+MAHATMA JYOTHIBA PHULE <br>
+TELANGANA BACKWARD CLASSES <br>
+WELFARE RESIDENTIAL <br>
+DEGREE COLLEGE FOR WOMEN
+</h1>
+
+<div class="location">
+Medchal & Hyderabad
+</div>
+
+</div>
+
+<img src="images/mjp1.png">
+
+</div>
+
+
+<!-- NAVIGATION -->
+
+<nav>
+
+<ul>
+
+<li><a href="index.html">Home</a></li>
+
+<li>
+<a href="#">About</a>
+<ul>
+<li><a href="history.html">History</a></li>
+<li><a href="governing body.html">Governing Body</a></li>
+<li><a href="secretary.html">Secretary</a></li>
+<li><a href="principal.html">Principal</a></li>
+<li><a href="vice principal.html">Vice Principal</a></li>
+<li><a href="management.html">Management</a></li>
+</ul>
+</li>
+
+<li>
+<a href="#">Academics</a>
+<ul>
+
+<li><a href="courses.html">Courses</a></li>
+<li><a href="course details.html">Course Details</a></li>
+
+<li><a href="examination.html">Examination Branch</a></li>
+</ul>
+</li>
+
+<li>
+<a href="#">Department & Faculty</a>
+<ul>
+<li><a href="languages.html">Languages</a></li>
+<li><a href="Physical_Science.html">Physical Science</a></li>
+<li><a href="life science.html">Life Science</a></li>
+<li><a href="arts.html">Arts</a></li>
+<li><a href="commerce.html">Commerce</a></li>
+<li><a href="bba.html">BBA</a></li>
+<li><a href="bft.html">BFT</a></li>
+<li><a href="PD_librarian.html">Physical Education and Librarians</a></li>
+
+<li><a href="Non_Teaching.html">Staff Nurses and Junior Assistants</a></li>
+
+
+</ul>
+</li>
+
+<li>
+<a href="#">Facilities</a>
+<ul>
+<li><a href="library.html">Library</a></li>
+<li><a href="labs.html">Labs</a></li>
+<li><a href="sports.html">Sports</a></li>
+<li><a href="events.html">Events</a></li>
+<li><a href="cultural.html">Cultural</a></li>
+<li><a href="industrial visits.html">Industrial Visits</a></li>
+<li><a href="nss.html">NSS</a></li>
+<li><a href="food-menu.html">Food Menu</a></li>
+<li><a href="health-cards.html">Health Cards</a></li>
+</ul>
+</li>
+
+<li><a href="placements.html">Placements</a></li>
+
+</ul>
+</nav>
+
+
+
+<div class="hero">
+<h1>Admissions Open 2026<h1>
+</div>
+
+<div class="container">
+
+<section>
+<h2 class="section-title">About Admissions</h2>
+<p>
+Welcome to MJPTBCWRDC(W)-HYDERABAD & MEDCHAL. We offer quality education with experienced faculty and modern facilities. 
+Admissions are open for undergraduate programs for the academic year 2026.
+</p>
+</section>
+
+<section>
+<h2 class="section-title">Programs Offered</h2>
+
+<table class="program-table">
+
+<tr>
+<th>Program</th>
+<th>Seats</th>
+</tr>
+
+<tr>
+<td>BSc.(MS(AI & ML))-Maths,Statistics,Artificial Intelligence & Machine Learning</td>
+<td>40</td>
+</tr>
+
+<tr>
+<td>BSc.(MSDs)-Maths,Statistics,Datascience</td>
+<td>40</td>
+</tr>
+
+<tr>
+<td>BSc.(MSCs)-Maths,Statistics,Computerscience</td>
+<td>40</td>
+</tr>
+
+<tr>
+<td>BSc.(MPCs)-Maths,Physics,Computerscience</td>
+<td>40</td>
+</tr>
+
+<tr>
+<td>BSc.(MPC)-Maths,Physics,Chemistry</td>
+<td>40</td>
+</tr>
+
+<tr>
+<td>BSc.Honors (Computer Science)</td>
+<td>40</td>
+</tr>
+
+<tr>
+<td>Bcom.(Computer Applications)</td>
+<td>40</td>
+</tr>
+
+<tr>
+<td>Bcom.(Business Analystic's)</td>
+<td>40</td>
+</tr>
+
+<tr>
+<td>(BBA) Bachelor of BusinessAdministration </td>
+<td>40</td>
+</tr>
+
+<tr>
+<td>BSc.(NZC)-Nutrition,Zoology,Chemistry</td>
+<td>40</td>
+</tr>
+
+<tr>
+<td>BSc.(ANPHBC)-Applied Nutrition,Public Health,Botany,Chemistry</td>
+<td>40</td>
+</tr>
+
+<tr>
+<td>BSc.(MBZC)-Microbiology,Botany,Zoology,Chemistry</td>
+<td>40</td>
+</tr>
+
+<tr>
+<td>BA.(HEP)-History,Economics,Political Science</td>
+<td>30</td>
+</tr>
+
+<tr>
+<td>BA.(PPGEPB)-Public Policy and Governance, Economics, Political Science.</td>
+<td>30</td>
+</tr>
+
+<tr>
+<td>Bachelor of Fashion Technology</td>
+<td>40</td>
+</tr>
+
+</table>
+
+</section>
+
+<section>
+<h2 class="section-title">Eligibility</h2>
+<ul>
+<li>Residence: Candidates must be residents of Telangana State.</li>
+<li>Academic Qualification: Must have passed the Intermediate Examination (or equivalent) in the first attempt.</li>
+<li>Marks Requirement: A minimum of 50% marks in aggregate and 40% marks in English are required. A 5% relaxation in marks is applicable for SC/ST students.</li>
+<li>Income Limit: Parental income must not exceed ₹1,50,000 per annum for rural areas and ₹2,00,000 for urban areas.</li>
+<li>Age Limit: Generally based on SSC completion, with preference for those graduating from junior college in the immediate academic year.</li>
+<li>Categories: Eligible categories include BC, SC, ST, EBC, MBC, and Orphans.</li>
+</ul>
+</section>
+
+<section>
+<h2 class="section-title">Admission Process</h2>
+
+<ol class="process">
+<li>Fill the online application form</li>
+<li>Upload required documents</li>
+<li>Pay the application fee</li>
+<li>Attend counseling / interview</li>
+<li>Confirm admission</li>
+</ol>
+
+</section>
+
+<section class="dates">
+<h2 class="section-title">Important Dates</h2>
+
+<table>
+<tr>
+<th>Event</th>
+<th>Date</th>
+</tr>
+
+<tr>
+<td>Application Start</td>
+<td>April 1, 2026</td>
+</tr>
+
+<tr>
+<td>Application Deadline</td>
+<td>June 30, 2026</td>
+</tr>
+
+<tr>
+<td>Entrance Exam</td>
+<td>July 10, 2026</td>
+</tr>
+
+<tr>
+<td>Admission Results</td>
+<td>July 25, 2026</td>
+</tr>
+
+</table>
+
+</section>
+
+<section>
+<h2 class="section-title">Contact Admissions Office</h2>
+<p>Email: mjptbcwrdc.medchalhyd@gmail.com</p>
+<p>Phone: +91 7680941485</p>
+<p>Address: MJPTBCWRDC(W)-HYDERABAD & MEDCHAL, Sri Vangmayi Educational Society, Annampatla(V),B.B.Nagar(M), Yadadri(D).</p>
+</section>
+
+</div>
+
+<footer>
+<p>© 2026 MJPTBCWRDC(W)-HYDERABAD & MEDCHAL | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>

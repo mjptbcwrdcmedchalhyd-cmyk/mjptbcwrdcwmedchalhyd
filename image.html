@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>BBA Department</title>
+<script>
+document.addEventListener('contextmenu',function(Event){
+event.preventDefault();
+//alert("right click disabled");
+});
+
+document.addEventListener('keydown',function(event){
+
+if((event.ctrlKey && event.key.toLowerCase() === 'p')||(event.ctrlKey && event.key.toLowerCase() === 'c')){
+event.preventDefault();
+//alert("action disabled");
+}});
+
+
+</script>
+
+<style>
+
+body{
+font-family: Arial, sans-serif;
+background-color:#f2f2f2;
+}
+
+h1{
+color:#2c3e50;
+}
+
+h2{
+color:#34495e;
+border-bottom:2px solid #2c3e50;
+padding-bottom:5px;
+}
+
+ul{
+line-height:1.8;
+}
+
+.section{
+background-color:white;
+padding:20px;
+border-radius:8px;
+margin:20px 0;
+}
+
+.card{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px;
+margin:20px 0;
+border-radius:10px;
+}
+
+.bg1{ background:#fff2f2; }
+.bg2{ background:#f2ffe6; }
+.bg3{ background:#e6f9ff; }
+
+.achievement{
+  width:50%;
+  font-size:18px;
+  margin-top:40px;
+  font-size:18px;
+}
+
+.details{
+width:40%;
+text-align:center;
+}
+
+.details img{
+width:200px;
+height:200px;
+border-radius:50%;
+margin-bottom:5px;
+}
+
+.name{
+font-weight:bold;
+font-size:18px;
+}
+
+.qualification{
+color:#555;
+}
+
+</style>
+
+</head>
+
+<body oncontextmenu="return false;" onselectstart="return false">
+
+
+<div class="dept-code">📊 Department Code: BBA-01</div>
+<h1>Bachelor of Business Administration</h1>
+
+<div class="section card bg1">
+
+<div class="achievement">
+<h2>About the Department</h2>
+
+<p>
+The Bachelor of Business Administration (BBA) department focuses on
+developing students' knowledge in business management, finance,
+marketing, entrepreneurship, and organizational leadership.
+</p>
+
+<p>
+The program prepares students for careers in corporate management,
+banking, entrepreneurship, marketing, and business consulting.
+With experienced faculty and practical learning methods,
+students gain strong analytical, managerial, and decision-making skills.
+</p>
+
+</div>
+
+<div class="details">
+<img src="images/bba.png" alt="BBA Department">
+<div class="name">BBA Department</div>
+</div>
+
+</div>
+<!-- Faculty 1 -->
+
+<div class="card bg1">
+
+<div class="achievement">
+<strong>Dr. A. Latha</strong>  is a Degree Lecturer in the Department of  Business Administration. She hold UGC-NET, AP-SET, and TS-SET (Commerce) qualifications, which demonstrate her  strong academic foundation and eligibility for higher education teaching and research. In 2017, She was awarded a Ph.D.  She have authored a book titled “A Study on Stock Market Volatility with Reference to Equities”, which explores fluctuations and analytical perspectives in the stock market. In addition to her  academic publications, She have also contributed to innovation through a UK patent titled “Computing Device for Financial Volatile Share Market Business Analytics Using AI".This work integrates artificial intelligence with financial market analysis to improve decision-making. She have actively published several research papers in both national and international journals. Her research contributions cover topics related to finance, stock markets, and business analytics. She have also presented papers at various national and international seminars and conferences. These academic engagements have helped broaden her research perspective and scholarly collaboration.</div>
+<div class="details">
+<img src="images/Latha.png">
+<div class="name">Dr. A. Latha</div>
+<div class="qualification">Ph.D(Business Management),</div>
+<div class="qualification"> UGC-NET, AP-SET, and TS-SET (Commerce) </div>
+</div>
+
+</div>
+
+<!-- Faculty 2 -->
+
+<div class="card bg2">
+
+<div class="achievement">
+<strong>K. Shilpa Rani </strong>is a Degree Lecturer in the Department of Business Administration. She worked as a Human Resource Trainee at TCD-Technocrats Domain Systems, a software company, where She gained valuable practical exposure to various human resource functions within a professional corporate environment. During this period, She developed an understanding of HR practices such as recruitment support, employee coordination, documentation, and organizational communication, which strengthened her  knowledge of human resource management in the IT sector. In addition to her  professional experience, She successfully completed a certification course in Soft Skills and Personality Development through SWAYAM, an initiative supported by the University Grants Commission. Furthermore, She qualified for the UGC-NET, demonstrating her strong academic competence and eligibility for teaching and research in the field of management.</div>
+
+<div class="details">
+<img src="images/Shilpa.png">
+<div class="name">K. Shilpa Rani</div>
+<div class="qualification">MBA,UGC-NET</div>
+</div>
+
+</div>
+
+<!-- Faculty 3 -->
+
+<div class="card bg3">
+
+<div class="achievement">
+<strong>G. Shirisha</strong> is a Degree Lecturer in the Depatment of Business Administration. She qualified for the Junior Research Fellowship (JRF) in Management. In addition, She have been selected for the Ph.D. Entrance examination at the University of Hyderabad (Hyderabad Central University), one of India’s premier institutions for higher education and research. Through doctoral studies, She aim to further strengthen,her  research capabilities and methodological expertise. She is eager to contribute to meaningful scholarly discussions and explore innovative solutions in management. Her goal is to generate insights that can enhance both theoretical understanding and practical applications in the field. She committed to advancing knowledge while maintaining a strong focus on academic rigor. </div>
+
+<div class="details">
+<img src="images/G.Shirisha.png">
+<div class="name">G. Shirisha</div>
+<div class="qualification">MBA,UGC-NET & JRF,TG-SET</div>
+</div>
+
+</div>
+
+</body>
+</html>

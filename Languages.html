@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Department of English</title>
+<script src="disableActions.js"></script>
+
+<style>
+body{
+font-family: Arial, sans-serif;
+margin:0;
+padding:0;
+background:#f5f7fa;
+}
+
+/* HEADER */
+
+.header{
+display:flex;
+align-items:center;
+justify-content:space-between;
+padding:10px 40px;
+background:white;
+border-bottom:3px solid #003366;
+}
+
+.header img{
+width:150px;
+height:150px;
+object-fit:contain;
+}
+
+.title{
+text-align:center;
+flex:1;
+padding:0 20px;
+}
+
+.title h1{
+margin:0;
+font-size:26px;
+color:#003366;
+font-weight:bold;
+}
+
+.location{
+font-weight:bold;
+margin-top:5px;
+}
+
+
+/* NAVIGATION */
+
+nav{
+background:#003366;
+text-align:center;
+position:sticky;
+top:0;
+z-index:1000;
+}
+
+nav ul{
+list-style:none;
+margin:0;
+padding:0;
+}
+
+nav ul li{
+display:inline-block;
+position:relative;
+}
+
+nav ul li a{
+display:block;
+padding:14px 20px;
+color:white;
+text-decoration:none;
+font-weight:bold;
+}
+
+nav ul li a:hover{
+background:#0055a5;
+}
+
+
+/* DROPDOWN */
+
+nav ul ul{
+display:none;
+position:absolute;
+background:#0055a5;
+min-width:200px;
+text-align:left;
+}
+
+nav ul ul li{
+display:block;
+}
+
+nav ul li:hover > ul{
+display:block;
+}
+
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+.header{
+flex-direction:column;
+text-align:center;
+}
+
+.header img{
+width:100px;
+height:100px;
+}
+
+.title h1{
+font-size:20px;
+}
+
+nav ul li{
+display:block;
+}
+
+}
+
+
+
+body{
+font-family: Arial, sans-serif;
+margin:40px;
+background-color:#f4f6f9;
+}
+
+h1{
+color:#2c3e50;
+}
+
+h2{
+color:#34495e;
+border-bottom:2px solid #2c3e50;
+padding-bottom:5px;
+}
+
+.section{
+background-color:#ffffff;
+padding:20px;
+border-radius:8px;
+margin-top:20px;
+box-shadow:0 2px 5px rgba(0,0,0,0.1);
+}
+
+ul{
+line-height:1.8;
+}
+
+.container{
+width:90%;
+margin:auto;
+}
+
+/* ✅ ABOUT SECTION */
+.about-box{
+display:flex;
+justify-content:space-between;
+align-items:center;
+gap:20px;
+}
+
+.about-text{
+width:65%;
+}
+
+.about-img{
+width:30%;
+text-align:center;
+}
+
+.about-img img{
+width:200px;
+border-radius:10px;
+}
+
+.card{
+display:flex;
+justify-content:space-between;
+padding:15px;
+margin:10px 0;
+border-radius:10px;
+}
+
+/* Light background colors */
+.bg1 { background:#ffe6e6; }
+.bg2 { background:#e6f2ff; }
+.bg3 { background:#e6ffe6; }
+.bg4 { background:#fff0e6; }
+.bg5 { background:#f0e6ff; }
+.bg6 { background:#e6ffff; }
+
+.achievement{
+  width:50%;
+  font-size:18px;
+  margin-top:40px;
+}
+
+.details{
+width:40%;
+text-align:center;
+}
+
+.details img{
+width:200px;
+height:200px;
+border-radius:50%;
+margin-bottom:5px;
+}
+
+.name{
+font-weight:bold;
+font-size:18px;
+}
+
+.qualification{
+color:#555;
+}
+
+</style>
+</head>
+
+<body oncontextmenu="return false;" onselectstart="return false">
+<!-- HEADER -->
+<div class="header">
+
+<img src="images/governament-logo1.jpeg" alt="Government Logo">
+
+<div class="title">
+<h1>
+MAHATMA JYOTHIBA PHULE <br>
+TELANGANA BACKWARD CLASSES <br>
+WELFARE RESIDENTIAL <br>
+DEGREE COLLEGE FOR WOMEN
+</h1>
+
+<div class="location">
+Medchal & Hyderabad
+</div>
+
+</div>
+
+<img src="images/mjp1.png">
+
+</div>
+
+
+<!-- NAVIGATION -->
+
+<nav>
+
+<ul>
+
+<li><a href="index.html">Home</a></li>
+
+<li>
+<a href="#">About</a>
+<ul>
+<li><a href="history.html">History</a></li>
+<li><a href="governing body.html">Governing Body</a></li>
+<li><a href="secretary.html">Secretary</a></li>
+<li><a href="principal.html">Principal</a></li>
+<li><a href="vice principal.html">Vice Principal</a></li>
+<li><a href="management.html">Management</a></li>
+</ul>
+</li>
+
+<li>
+<a href="#">Academics</a>
+<ul>
+<li><a href="admissions.html">Admissions</a></li>
+<li><a href="courses.html">Courses</a></li>
+<li><a href="course details.html">Course Details</a></li>
+
+<li><a href="examination.html">Examination Branch</a></li>
+</ul>
+</li>
+
+<li>
+<a href="#">Department & Faculty</a>
+<ul>
+<li><a href="#">Languages</a></li>
+<li><a href="Physical_Science.html">Physical Science</a></li>
+<li><a href="life science.html">Life Science</a></li>
+<li><a href="arts.html">Arts</a></li>
+<li><a href="commerce.html">Commerce</a></li>
+<li><a href="bba.html">BBA</a></li>
+<li><a href="bft.html">BFT</a></li>
+<li><a href="PD_librarian.html">Physical Education and Librarians</a></li>
+
+<li><a href="Non_Teaching.html">Staff Nurses and Junior Assistants</a></li>
+
+
+</ul>
+</li>
+
+<li>
+<a href="#">Facilities</a>
+<ul>
+<li><a href="library.html">Library</a></li>
+<li><a href="labs.html">Labs</a></li>
+<li><a href="sports.html">Sports</a></li>
+<li><a href="events.html">Events</a></li>
+<li><a href="cultural.html">Cultural</a></li>
+<li><a href="industrial visits.html">Industrial Visits</a></li>
+<li><a href="nss.html">NSS</a></li>
+<li><a href="food-menu.html">Food Menu</a></li>
+<li><a href="health-cards.html">Health Cards</a></li>
+</ul>
+</li>
+
+<li><a href="placements.html">Placements</a></li>
+
+</ul>
+</nav>
+
+<!-- Languages Offered Section -->
+<div class="section">
+<h2>Languages Offered</h2>
+<ul>
+<li>English</li>
+<li>Telugu</li>
+<li>Sanskrit</li>
+<li>Urdu</li>
+<li>Hindi</li>
+</ul>
+</div>
+
+<div class="dept-code">🔤 Department Code: ENG-01</div>
+<h1>Department of English</h1>
+
+<!-- About the Department Section -->
+<div class="section">
+<h2>About the Department</h2>
+
+<div class="about-box">
+
+<div class="about-text">
+<p>
+The Department of English is dedicated to academic excellence in the study
+of English language and literature. The department aims to develop students'
+communication skills, critical thinking, and creative expression.
+</p>
+
+<p>
+We offer undergraduate and postgraduate programs that focus on literature,
+linguistics, literary theory, and language studies. Our faculty members are
+experienced educators and researchers committed to student success.
+</p>
+</div>
+
+<div class="about-img">
+<img src="images/English.jpg">
+</div>
+
+</div>
+
+</div>
+
+<!-- Programs Offered Section -->
+<div class="section">
+<h2>Programs Offered</h2>
+<ul>
+<li>B.Sc (MSCs)</li>
+<li>B.Sc (Data Science)</li>
+<li>B.Sc (AIML)</li>
+<li>B.Sc (MPC)</li>
+<li>B.Sc (MPCs)</li>
+<li>B.Sc (MBZC)</li>
+<li>B.Sc (NZC)</li>
+<li>B.Sc (ANPHBC)</li>
+<li>B.Sc (BFT)</li>
+<li>B.A (HEP)</li>
+<li>B.A (PPGEP)</li>
+<li>B.Com (Computer Administration)</li>
+<li>B.Com (Business Analytics)</li>
+<li>Bachelor of Bussiness Administration</li>
+</ul>
+</div>
+
+<div class="card bg1">
+<div class="achievement">
+<strong>Santhosha</strong> is a faculty in the Department of English. She have 9 years of experience as a Degree Lecturer in TSWREI Society. This experience has strengthened her instructional expertise and ability to manage classroom dynamics effectively. She focus on fostering critical thinking, creativity, and professional growth among students. Her efforts aim to support students in preparing for higher education and future careers. Overall, her career reflects a dedication to education, student success, and the mission of the institution she serve.
+</div>
+<div class="details">
+<img src="images/Santhosha.png">
+<div class="name">Santhosha</div>
+<div class="qualification">DL in English</div>
+</div>
+</div>
+
+<div class="card bg2">
+<div class="achievement">
+<strong>G.Vanitha</strong> is a faculty in the Department of English. She have five years of experience as a Degree Lecturer in English.She have one year of experience in SSC Hyderabad, starting at Lorvens Convent High School, Following this, She served one year at St. Joseph’s Grammar High School, SSC Hyderabad.She also gained two years of experience in SC Welfare, Nalgonda, serving as a Degree Lecturer, where She focused on educational support and development for underrepresented communities.  She submitted Project on "How Study Skills helps students to improve their learning".
+</div>
+<div class="details">
+<img src="images/vanitha.png">
+<div class="name">G.Vanitha</div>
+<div class="qualification">M.A(English), B.Ed</div>
+</div>
+</div>
+
+<div class="card bg3">
+<div class="achievement">
+<strong>T.Vinutha</strong> is a faculty in the Department of English. She have 10 years of professional experience working in the Gurukul educational system.She have five years of experience as a Counsellor at Dr. B. R. Ambedkar Open University. This role helped to develop strong communication and mentoring skills. She have consistently worked to motivate and support students from diverse educational backgrounds. Her experience reflects a strong commitment to education, student success, and academic excellence.
+</div>
+<div class="details">
+<img src="images/Vinutha.png">
+<div class="name">T.Vinutha</div>
+<div class="qualification">M.A(English), B.Ed</div>
+</div>
+</div>
+
+<div class="dept-code">🈚 Department Code: TEL-01</div>
+<h1 style="text-align:Left;">Department of Telugu</h1>
+
+<div class="section">
+<h2>About the Department</h2>
+
+<div class="about-box">
+
+<div class="about-text">
+<p>
+The Department of Telugu is committed to promoting the rich heritage,
+literature, and cultural traditions of the Telugu language. The department
+aims to develop students' language proficiency, literary appreciation,
+and research skills.
+</p>
+
+<p>
+Through academic programs and cultural activities, the department
+encourages students to explore classical and modern Telugu literature
+while strengthening communication and analytical abilities.
+</p>
+</div>
+
+<div class="about-img">
+<img src="images/Telugu.jpg">
+</div>
+
+</div>
+
+</div>
+
+<div class="section">
+<h2>Programs Offered</h2>
+<ul>
+<li>B.Sc (MSCs)</li>
+<li>B.Sc (Data Science)</li>
+<li>B.Sc (AIML)</li>
+<li>B.Sc (MPC)</li>
+<li>B.Sc (MPCs)</li>
+<li>B.Sc (MBZC)</li>
+<li>B.Sc (NZC)</li>
+<li>B.Sc (ANPHBC)</li>
+<li>B.Sc (BFT)</li>
+<li>B.A (HEP)</li>
+<li>B.A (PPGEP)</li>
+<li>B.Com (Computer Administration)</li>
+<li>B.Com (Business Analytics)</li>
+<li>Bachelor of Business Administration</li>
+</ul>
+</div>
+
+<div class="card bg4">
+<div class="achievement">
+<strong>P.Annapurna,</strong>Degree Lecturer in Telugu Department. She have successfully qualified for the Junior Research Fellowship (JRF) in Telugu and secured the State1st Rank in the TREIRB Gurukula Degree Lecturer (DL) Examination. Qualified JRF with First rank across the State of Telangana. Together, these accomplishments highlight her dedication to teaching, research, and continuous learning, as well as her passion for preserving, promoting, and advancing Telugu studies through academic and professional engagement.
+</div>
+<div class="details">
+<img src="images/p.annapurna.png">
+<div class="name">P.Annapurna</div>
+<div class="qualification">MA, B.ED, NET, TS-SET, JRF</div>
+</div>
+</div>
+
+<div class="card bg5">
+<div class="achievement">
+<strong>K. Anuradha,</strong> is a Degree Lecturer in the Department of M.A. in Telugu, is a dedicated Degree Lecturer passionate about teaching and promoting Telugu language and literature. She focuses on academic excellence while helping students appreciate the cultural and literary values of Telugu. Known for her commitment and supportive nature, she encourages creativity, confident expression, and a love for literature. Her guidance has helped many students improve their language skills and respect for their mother tongue. Through her dedication, she continues to inspire students and contribute to education and Telugu literary growth.
+</div>
+<div class="details">
+<img src="images/Anuradha.png">
+<div class="name">Anuradha</div>
+<div class="qualification">M.A(Telugu)</div>
+</div>
+</div>
+
+<div class="card bg6">
+<div class="achievement">
+<strong>V.Soujanya </strong> is a faculty in the Department of Telugu. She has completed M.A. and B.Ed. from Osmania University.She successfully qualified the UGC-NET in June 2025 and the SET in 2024. Over the course of her career, she gained valuable teaching experience, developing and delivering comprehensive curricula, guiding students in their academic journeys, and fostering an engaging and inclusive learning environment. Her combination of advanced qualifications, extensive teaching experience, and mentoring expertise enables me to contribute meaningfully to student success, institutional growth, and the advancement of higher education.
+</div>
+<div class="details">
+<img src="images/soujanya1.jpg">
+<div class="name">V.Soujanya</div>
+<div class="qualification">M.A(Telugu)</div>
+</div>
+</div>
+
+</body>
+</html>

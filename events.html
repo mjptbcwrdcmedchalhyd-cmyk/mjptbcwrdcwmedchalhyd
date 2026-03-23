@@ -1,0 +1,905 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Events</title>
+
+ <script src="disableActions.js"></script>
+
+
+<style>
+
+
+
+body{
+font-family: Arial, sans-serif;
+margin:0;
+padding:0;
+background:#f5f7fa;
+}
+
+/* HEADER */
+
+.header{
+display:flex;
+align-items:center;
+justify-content:space-between;
+padding:10px 40px;
+background:white;
+border-bottom:3px solid #003366;
+}
+
+.header img{
+width:150px;
+height:150px;
+object-fit:contain;
+}
+
+.title{
+text-align:center;
+flex:1;
+padding:0 20px;
+}
+
+.title h1{
+margin:0;
+font-size:26px;
+color:#003366;
+font-weight:bold;
+}
+
+.location{
+font-weight:bold;
+margin-top:5px;
+}
+
+
+/* NAVIGATION */
+
+nav{
+background:#003366;
+text-align:center;
+position:sticky;
+top:0;
+z-index:1000;
+}
+
+nav ul{
+list-style:none;
+margin:0;
+padding:0;
+}
+
+nav ul li{
+display:inline-block;
+position:relative;
+}
+
+nav ul li a{
+display:block;
+padding:14px 20px;
+color:white;
+text-decoration:none;
+font-weight:bold;
+}
+
+nav ul li a:hover{
+background:#0055a5;
+}
+
+
+/* DROPDOWN */
+
+nav ul ul{
+display:none;
+position:absolute;
+background:#0055a5;
+min-width:200px;
+text-align:left;
+}
+
+nav ul ul li{
+display:block;
+}
+
+nav ul li:hover > ul{
+display:block;
+}
+
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+.header{
+flex-direction:column;
+text-align:center;
+}
+
+.header img{
+width:100px;
+height:100px;
+}
+
+.title h1{
+font-size:20px;
+}
+
+nav ul li{
+display:block;
+}
+
+}
+
+
+.image-slider {
+    width: 100%;
+    overflow: hidden;
+    margin: 20px 0;
+}
+
+.slider-track {
+    display: flex;
+    width: calc(250px * 10); /* 250px image width * number of images */
+    animation: scroll 20s linear infinite;
+}
+
+.slider-track img {
+    width: 250px;
+    height: 150px;
+    margin-right: 10px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+@keyframes scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+}
+body{
+    font-family: Arial;
+    background:WHITE;
+    margin: 40px;
+    text-align: center;
+}
+
+h1{
+    color:purple;
+}
+
+.container{
+    width: 60%;
+    margin: auto;
+}
+
+.link{
+    color: blue;
+    cursor: pointer;
+    text-decoration: underline;
+    display: block;
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+.content{
+    display: none;
+    margin: 10px auto;
+    background: white;
+    padding: 12px;
+    width: 80%;
+    border-left: 4px solid #3498db;
+    border-radius: 5px;
+}
+
+
+
+            table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 6px;
+            text-align: center;
+            text color : WHITE ;
+        }
+
+h2 {
+    text-align: center;
+}
+        th {
+            background-color:VOILATE;
+ text color : WHITE ;
+        }
+       
+
+        /* Alternate row colors */
+        tr:nth-child(even) {
+            background-color: #FFE4E1;  
+        }
+
+        tr:nth-child(odd) {
+            background-color: #B0E0E6;  
+        }
+
+        /* Keep header color fixed */
+        tr:first-child {
+            background-color: INDIGO;
+        }
+th {
+    background-color: blue;
+    color: white;
+}
+
+
+
+      table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 6px;
+            text-align: center;
+            text color : WHITE ;
+        }
+h2 {
+    text-align: center;
+}
+        th {
+            background-color: BLUE;
+ text color : WHITE ;
+        }
+
+        /* Alternate row colors */
+        tr:nth-child(even) {
+            background-color: LIGHT BLUE;   /* Light gray */
+        }
+
+        tr:nth-child(odd) {
+            background-color: LAVENDER;   /* White */
+        }
+
+        /* Keep header color fixed */
+        tr:first-child {
+            background-color: INDIGO;
+        }
+th {
+    background-color: BLUE;
+    color: white;
+}
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f9;
+        }
+        h2 {
+            text-align: center;
+        }
+        table {
+            width: 80%;
+            margin: 20px auto;
+            border-collapse: collapse;
+            background-color: #ffffff;
+        }
+        th, td {
+            border: 1px solid #333;
+            padding: 10px;
+            text-align: center;
+        }
+        th {
+            background-color: VOILATE;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: #FFE4E1  ;
+        }
+         tr:nth-child(ODD) {
+            background-color:  #B0E0E6;
+        }
+
+
+   body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f9;
+            margin: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+        }
+        h2 {
+            color: #2980b9;
+            margin-top: 20px;
+        }
+        ol {
+            margin-left: 40px;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        p {
+            margin-left: 20px;
+        }
+
+
+ body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f9;
+            margin: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+        }
+        h2 {
+            color: #2980b9;
+            margin-top: 20px;
+        }
+        h3 {
+            color: #16a085;
+            margin-top: 15px;
+        }
+        ul {
+            margin-left: 20px;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        p {
+            margin-left: 20px;
+        }
+
+   body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f9;
+            margin: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+        }
+        h2 {
+            color: #2980b9;
+            margin-top: 20px;
+        }
+        h3 {
+            color: #16a085;
+            margin-top: 15px;
+        }
+        p {
+            margin-left: 20px;
+        }
+        ol {
+            margin-left: 40px;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+
+
+  body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f9;
+            margin: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+        }
+        h2 {
+            color: #2980b9;
+            margin-top: 20px;
+        }
+        h3 {
+            color: #16a085;
+            margin-top: 15px;
+        }
+        p {
+            margin-left: 20px;
+        }
+        ol {
+            margin-left: 40px;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+
+
+  body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f9;
+            margin: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+        }
+        h2 {
+            color: #2980b9;
+            margin-top: 20px;
+        }
+        h3 {
+            color: #16a085;
+            margin-top: 15px;
+        }
+        p {
+            margin-left: 20px;
+        }
+        ol {
+            margin-left: 40px;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+
+
+</style>
+
+<script>
+function showInfo(id){
+    var x = document.getElementById(id);
+
+    if(x.style.display === "block"){
+        x.style.display = "none";
+    }else{
+        x.style.display = "block";
+    }
+}
+</script>
+
+</head>
+<body oncontextmenu="return false;" onselectstart="return false">
+
+
+<!-- HEADER -->
+<div class="header">
+
+<img src="images/governament-logo1.jpeg" alt="Government Logo">
+
+<div class="title">
+<h1>
+MAHATMA JYOTHIBA PHULE <br>
+TELANGANA BACKWARD CLASSES <br>
+WELFARE RESIDENTIAL <br>
+DEGREE COLLEGE FOR WOMEN
+</h1>
+
+<div class="location">
+Medchal & Hyderabad
+</div>
+
+</div>
+
+<img src="images/mjp1.png">
+
+</div>
+
+
+<!-- NAVIGATION -->
+
+<nav>
+
+<ul>
+
+<li><a href="index.html">Home</a></li>
+
+<li>
+<a href="#">About</a>
+<ul>
+<li><a href="history.html">History</a></li>
+<li><a href="governing body.html">Governing Body</a></li>
+<li><a href="secretary.html">Secretary</a></li>
+<li><a href="principal.html">Principal</a></li>
+<li><a href="vice principal.html">Vice Principal</a></li>
+<li><a href="management.html">Management</a></li>
+</ul>
+</li>
+
+<li>
+<a href="#">Academics</a>
+<ul>
+<li><a href="admissions.html">Admissions</a></li>
+<li><a href="courses.html">Courses</a></li>
+<li><a href="course details.html">Course Details</a></li>
+<li><a href="examination.html">Examination Branch</a></li>
+</ul>
+</li>
+
+<li>
+<a href="#">Department & Faculty</a>
+<ul>
+<li><a href="languages.html">Languages</a></li>
+<li><a href="Physical_Science.html">Physical Science</a></li>
+<li><a href="life science.html">Life Science</a></li>
+<li><a href="arts.html">Arts</a></li>
+<li><a href="commerce.html">Commerce</a></li>
+<li><a href="bba.html">BBA</a></li>
+<li><a href="bft.html">BFT</a></li>
+<li><a href="PD_librarian.html">Physical Education and Librarians</a></li>
+
+<li><a href="Non_Teaching.html">Staff Nurses and Junior Assistants</a></li>
+
+
+</ul>
+</li>
+
+<li>
+<a href="#">Facilities</a>
+<ul>
+<li><a href="library.html">Library</a></li>
+<li><a href="labs.html">Labs</a></li>
+<li><a href="sports.html">Sports</a></li>
+<li><a href="cultural.html">Cultural</a></li>
+<li><a href="industrial visits.html">Industrial Visits</a></li>
+<li><a href="nss.html">NSS</a></li>
+<li><a href="food-menu.html">Food Menu</a></li>
+<li><a href="health-cards.html">Health Cards</a></li>
+</ul>
+</li>
+
+<li><a href="placements.html">Placements</a></li>
+
+</ul>
+
+</nav>
+
+
+
+
+
+<div class="container">
+
+<h1>Events</h1>
+<!-- Horizontal scrolling images -->
+<div class="image-slider">
+    <div class="slider-track">
+        <img src="images/infosys3.png" alt="Event 1">
+        <img src="images/magicbus1.png" alt="Event 2">
+        <img src="images/nandhi1.png" alt="Event 3">
+        <img src="images/COLLEGE4.png" alt="Event 3">
+        <img src="images/gradution1.png" alt="Event 4">
+        <img src="images/stem3.PNG" alt="Event 6">
+        <img src="images/stem2.PNG" alt="Event 7">
+       <img src="images/stem1.PNG" alt="Event 8">
+      <img src="images/mock_assembly.jpeg" alt="Event 9">
+
+ </div>
+</div>
+
+
+<p>
+In different training programs like STEM, Magic Bus, Nandi Foundation and Cognizant,
+students learn many important soft skills such as communication, teamwork,
+leadership, time management, problem solving and confidence building.
+These skills help students improve their personality and career opportunities.
+Click the links below to know more.
+</p>
+
+<span class="link" onclick="showInfo('stem')">SHE FOR STEM</span>
+<div id="stem" class="content">
+
+
+
+<h2>STEM STUDENTS LIST (2025 BATCH)</h2>
+
+
+<table>
+    <tr>
+        <th>S.No</th>
+        <th>Names</th>
+        <th>Groups</th>
+    </tr>
+    <tr><td>1</td><td>VADDE SRUJANA</td><td>MSCS</td></tr>
+    <tr><td>2</td><td>MYADHARI PRASANNA</td><td>MSCS</td></tr>
+    <tr><td>3</td><td>KURAPATI ANURADHA</td><td>MSCS</td></tr>
+    <tr><td>4</td><td>VANGURI SRAVANI</td><td>MSCS</td></tr>
+    <tr><td>5</td><td>PEDDAGONI SHRIVANI</td><td>MSCS</td></tr>
+    <tr><td>6</td><td>SAPETLA SHIVANEELA</td><td>MSCS</td></tr>
+    <tr><td>7</td><td>MOKURALA KAVYASREE</td><td>MSDS</td></tr>
+    <tr><td>8</td><td>MANGALI NAVYA</td><td>MSDS</td></tr>
+    <tr><td>9</td><td>GADDA GEETHA</td><td>MSDS</td></tr>
+    <tr><td>10</td><td>KARELLI SHIRISHA</td><td>MSDS</td></tr>
+    <tr><td>11</td><td>GUNDEMONI PAVANI</td><td>MSDS</td></tr>
+    <tr><td>12</td><td>KARNATI HEMA</td><td>MS(AI&ML)</td></tr>
+    <tr><td>13</td><td>GUNTHAPALLY ANNAPURNA</td><td>MS(AI&ML)</td></tr>
+    <tr><td>14</td><td>SUHASINI</td><td>MS(AI&ML)</td></tr>
+    <tr><td>15</td><td>GADDI RAKSHITHA</td><td>MS(AI&ML)</td></tr>
+    <tr><td>16</td><td>PYATA AKHILA</td><td>MS(AI&ML)</td></tr>
+    <tr><td>17</td><td>GILLI LAXMI</td><td>MS(AI&ML)</td></tr>
+    <tr><td>18</td><td>MEDI RAMYA</td><td>MS(AI&ML)</td></tr>
+    <tr><td>19</td><td>PERALA RESHMA</td><td>ANPHBC</td></tr>
+    <tr><td>20</td><td>PEERI VAISHNAVI</td><td>ANPHBC</td></tr>
+    <tr><td>21</td><td>YERRAGOLLA SANGEETHA </td><td>ANPHBC</td></tr>
+    <tr><td>22</td><td>KATHI KEERTHANA</td><td>ANPHBC</td></tr>
+    <tr><td>23</td><td>LOLAM UMAPRANAVASRI</td><td>ANPHBC</td></tr>
+    <tr><td>24</td><td>MERUGU RAVALIKA</td><td>NZC</td></tr>
+    <tr><td>25</td><td>NEELA DEEPIKA</td><td>NZC</td></tr>
+    <tr><td>26</td><td>MUNAGALA YASHASWINI</td><td>NZC</td></tr>
+    <tr><td>27</td><td>PENDRA SRAVANI</td><td>NZC</td></tr>
+    <tr><td>28</td><td>MUTTE MADHUMITHA</td><td>NZC</td></tr>
+    <tr><td>29</td><td>TUMMA YAMINI</td><td>NZC</td></tr>
+    <tr><td>30</td><td>BODA AKSHITHA</td><td>NZC</td></tr>
+    <tr><td>31</td><td>PUTTI VIJAYALAXMI</td><td>MBZC</td></tr>
+    <tr><td>32</td><td>MANGALI SHIVAREKHA</td><td>MBZC</td></tr>
+    <tr><td>33</td><td>VADTHYAVATH POOJA</td><td>MBZC</td></tr>
+    <tr><td>34</td><td>MAVILLA MOUNIKA</td><td>MBZC</td></tr>
+    <tr><td>35</td><td>GUJJARI ANUSHA</td><td>MBZC</td></tr>
+    <tr><td>36</td><td>BAIKANI ANUSHA</td><td>MBZC</td></tr>
+    <tr><td>37</td><td>AKKARAJU SRIVANI</td><td>MBZC</td></tr>
+    <tr><td>38</td><td>UPPARI SRIVANI</td><td>MBZC</td></tr>
+    <tr><td>39</td><td>TUPAKULA MANEESHA</td><td>MBZC</td></tr>
+    <tr><td>40</td><td>KETHAVATH PRIYANKA</td><td>MBZC</td></tr>
+    <tr><td>41</td><td>BANKULA SRAVANTHI</td><td>MBZC</td></tr>
+    <tr><td>42</td><td>KARBAL VAISHNAVI</td><td>MBZC</td></tr>
+    <tr><td>43</td><td>VANKARAMONI ABHINAYASRI</td><td>MBZC</td></tr>
+    <tr><td>44</td><td>KAMMARI SOUMYA</td><td>MPC</td></tr>
+    <tr><td>45</td><td>KOTHINTI TULASI</td><td>MPC</td></tr>
+    <tr><td>46</td><td>ENUGANDLA PRIYANKA</td><td>MPC</td></tr>
+    <tr><td>47</td><td>BORRA MOUNIKA</td><td>MPCS</td></tr>
+    <tr><td>48</td><td>BULLA SNEHA</td><td>MPCS</td></tr>
+    <tr><td>49</td><td>REPALLE JEEVITHA</td><td>MPCS</td></tr>
+    <tr><td>50</td><td>SRIPATHI VENNELA</td><td>MPCS</td></tr>
+    <tr><td>51</td><td>GONEMONI AKHILA</td><td>MPCS</td></tr>
+    <tr><td>52</td><td>MANDULA SAILAJA</td><td>MPCS</td></tr>
+    <tr><td>53</td><td>PASUPULA HEMALATHA</td><td>MPCS</td></tr>
+    <tr><td>54</td><td>AMGOTH NIKHITHA</td><td>MPCS</td></tr>
+    <tr><td>55</td><td>CHINTHAKAYALA RADHIKA</td><td>MPCS</td></tr>
+    <tr><td>56</td><td>GANGARAPU ANUSHA</td><td>MPCS</td></tr>
+    <tr><td>57</td><td>DAMAYAPALLI MALLESHWARI</td><td>MPCS</td></tr>
+    <tr><td>58</td><td>GOLLA SHAKUNTALA</td><td>MPCS</td></tr>
+    <tr><td>59</td><td>KATAMONI ARCHANA</td><td>MPCS</td></tr>
+    <tr><td>60</td><td>SULTHANPUR SINDHUJA</td><td>MPCS</td></tr>
+</table>
+
+
+
+
+    <h2>STEM Students - Stellar Scholarship Awardees(2026)</h2>
+
+    <table>
+        <tr>
+            <th>S.No</th>
+            <th>Student Name</th>
+            <th>Field of Study</th>
+            <th>Year</th>
+        </tr>
+        <tr><td>1</td><td>VADDE SRUJANA</td><td>MSCS-HYD</td><td>2026</td></tr>
+        <tr><td>2</td><td>SAPETLA SHIVANEELA</td><td>MSCS-HYD</td><td>2026</td></tr>
+        <tr><td>3</td><td>MANGALI NAVYA</td><td>MSDS-HYD</td><td>2026</td></tr>
+        <tr><td>4</td><td>LOLAM UMAPRANAVASRI</td><td>ANPHBC-HYD</td><td>2026</td></tr>
+        <tr><td>5</td><td>PENDRA SRAVANI</td><td>NZC-HYD</td><td>2026</td></tr>
+        <tr><td>6</td><td>PUTTI VIJAYALAXMI</td><td>MBZC-MED</td><td>2026</td></tr>
+        <tr><td>7</td><td>GUJJARI ANUSHA</td><td>MBZC-MED</td><td>2026</td></tr>
+        <tr><td>8</td><td>BAIKANI ANUSHA</td><td>MBZC-MED</td><td>2026</td></tr>
+        <tr><td>9</td><td>PASUPULA HEMALATHA</td><td>MPCS-MED</td><td>2026</td></tr>
+        <tr><td>10</td><td>MANDULA SAILAJA</td><td>MPCS-MED</td><td>2026</td></tr>
+        <tr><td>11</td><td>DAMAYAPALLI MALLESHWARI</td><td>MPCS-MED</td><td>2026</td></tr>
+       </table>
+<h2>STEM STUDENTS LIST (2026 BATCH)</h2>
+<table>
+    <tr>
+        <th>S.No</th>
+        <th>Names</th>
+        <th>Groups</th>
+    </tr>
+    <tr><td>1</td><td>GOLLA  MOUNIKA</td><td>MSCS</td></tr>
+    <tr><td>2</td><td>BOYA  AISHWARYA</td><td>MSCS</td></tr>
+    <tr><td>3</td><td>MUSHINI  LAXMI PRASNNA</td><td>MSCS</td></tr>
+    <tr><td>4</td><td>KATROTH  PAVANI</td><td>MSCS</td></tr>
+    <tr><td>5</td><td>KOLLAKADI  MEGHANA</td><td>MSCS</td></tr>
+    <tr><td>6</td><td>KUMMARI  VIJAYA LAKSHMI</td><td>MSCS</td></tr>
+    <tr><td>7</td><td>MEKALA  MADHAVI</td><td>MSCS</td></tr>
+    <tr><td>8</td><td>THOTA  AKHILA</td><td>MSCS</td></tr>
+    <tr><td>9</td><td>UPPUNUNTHALA  APARNA</td><td>MSCS</td></tr>
+    <tr><td>10</td><td>VAVILLA  SHRUTHI</td><td>MSCS</td></tr>
+    <tr><td>11</td><td>KATTA  ANUSHA</td><td>MSDS</td></tr>
+    <tr><td>12</td><td>KONDALA  ANSHIKA</td><td>MSDS</td></tr>
+    <tr><td>13</td><td>MORA  KEERTHANA</td><td>MSDS</td></tr>
+    <tr><td>14</td><td>GUNDIMALLA  KEERTHANA</td><td>MSDS</td></tr>
+    <tr><td>15</td><td>KALAL SINDHUJA</td><td>MSDS</td></tr>
+    <tr><td>16</td><td>NARRAMULA NAVYA</td><td>MSDS</td></tr>
+    <tr><td>17</td><td>RATHLAVATHA NIKITHARAJ</td><td>MSDS</td></tr>
+    <tr><td>18</td><td>SANKELLA GAYATHRI</td><td>MSDS</td></tr>
+    <tr><td>19</td><td>ANUGULA INDHU</td><td>MS(AI&ML)</td></tr>
+    <tr><td>20</td><td>JAJULA ANJALI</td><td>MS(AI&ML)</td></tr>
+    <tr><td>21</td><td>KESHAPAGA PADMASRI</td><td>MS(AI&ML)</td></tr>
+    <tr><td>22</td><td>MADUGULA RAJITHA</td><td>MS(AI&ML)</td></tr>
+    <tr><td>23</td><td>PEDDABUGGANOLA ANUSHA</td><td>MS(AI&ML)</td></tr>
+    <tr><td>24</td><td>SANGEM SRAVANI</td><td>ANPHBC</td></tr>
+    <tr><td>25</td><td>THALARI ASHWINI</td><td>ANPHBC</td></tr>
+    <tr><td>26</td><td>CHEVULA INDHU</td><td>NZC</td></tr>
+    <tr><td>27</td><td>GIRAGANI THRISHA</td><td>NZC</td></tr>
+    <tr><td>28</td><td>GOLLA AKHILA</td><td>NZC</td></tr>
+    <tr><td>29</td><td>KUKKALA PRATHYUSHA</td><td>NZC</td></tr>
+    <tr><td>30</td><td>ORUGANTI SHIVANI</td><td>NZC</td></tr>
+    <tr><td>31</td><td>BOLLAM SUCHITRA</td><td>MSCS</td></tr>
+    <tr><td>32</td><td>DOSADA SRIVANI</td><td>MSCS</td></tr>
+    <tr><td>33</td><td>GADDAMEEDI DEEPIKA</td><td>MSCS</td></tr>
+    <tr><td>34</td><td>KATROTH PAVITRA</td><td>MSCS</td></tr>
+    <tr><td>35</td><td>SADURLA  NANDINI</td><td>MSCS</td></tr>
+    <tr><td>36</td><td>SOWKUNTLA  NANDINI</td><td>MSCS</td></tr>
+    <tr><td>37</td><td>VELJARALA  ARCHANA</td><td>MSCS</td></tr>
+    <tr><td>38</td><td>CHINTHALA MAHATHI</td><td>MBZC</td></tr>
+    <tr><td>39</td><td>DEVANDA RAGINI</td><td>MBZC</td></tr>
+    <tr><td>40</td><td>GADEELA TANISHKA</td><td>MBZC</td></tr>
+    <tr><td>41</td><td>KAKOJU  LAVANYA</td><td>MBZC</td></tr>
+    <tr><td>42</td><td>KODUPAKA NIKITHA</td><td>MBZC</td></tr>
+    <tr><td>43</td><td>KOLURU KAVERI</td><td>MBZC</td></tr>
+    <tr><td>44</td><td>KOTHAPALLY MANASA</td><td>MBZC</td></tr>
+    <tr><td>45</td><td>MANGALI NEESHMA</td><td>MBZC</td></tr>
+    <tr><td>46</td><td>PALAKURTHI RASAGNA</td><td>MBZC</td></tr>
+    <tr><td>47</td><td>PARVEDA PAVANI</td><td>MBZC</td></tr>
+    <tr><td>48</td><td>RAILA LAXMIDEVI</td><td>MBZC</td></tr>
+    <tr><td>49</td><td>SARA GANGAVATHI</td><td>MBZC</td></tr>
+    <tr><td>50</td><td>YERRAGOLLA NANDINI</td><td>MBZC</td></tr>
+    <tr><td>51</td><td>THUMMALA NAVYA </td><td>MPC</td></tr>
+    <tr><td>52</td><td>YALALA NAGALAXMI</td><td>MPC</td></tr>
+    <tr><td>53</td><td>AILU RAJASREE</td><td>MPCS</td></tr>
+    <tr><td>54</td><td>GUDA GAYATHRI</td><td>MPCS</td></tr>
+    <tr><td>55</td><td>HARIJAN NANDINI</td><td>MPCS</td></tr>
+    <tr><td>56</td><td>KETHAVATH KEERTHI</td><td>MPCS</td></tr>
+    <tr><td>57</td><td>KOTHAKURVA AKANKSHA</td><td>MPCS</td></tr>
+    <tr><td>58</td><td>VENNA MANUSHA</td><td>MPCS</td></tr>
+    <tr><td>59</td><td>MASANPALLI SUJATHA</td><td>MPCS</td></tr>
+    <tr><td>60</td><td>NAKKARI SRAVANTHI</td><td>MPCS</td></tr>
+</table>
+
+</div>
+
+<span class="link" onclick="showInfo('magicbus')">MAGIC  BUS</span>
+<div id="magicbus" class="content">
+
+
+<h1>MAGIC BUS AI TRAINING</h1>
+
+<p><strong>Date:</strong> 30-01-2026 TO 16-02-2026</p>
+<p><strong>Timings:</strong> 2:30 PM TO 4:30 PM</p>
+
+<p>The AI Training program conducted by Magic Bus India Foundation in collaboration with TASK focused on building foundational AI knowledge along with practical digital skills.</p>
+
+<h2>Instructors:</h2>
+<ol>
+  <b><li>Vikas</li></b>
+     <b> <li>Supritha</li> </b>
+</ol>
+
+<h2>Topics Covered:</h2>
+<ol>
+    <li>AI tools such as Canva AI, Copilot, Clande, Perplexity, Gemini AI</li>
+    <li> Generative AI, prompt engineering [ChatGPT], basic project</li>
+    <li>Financial literacy, team building activities, LinkedIn profile creation</li>
+    <li>Professional work etiquette, professional resume building, and interview skills</li>
+    <li>LLM, Resume making using AI, computer vision, etc.</li>
+    <li>AI tools such as ChatGPT, Copilot, etc., to automate day-to-day tasks and improve workflow</li>
+</ol>
+
+</div>
+
+<span class="link" onclick="showInfo('nandi')">NAANDI   FOUNDATION</span>
+<div id="nandi" class="content">
+
+
+<h1>Naandi Foundation</h1>
+
+<h2>MAHINDRA PRIDE CLASSROOMS</h2>
+
+<p><strong>Employability Skills Training By Naandi Foundation</strong></p>
+<p><strong>Date:</strong> 02-01-2026 TO 08-01-2026 (6 DAYS)</p>
+<p><strong>Timings:</strong> 9:30 AM TO 4:30 PM</p>
+
+<h2>REPORT</h2>
+<p>Employability skills training was conducted for final year students by Naandi Foundation.</p>
+
+<ol>
+    <li>Final year students were divided into 3 groups and instructed by one instructor each.</li>
+    <li>Below instructors have given training to the students:
+        <ol type="1">
+          <b>  <li>Bhavani</li></b>
+            <b> <li>Sri Harshini</li></b>
+        </ol>
+    </li>
+    <li>Below topics were mainly focused on during the training:
+        <ol type="a">
+            <li>Body language and professional grooming</li>
+            <li>English language for career</li>
+            <li>Art of speaking</li>
+            <li>Goal setting and time management</li>
+            <li>Professional communication</li>
+            <li>Critical thinking</li>
+            <li>Interview preparation</li>
+            <li>Money management, etc.</li>
+        </ol>
+    </li>
+</ol>
+
+</div>
+
+<span class="link" onclick="showInfo('cognizant')">COGNIZANT</span>
+<div id="cognizant" class="content">
+<h1>Cognizant</h1>
+
+<h2>EVENT 1: SEMINAR ON FUTURE SKILLS</h2>
+<p>A seminar on future skills in collaboration with Cognizant Outreach and Leadership team.</p>
+<ul>
+    <li><strong>Speaker 1:</strong> Subramanyam Chinta – Senior Director, Delivery Partner – Health care &amp; Life Science</li>
+    <li><strong>Speaker 2:</strong> Ravikiran Jakkula</li>
+</ul>
+
+<h2>EVENT 2: INDUSTRIAL VISITS TO COGNIZANT</h2>
+<p>The students were made to interact with one of Cognizant’s project clients called Talcott. During the interaction, the client addressed students’ questions related to industry and projects.</p>
+<ul>
+    <li>Post lunch, students were trained about various basics and shortcuts in MS Office tools like MS Excel, PowerPoint, etc., with hands-on experience.</li>
+    <li>Students were given tasks to complete in MS Office and successfully completed them with excellence.</li>
+    <li>Students were awarded certificates of participation and merit for attending and performing well in completing the tasks given in MS Office training.</li>
+</ul>
+
+<h2>EVENT 3: MOCK INTERVIEWS</h2>
+<p>After the mock interview, the overall best performing students were given certificates. About 40 students received appreciation certificates as best performers in the employability skills training conducted by Cognizant Outreach team.</p>
+
+
+</div>
+<span class="link" onclick="showInfo('mock assemble')">MOCK ASSEMBLY</span>
+<div id="mock assemble" class="content">
+<h1>MOCK ASSEMBLY</h1>
+
+<h2>DEPARTMENT OF ARTS</h2>
+
+<p><strong>Mock Assembly Program</strong></p>
+<p><strong>Date:</strong> 06-12-2024</p>
+<p><strong>College:</strong> Mahatma Jyotiba Phule Telangana BC Welfare Residential Degree College for Women, Medchal & Hyderabad</p>
+
+<h2>REPORT</h2>
+
+<p>
+The Department of Arts organized a Mock Assembly Program to provide students with practical knowledge 
+about the functioning of a legislative assembly and to create awareness about democratic processes.
+The program aimed to enhance students’ leadership skills, communication abilities, and understanding 
+of parliamentary procedures.
+</p>
+
+<ol>
+
+<li>
+Students from BA (EPH) and BA (PPGEP) courses actively participated in the Mock Assembly.
+</li>
+
+<li>
+Students were assigned the following roles:
+<ol type="1">
+<li>Speaker</li>
+<li>Chief Minister</li>
+<li>Ministers</li>
+<li>Opposition Leader</li>
+<li>Members of the House</li>
+</ol>
+</li>
+
+<li>
+Students actively participated by presenting arguments, raising questions, and defending their viewpoints.
+</li>
+
+<li>
+The discussions mainly focused on the following topics:
+<ol type="a">
+<li>Education</li>
+<li>Women Empowerment</li>
+<li>Social Development</li>
+</ol>
+</li>
+
+<li>
+The Speaker maintained discipline and ensured the smooth conduct of the session, making the program 
+similar to a real legislative assembly.
+</li>
+
+</ol>
+
+<p>
+The Mock Assembly program proved to be highly informative, interactive, and engaging for the students.
+It helped them understand democratic procedures and improved their confidence in public speaking.
+</p>
+
+</div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+
+
+<script src="disableActions.js"></script>
+
+
+<style>
+body{
+font-family: Arial, sans-serif;
+margin:0;
+padding:0;
+background:#f5f7fa;
+}
+
+/* HEADER */
+
+.header{
+display:flex;
+align-items:center;
+justify-content:space-between;
+padding:10px 40px;
+background:white;
+border-bottom:3px solid #003366;
+}
+
+.header img{
+width:150px;
+height:150px;
+object-fit:contain;
+}
+
+.title{
+text-align:center;
+flex:1;
+padding:0 20px;
+}
+
+.title h1{
+margin:0;
+font-size:26px;
+color:#003366;
+font-weight:bold;
+}
+
+.location{
+font-weight:bold;
+margin-top:5px;
+}
+
+
+/* NAVIGATION */
+
+nav{
+background:#003366;
+text-align:center;
+position:sticky;
+top:0;
+z-index:1000;
+}
+
+nav ul{
+list-style:none;
+margin:0;
+padding:0;
+}
+
+nav ul li{
+display:inline-block;
+position:relative;
+}
+
+nav ul li a{
+display:block;
+padding:14px 20px;
+color:white;
+text-decoration:none;
+font-weight:bold;
+}
+
+nav ul li a:hover{
+background:#0055a5;
+}
+
+
+/* DROPDOWN */
+
+nav ul ul{
+display:none;
+position:absolute;
+background:#0055a5;
+min-width:200px;
+text-align:left;
+}
+
+nav ul ul li{
+display:block;
+}
+
+nav ul li:hover > ul{
+display:block;
+}
+
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+.header{
+flex-direction:column;
+text-align:center;
+}
+
+.header img{
+width:100px;
+height:100px;
+}
+
+.title h1{
+font-size:20px;
+}
+
+nav ul li{
+display:block;
+}
+
+}
+
+
+
+body{
+font-family: Arial, sans-serif;
+margin:40px;
+background-color:#f4f6f9;
+}
+
+h1{
+color:#2c3e50;
+}
+
+.dept-code{
+background-color:#2c3e50;
+color:white;
+padding:8px 15px;
+display:inline-block;
+border-radius:5px;
+margin-top:25px;
+margin-bottom:15px;
+}
+
+.page-title{
+text-align:center;
+font-size:32px;
+margin-bottom:30px;
+background:linear-gradient(to right,#ffcccc,#ccddff);
+padding:10px;
+border-radius:20px;
+}
+
+.card{
+display:flex;
+justify-content:space-between;
+padding:20px;
+margin:15px 0;
+border-radius:10px;
+box-shadow:0 2px 8px rgba(0,0,0,0.1);
+}
+
+.bg1{background:#EAF4FF;}
+.bg2{background:#F3E8FF;}
+.bg3{background:#E8F5E9;}
+.bg4{background:#FFF9E6;}
+.bg5{background:#F5F7FA;}
+.bg6{background:#FDECEF;}
+.bg7{background:#F1F8E9;}
+
+.achievement{
+  width:55%;
+  font-size:16px;
+  line-height:1.6;
+  padding-top:25px;  
+}
+.details{
+width:35%;
+text-align:center;
+}
+
+.details img{
+width:250px;
+height:250px;
+border-radius:50%;
+
+margin-bottom:5px;
+}
+
+.name{
+font-weight:bold;
+font-size:18px;
+}
+
+.qualification{
+color:#555;
+}
+
+</style>
+
+</head>
+
+<body oncontextmenu="return false;" onselectstart="return false">
+
+<!-- HEADER -->
+<div class="header">
+
+<img src="images/governament-logo1.jpeg" alt="Government Logo">
+
+<div class="title">
+<h1>
+MAHATMA JYOTHIBA PHULE <br>
+TELANGANA BACKWARD CLASSES <br>
+WELFARE RESIDENTIAL <br>
+DEGREE COLLEGE FOR WOMEN
+</h1>
+
+<div class="location">
+Medchal & Hyderabad
+</div>
+
+</div>
+
+<img src="images/mjp1.png">
+
+</div>
+
+
+<!-- NAVIGATION -->
+
+<nav>
+
+<ul>
+
+<li><a href="index.html">Home</a></li>
+
+<li>
+<a href="#">About</a>
+<ul>
+<li><a href="history.html">History</a></li>
+<li><a href="governing body.html">Governing Body</a></li>
+<li><a href="secretary.html">Secretary</a></li>
+<li><a href="principal.html">Principal</a></li>
+<li><a href="vice principal.html">Vice Principal</a></li>
+<li><a href="management.html">Management</a></li>
+</ul>
+</li>
+
+<li>
+<a href="#">Academics</a>
+<ul>
+<li><a href="admissions.html">Admissions</a></li>
+<li><a href="courses.html">Courses</a></li>
+<li><a href="course details.html">Course Details</a></li>
+
+<li><a href="examination.html">Examination Branch</a></li>
+</ul>
+</li>
+
+<li>
+<a href="#">Department & Faculty</a>
+<ul>
+<li><a href="languages.html">Languages</a></li>
+<li><a href="Physical_Science.html">Physical Science</a></li>
+<li><a href="life science.html">Life Science</a></li>
+<li><a href="arts.html">Arts</a></li>
+<li><a href="commerce.html">Commerce</a></li>
+<li><a href="bba.html">BBA</a></li>
+<li><a href="bft.html">BFT</a></li>
+<li><a href="#">Physical Education and Librarians</a></li>
+
+<li><a href="Non_Teaching.html">Staff Nurses and Junior Assistants</a></li>
+
+
+</ul>
+</li>
+
+<li>
+<a href="#">Facilities</a>
+<ul>
+<li><a href="library.html">Library</a></li>
+<li><a href="labs.html">Labs</a></li>
+<li><a href="sports.html">Sports</a></li>
+<li><a href="events.html">Events</a></li>
+<li><a href="cultural.html">Cultural</a></li>
+<li><a href="industrial visits.html">Industrial Visits</a></li>
+<li><a href="nss.html">NSS</a></li>
+<li><a href="food-menu.html">Food Menu</a></li>
+<li><a href="health-cards.html">Health Cards</a></li>
+</ul>
+</li>
+
+<li><a href="placements.html">Placements</a></li>
+
+</ul>
+</nav>
+
+<!-- PD's Department -->
+
+<div class="dept-code">🏃 Department Code: PD-01</div>
+<h1>Department of Physical Education</h1>
+
+<div class="card bg1">
+<div class="achievement">
+<strong>A. Baby  </strong>is working as a Physical Director in the department of Physical Education at MJPTBCWR Degree college.Her Professional qualification M.P.ED from Osmania University in 2014-2016. She completed her Bachelore of Physical Education (B.Ped) from Palamuru University in 2013.She qualified AP-TET in 2011. She had 7 years, 4 months of experience in coorporate college. She has also qualified TS-SET in 2023. her Job Achievements are : DSC in 2024, she appointed as PET in MJPTBCWREIS, she also appointed also Junior college TTWREIS as a Physical Director. She has awarded Silver medal in M.A(Economics). Her sports achievement in South west zone from Sri Krishna Devarayula University. She had published more than 3 research articles in reputed national and international journals(International research Journal of Education and Technology). She Published a Book: "GET FIT NEVER QUIT".She was Appointed as Physical Director in MJPTBCWR Degree college. </div>
+<div class="details">
+<img src="images/A.Baby.png">
+<div class="name">A. Baby</div>
+<div class="qualification">M.Ped, B.Ped, M.A(Economics), B.Ed</div>
+</div>
+</div>
+
+<div class="card bg2">
+<div class="achievement">
+<strong>Dr. P. Anitha  </strong>is working as a Physical Director in the Department of Physical Education at MJPTBCWR Degree college with 9 years of experience in sports training, coaching, and physical education. She completed her schooling and higher education in Telangana and Andhra Pradesh, developing a strong background in sports and martial arts. She earned her Ph.D. in Physical Education from Osmania University, Hyderabad. Her research topic was “Training on Development of Physical Fitness Components among Female Taekwondo Players.” She has also qualified the TS-SET (Telangana State Eligibility Test). Dr. Anitha holds a 1st Dan Black Belt in Taekwondo and a Black Belt in Kung-Fu. She possesses an NCC “C” Certificate and participated in the Independence Day Parade at Secunderabad on 15th August. She has represented in All India Inter-University competitions in Taekwondo and Pistol Shooting. She previously worked as a PGT (Physical Education) at an Army School and received three Appreciation Certificates for Excellence in Results in AISSCE. Under her coaching, her team won the CBSE South Zone Taekwondo Overall Championship in the Under-17 Girls category. She has attended many seminars and conferences, published research articles, and authored a book titled “Fitness in Combat Sports: Training Insights from Boxing, Taekwondo, Wrestling and Judo” published on 20 May 2025.</div>
+<div class="details">
+<img src="images/Anitha.png">
+<div class="name">Dr. P. Anitha</div>
+<div class="qualification">Ph.D(Physical Education)</div>
+</div>
+</div>
+
+<!-- Library Department -->
+
+<div class="dept-code">📚 Department Code: LIB-01</div>
+<h1>Department of Library</h1>
+
+
+<div class="card bg6">
+<div class="achievement">
+<strong>Sruthi</strong> is working as Librarian since july 2024
+Her qualifications are MLiSc,MPharmacy,MA,BEd she qualified UGC NET and TSSET
+</div>
+<div class="details">
+<img src="images/shruthi.jpeg">
+<div class="name">Sruthi</div>
+<div class="qualification">Library</div>
+</div>
+</div>
+
+<div class="card bg7">
+<div class="achievement">
+<strong>Kamatam Sukanya</strong> is a dedicated academic professional specializing in Library and Information Science. She holds a master’s degree in library science, reflecting her strong academic foundation and expertise. She began her career as a Librarian at a Girls’ Junior College under MJPTBCWRJC, Kalwakurthy, on 31st January 2019. Through her commitment and efficiency, she contributed significantly to academic resource management and student support. In July 2024, she earned a promotion to serve in a Degree College, marking a key milestone in her career. Her journey reflects professionalism, growth, and a continued passion for empowering education through library services.
+
+</div>
+<div class="details">
+<img src="images/sukanya.jpg">
+<div class="name">Sukanya</div>
+<div class="qualification">Library</div>
+</div>
+</div>
+
+
+</body>
+</html>
